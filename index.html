@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>SSU EN</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page-body">
@@ -1027,79 +1027,141 @@
         </ul>
       </section>
 
-      <section class="map"></section>
+      <div id="map" class="map"></div>
     </main>
     <footer class="page-footer">
-      <div class="social-media">
-        <ul class="social-media__list">
-          <li class="social-media__item">
-            <a
-              class="social-media__link"
-              href="https://vk.com/saruniversity"
-              aria-label="Vkontakte"
-            >
+      <div class="page-footer__container">
+        <div class="social-media">
+          <ul class="social-media__list">
+            <li class="social-media__item">
+              <a
+                class="social-media__link"
+                href="https://vk.com/saruniversity"
+                aria-label="Vkontakte"
+              >
+                <!-- Sprite -->
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a
+                class="social-media__link"
+                href="https://ok.ru/saruniversity"
+                aria-label="Odnoklassniki"
+              >
+                <!-- Sprite -->
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a
+                class="social-media__link"
+                href="https://t.me/saruniversity"
+                aria-label="Telegram"
+              >
+                <!-- Sprite -->
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a
+                class="social-media__link"
+                href="https://rutube.ru/channel/23787053/"
+                aria-label="Rutube"
+              >
+                <!-- Sprite -->
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a
+                class="social-media__link"
+                href="https://zen.yandex.ru/id/61e7f00ecf77372412e737e8?utm_source=main_stripe_big"
+                aria-label="Zen"
+              >
+                <!-- Sprite -->
+              </a>
+            </li>
+          </ul>
+          <form class="search" method="get">
+            <input
+              class="search__input"
+              type="text"
+              name="search"
+              placeholder="Website search"
+            />
+            <button class="search__button" type="submit">
               <!-- Sprite -->
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a
-              class="social-media__link"
-              href="https://ok.ru/saruniversity"
-              aria-label="Odnoklassniki"
-            >
-              <!-- Sprite -->
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a
-              class="social-media__link"
-              href="https://t.me/saruniversity"
-              aria-label="Telegram"
-            >
-              <!-- Sprite -->
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a
-              class="social-media__link"
-              href="https://rutube.ru/channel/23787053/"
-              aria-label="Rutube"
-            >
-              <!-- Sprite -->
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a
-              class="social-media__link"
-              href="https://zen.yandex.ru/id/61e7f00ecf77372412e737e8?utm_source=main_stripe_big"
-              aria-label="Zen"
-            >
-              <!-- Sprite -->
-            </a>
-          </li>
-        </ul>
-        <form class="search" method="get">
-          <input
-            class="search__input"
-            type="text"
-            name="search"
-            placeholder="Поиск по сайту"
-          />
-          <button class="search__button" type="submit">
-            <!-- Sprite -->
-          </button>
-        </form>
+            </button>
+          </form>
+        </div>
+        <div class="page-footer__information">
+          <div class="page-footer__column-1">
+            <div class="page-footer__wrapper-1">
+              <div class="page-footer__address">
+                <span class="page-footer__information-type">Address:</span>
+                <br />
+                410012, Saratov, Astrakhanskaya Street, 83
+              </div>
+              <div class="page-footer__reception">
+                <span class="page-footer__information-type"
+                  >Reception of rector:</span
+                >
+                <br />
+                +7 (8452) 26 - 16 - 96, rector@sgu.ru
+              </div>
+            </div>
+            <div class="page-footer__wrapper-2">
+              <a class="page-footer__SSU-site" href="#">To the SSU website</a>
+            </div>
+            <div class="page-footer__wrapper-3">
+              <div class="page-footer__commission">
+                <span class="page-footer__information-type"
+                  >Department for the organization of admission to basic
+                  educational programs (Central Admission Commission)</span
+                >
+                <br />
+                +7 (8452) 51 - 92 - 26, cpk@info.sgu.ru
+              </div>
+              <div class="page-footer__international">
+                <span class="page-footer__information-type"
+                  >International Students:</span
+                >
+                <br />
+                +7 (8452) 51 - 87 - 07, ied@sgu.ru
+              </div>
+              <div class="page-footer__data">
+                Information about the education organization
+              </div>
+            </div>
+          </div>
+
+          <div class="page-footer__column-2">
+            <div class="page-footer__support">
+              <span class="page-footer__information-type"
+                >Information support:</span
+              >
+              <br />
+              Media communication management SSU
+            </div>
+            <div class="page-footer__phone">
+              <span class="page-footer__information-type">Phone:</span>
+              <br />
+              +7 (8452) 21 - 06 - 25
+            </div>
+            <div class="page-footer__mail">
+              <span class="page-footer__information-type">Email:</span>
+              <br />
+              press@sgu.ru
+            </div>
+            <a class="page-footer__sitemap" href="#">Sitemap</a>
+            <a class="page-footer__account" href="#">Personal account</a>
+          </div>
+        </div>
       </div>
-      <div class="page-footer__wrapper-1">
-        <a
-          class="page-footer__address-link"
-          href="https://yandex.ru/maps/-/CDupjGjc"
-          target="_blank"
-          >Адрес:</a
-        >
-        <span class="page-footer__address"
-          >410012, г. Саратов, ул. Астраханская, 83</span
-        >
+      <div class="page-footer__copyright">
+        <p>
+          @ 2022 Federal State Budgetary Educational Institution of Higher
+          Education "Saratov National Research State University named after N.G.
+          Chernyshevsky
+        </p>
+        <p>When using materials, an active link to the source is mandatory</p>
       </div>
     </footer>
   </body>
