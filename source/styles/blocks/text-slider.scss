@@ -1,0 +1,23 @@
+.text-slider__slide {
+  line-height: 25px;
+
+  &--current-slide {
+    color: $blue;
+  }
+
+  &--last-slide {
+    color: $light-lilac;
+  }
+}
+
+.text-slider__header {
+  font-size: 32px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.text-slider__description {
+  font-weight: 400;
+}

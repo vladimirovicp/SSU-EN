@@ -1,0 +1,13 @@
+.slider__info {
+  font-weight: 400;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.slider__button-admission,
+.slider__button-partnership {
+  color: $white;
+}

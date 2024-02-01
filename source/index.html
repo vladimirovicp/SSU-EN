@@ -4,6 +4,67 @@
     <meta charset="UTF-8" />
     <title>SSU EN</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="preload"
+      href="fonts/GolosText-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/GolosText-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="fonts/GolosText-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/GolosText-Medium.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="fonts/GolosText-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/GolosText-Bold.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="fonts/FiraSans-BoldItalic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/FiraSans-BoldItalic.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/index.js" defer></script>
   </head>
@@ -25,7 +86,7 @@
         <div class="main-nav__menu">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href=""
+              <a class="main-nav__link main-nav__link--current" href=""
                 >Preparatory department for foreign citizens</a
               >
             </li>
@@ -126,8 +187,11 @@
           <div class="region__text-slider text-slider">
             <div class="text-slider__control">
               <div class="text-slider__slides">
-                <span class="text-slider__current-slide">02</span
-                >&ensp;&mdash;&ensp;<span class="text-slider__last-slide"
+                <span
+                  class="text-slider__slide text-slider__slide--current-slide"
+                  >02</span
+                >&ensp;&mdash;&ensp;<span
+                  class="text-slider__slide text-slider__slide--last-slide"
                   >10</span
                 >
               </div>
@@ -744,8 +808,11 @@
           <div class="science__text-slider text-slider">
             <div class="text-slider__control">
               <div class="text-slider__slides">
-                <span class="text-slider__current-slide">02</span
-                >&ensp;&mdash;&ensp;<span class="text-slider__last-slide"
+                <span
+                  class="text-slider__slide text-slider__slide--current-slide"
+                  >02</span
+                >&ensp;&mdash;&ensp;<span
+                  class="text-slider__slide text-slider__slide--last-slide"
                   >10</span
                 >
               </div>
@@ -804,7 +871,7 @@
             <!-- Sprite -->
           </button>
           <ul class="picture-slider__list">
-            <li class="picture-slider__item">
+            <li class="picture-slider__item picture-slider__item--current">
               <img
                 class="picture-slider__picture"
                 src="images/lab-worker-1.jpg"

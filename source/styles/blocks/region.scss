@@ -1,0 +1,10 @@
+.region__slogan {
+  font-family: "FiraSans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  color: $white;
+  letter-spacing: 10.5%;
+  text-shadow: 2px 2px 0 $light-lilac, -2px 2px 0 $light-lilac,
+    -2px -2px 0 $light-lilac, 2px -2px 0 $light-lilac;
+  text-transform: uppercase;
+}

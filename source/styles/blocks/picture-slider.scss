@@ -1,0 +1,16 @@
+.picture-slider__description {
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
+}
+
+.picture-slider__item--current {
+  .picture-slider__description {
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+    }
+  }
+}
+// - вложенность не работает
