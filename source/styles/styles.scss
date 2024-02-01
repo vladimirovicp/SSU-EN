@@ -1,7 +1,25 @@
 /* GLOBAL */
-@import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/variables.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/accordion.scss";
+@import "./blocks/admission.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/foreigners.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/news.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/picture-slider.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/region.scss";
+@import "./blocks/residence.scss";
+@import "./blocks/science.scss";
+@import "./blocks/search.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social-media.scss";
+@import "./blocks/text-slider.scss";
