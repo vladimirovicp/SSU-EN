@@ -1,0 +1,7 @@
+.accordion__header {
+  font-weight: 500;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}

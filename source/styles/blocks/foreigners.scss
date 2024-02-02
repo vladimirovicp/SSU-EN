@@ -1,0 +1,35 @@
+.foreigners__header {
+  font-size: 32px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.foreigners__note {
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.foreigners__item {
+  font-size: 20px;
+  // color: $white;
+}
+
+.foreigners__description {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.foreigners__subject-item {
+  line-height: 16px;
+}
+
+.foreigners__condition-item {
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+  }
+}

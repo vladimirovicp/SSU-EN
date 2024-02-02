@@ -1,0 +1,36 @@
+.admission__header {
+  font-size: 32px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.admission__time,
+.admission__foreigners {
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.admission__item {
+  font-weight: 400;
+  // color: $white;
+}
+
+.admission__compling,
+.admission__questions {
+  font-weight: 400;
+  // color: $white;
+}
+
+.admission__contacts {
+  font-size: 20px;
+  // color: $white;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
