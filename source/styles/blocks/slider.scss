@@ -11,3 +11,11 @@
 .slider__button-partnership {
   color: $white;
 }
+
+.slider__arrow-right .slider__arrow-icon {
+  transform: rotate(180deg);
+
+  @media (min-width: $desktop-width) {
+    fill: $light-blue;
+  }
+}

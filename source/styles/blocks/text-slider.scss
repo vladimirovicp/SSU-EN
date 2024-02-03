@@ -22,3 +22,7 @@
 .text-slider__description {
   font-weight: 400;
 }
+
+.text-slider__arrow-right .text-slider__arrow-icon {
+  transform: rotate(180deg);
+}

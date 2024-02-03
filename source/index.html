@@ -73,16 +73,35 @@
       <nav class="main-nav">
         <div class="main-nav__logo">
           <a class="main-nav__link-logo">
-            <img
+            <svg
               class="main-nav__shortcut-logo"
-              src="images/shortcut-logo.svg"
               width="59"
               height="54"
-              alt="Logotype of SSU"
-            />
+              fill="#ffffff"
+            >
+              <use xlink:href="images/icons/stack.svg#shortcut-logo"></use>
+            </svg>
             <span class="main-nav__cupture-logo">Saratov state university</span>
           </a>
         </div>
+        <form class="search" method="get">
+          <input
+            class="search__input"
+            type="text"
+            name="search"
+            placeholder="Website search"
+          />
+          <button class="search__button" type="submit">
+            <svg class="search__icon" width="30" height="30">
+              <use xlink:href="images/icons/stack.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <button
+          class="main-nav__toggle"
+          type="button"
+          aria-label="Open the site navigation menu"
+        ></button>
         <div class="main-nav__menu">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -144,11 +163,33 @@
           </li>
         </ul>
         <div class="slider__arrows">
-          <button class="slider__arrow slider__arrow-left" type="button">
-            <!-- Sprite -->
+          <button
+            class="slider__arrow slider__arrow-left"
+            type="button"
+            aria-label="flip slider to the left"
+          >
+            <svg
+              class="slider__arrow-icon slider__arrow-icon"
+              width="17"
+              height="33"
+              fill="#ffffff"
+            >
+              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+            </svg>
           </button>
-          <button class="slider__arrow slider__arrow-right" type="button">
-            <!-- Sprite -->
+          <button
+            class="slider__arrow slider__arrow-right"
+            type="button"
+            aria-label="flip slider to the right"
+          >
+            <svg
+              class="slider__arrow-icon"
+              width="17"
+              height="33"
+              fill="#ffffff"
+            >
+              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -159,21 +200,23 @@
         </h2>
         <div class="region__invitation">
           <span class="region__slogan">Welcome to Saratov and SSU</span>
-          <img
+          <svg
             class="region__shortcut-logo"
-            src="images/shortcut-logo.svg"
             width="38"
             height="35"
-            alt="Logotype of SSU"
-          />
+            fill="#BEC7E7"
+          >
+            <use xlink:href="images/icons/stack.svg#shortcut-logo"></use>
+          </svg>
           <span class="region__slogan">Welcome to Saratov and SSU</span>
-          <img
+          <svg
             class="region__shortcut-logo"
-            src="images/shortcut-logo.svg"
             width="38"
             height="35"
-            alt="Logotype of SSU"
-          />
+            fill="#BEC7E7"
+          >
+            <use xlink:href="images/icons/stack.svg#shortcut-logo"></use>
+          </svg>
           <span class="region__slogan">Welcome to Saratov and SSU</span>
         </div>
         <div class="region__container">
@@ -198,14 +241,34 @@
                 <button
                   class="text-slider__arrow text-slider__arrow-left"
                   type="button"
+                  aria-label="flip slider to the left"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="text-slider__arrow-icon"
+                    width="8"
+                    height="15"
+                    fill="#ffffff"
+                  >
+                    <use
+                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
+                    ></use>
+                  </svg>
                 </button>
                 <button
                   class="text-slider__arrow text-slider__arrow-right"
                   type="button"
+                  aria-label="flip slider to the right"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="text-slider__arrow-icon"
+                    width="8"
+                    height="15"
+                    fill="#ffffff"
+                  >
+                    <use
+                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
+                    ></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -236,14 +299,30 @@
           <button
             class="picture-slider__arrow picture-slider__arrow-left"
             type="button"
+            aria-label="flip slider to the left"
           >
-            <!-- Sprite -->
+            <svg
+              class="picture-slider__arrow-icon"
+              width="17"
+              height="33"
+              fill="#BEC7E7"
+            >
+              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+            </svg>
           </button>
           <button
             class="picture-slider__arrow picture-slider__arrow-right"
             type="button"
+            aria-label="flip slider to the right"
           >
-            <!-- Sprite -->
+            <svg
+              class="picture-slider__arrow-icon"
+              width="17"
+              height="33"
+              fill="#BEC7E7"
+            >
+              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+            </svg>
           </button>
           <ul class="picture-slider__list">
             <li class="picture-slider__item picture-slider__item--current">
@@ -306,7 +385,14 @@
               subjects)
             </p>
             <div class="foreigners__arrow">
-              <!-- Sprite -->
+              <svg
+                class="foreigners__triangle"
+                width="18"
+                height="44"
+                fill="#CDD2E4"
+              >
+                <use xlink:href="images/icons/stack.svg#triangle"></use>
+              </svg>
             </div>
             <div class="foreigners__description">
               <p>
@@ -348,21 +434,31 @@
                 </li>
               </ul>
               <ul class="foreigners__condition-list">
-                <li class="foreigners__condition-item">
+                <li
+                  class="foreigners__condition-item foreigners__condition-item--hours"
+                >
                   <b>Total hours:</b> 1012 contact hours
                 </li>
-                <li class="foreigners__condition-item">
+                <li
+                  class="foreigners__condition-item foreigners__condition-item--mode"
+                >
                   <b>Mode of study:</b> full-time / via use of exclusively
                   distance learning technologies (online mode)
                 </li>
-                <li class="foreigners__condition-item">
+                <li
+                  class="foreigners__condition-item foreigners__condition-item--fee"
+                >
                   <b>Fee:</b> 112,332 rubles / 101,200 rubles
                 </li>
-                <li class="foreigners__condition-item">
+                <li
+                  class="foreigners__condition-item foreigners__condition-item--start"
+                >
                   <b>Start:</b> upon arrival from September 1 to June 30, from
                   November 1 to August 31
                 </li>
-                <li class="foreigners__condition-item">
+                <li
+                  class="foreigners__condition-item foreigners__condition-item--deadline"
+                >
                   <b>Deadline for the program:</b> December 5
                 </li>
               </ul>
@@ -374,14 +470,28 @@
               pre-university training program
             </p>
             <div class="foreigners__arrow">
-              <!-- Sprite -->
+              <svg
+                class="foreigners__triangle"
+                width="18"
+                height="44"
+                fill="#CDD2E4"
+              >
+                <use xlink:href="images/icons/stack.svg#triangle"></use>
+              </svg>
             </div>
             <div class="foreigners__description"></div>
           </li>
           <li class="foreigners__item foreigners__item--russian-A2">
             <p>The program “Russian as a Foreign Language. Level A2"</p>
             <div class="foreigners__arrow">
-              <!-- Sprite -->
+              <svg
+                class="foreigners__triangle"
+                width="18"
+                height="44"
+                fill="#CDD2E4"
+              >
+                <use xlink:href="images/icons/stack.svg#triangle"></use>
+              </svg>
             </div>
             <div class="foreigners__description"></div>
           </li>
@@ -390,6 +500,35 @@
 
       <section class="programs">
         <h2 class="programs__header">Programs</h2>
+        <button
+          class="programs__arrow programs__arrow--left"
+          type="button"
+          aria-label="Flip list of programs to the left"
+        >
+          <svg
+            class="programs__arrow-icon"
+            width="17"
+            height="33"
+            fill="#668BD4"
+          >
+            <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="programs__arrow programs__arrow--right"
+          type="button"
+          aria-label="Flip list of programs to the right"
+        >
+          <svg
+            class="programs__arrow-icon"
+            width="17"
+            height="33"
+            fill="#668BD4"
+          >
+            <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+          </svg>
+        </button>
+
         <ul class="programs__list programs__list--current">
           <li class="programs__item">
             Bachelors Degree Programs
@@ -398,8 +537,14 @@
                 <h3 class="accordion__header">
                   Faculty of Mechanics and Mathematics
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -409,8 +554,14 @@
                 <h3 class="accordion__header">
                   Faculty of Computer Science and Information Technology
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -418,8 +569,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Institute of Physics</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -427,8 +584,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Institute of Chemistry</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -436,8 +599,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Geology</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -445,8 +614,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Geography</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -454,8 +629,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Biology</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -463,8 +644,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Psychology</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -472,8 +659,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Economics</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -481,8 +674,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Sociology</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -490,8 +689,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Law</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -501,8 +706,14 @@
                 <h3 class="accordion__header">
                   Institute of History and International Relations
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -512,8 +723,14 @@
                 <h3 class="accordion__header">
                   Faculty of Psychological, Pedagogical and Special Education
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -523,8 +740,14 @@
                 <h3 class="accordion__header">
                   Institute of Philology and Journalism
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -534,8 +757,14 @@
                 <h3 class="accordion__header">
                   Faculty of Foreign Languages and Linguodidactics
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -543,8 +772,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Institute of Arts</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -552,8 +787,14 @@
               </li>
               <li class="accordion__section">
                 <h3 class="accordion__header">Faculty of Philosophy</h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -563,8 +804,14 @@
                 <h3 class="accordion__header">
                   Institute of Physical Education and Sports
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -574,8 +821,14 @@
                 <h3 class="accordion__header">
                   Institute of Additional Professional Education
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -585,8 +838,14 @@
                 <h3 class="accordion__header">
                   Institute of Additional Professional Education
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -601,8 +860,14 @@
                 <h3 class="accordion__header">
                   Faculty of Mechanics and Mathematics
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -617,8 +882,14 @@
                 <h3 class="accordion__header">
                   Faculty of Mechanics and Mathematics
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -628,8 +899,14 @@
                 <h3 class="accordion__header">
                   Faculty of Computer Science and Information Technology
                 </h3>
-                <button class="accordion__button" type="button">
-                  <!-- Sprite -->
+                <button
+                  class="accordion__button"
+                  type="button"
+                  aria-label="Open the program"
+                >
+                  <svg class="accordion__icon" width="19" height="19">
+                    <use xlink:href="images/icons/stack.svg#plus"></use>
+                  </svg>
                 </button>
                 <div class="accordion__content">
                   <p>Здесь должен находится конетент</p>
@@ -709,7 +986,14 @@
               from visa countries
             </p>
             <div class="residence__arrow">
-              <!-- Sprite -->
+              <svg
+                class="residence__triangle"
+                width="18"
+                height="44"
+                fill="#CDD2E4"
+              >
+                <use xlink:href="images/icons/stack.svg#triangle"></use>
+              </svg>
             </div>
             <div class="residence__description">
               <p class="residence__description-header">
@@ -784,14 +1068,28 @@
               citizens)
             </p>
             <div class="residence__arrow">
-              <!-- Sprite -->
+              <svg
+                class="residence__triangle"
+                width="18"
+                height="44"
+                fill="#CDD2E4"
+              >
+                <use xlink:href="images/icons/stack.svg#triangle"></use>
+              </svg>
             </div>
             <div class="residence__description"></div>
           </li>
           <li class="residence__item residence__item--visa">
             <p>Visa Extension</p>
             <div class="residence__arrow">
-              <!-- Sprite -->
+              <svg
+                class="residence__triangle"
+                width="18"
+                height="44"
+                fill="#CDD2E4"
+              >
+                <use xlink:href="images/icons/stack.svg#triangle"></use>
+              </svg>
             </div>
             <div class="residence__description"></div>
           </li>
@@ -822,14 +1120,34 @@
                 <button
                   class="text-slider__arrow text-slider__arrow-left"
                   type="button"
+                  aria-label="flip slider to the left"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="text-slider__arrow-icon"
+                    width="8"
+                    height="15"
+                    fill="#ffffff"
+                  >
+                    <use
+                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
+                    ></use>
+                  </svg>
                 </button>
                 <button
                   class="text-slider__arrow text-slider__arrow-right"
                   type="button"
+                  aria-label="flip slider to the right"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="text-slider__arrow-icon"
+                    width="8"
+                    height="15"
+                    fill="#ffffff"
+                  >
+                    <use
+                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
+                    ></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -863,14 +1181,30 @@
           <button
             class="picture-slider__arrow picture-slider__arrow-left"
             type="button"
+            aria-label="flip slider to the left"
           >
-            <!-- Sprite -->
+            <svg
+              class="picture-slider__arrow-icon"
+              width="17"
+              height="33"
+              fill="#BEC7E7"
+            >
+              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+            </svg>
           </button>
           <button
             class="picture-slider__arrow picture-slider__arrow-right"
             type="button"
+            aria-label="flip slider to the right"
           >
-            <!-- Sprite -->
+            <svg
+              class="picture-slider__arrow-icon"
+              width="17"
+              height="33"
+              fill="#BEC7E7"
+            >
+              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+            </svg>
           </button>
           <ul class="picture-slider__list">
             <li class="picture-slider__item picture-slider__item--current">
@@ -933,10 +1267,18 @@
                 >
               </div>
               <div class="news__arrows">
-                <button class="news__arrow news__arrow-left" type="button">
+                <button
+                  class="news__arrow news__arrow-left"
+                  type="button"
+                  aria-label="flip slider to the left"
+                >
                   <!-- Sprite -->
                 </button>
-                <button class="news__arrow news__arrow-right" type="button">
+                <button
+                  class="news__arrow news__arrow-right"
+                  type="button"
+                  aria-label="flip slider to the right"
+                >
                   <!-- Sprite -->
                 </button>
               </div>
@@ -969,12 +1311,14 @@
                 <button
                   class="news__picture-slider__arrow news__picture-slider__arrow-left"
                   type="button"
+                  aria-label="flip slider to the left"
                 >
                   <!-- Sprite -->
                 </button>
                 <button
                   class="news__picture-slider__arrow news__picture-slider__arrow-right"
                   type="button"
+                  aria-label="flip slider to the right"
                 >
                   <!-- Sprite -->
                 </button>
@@ -1107,6 +1451,8 @@
       </section>
 
       <div id="map" class="page-main__map"></div>
+
+      <button class="button-up" type="button">Upstairs</button>
     </main>
 
     <footer class="page-footer">
@@ -1167,7 +1513,9 @@
               placeholder="Website search"
             />
             <button class="search__button" type="submit">
-              <!-- Sprite -->
+              <svg class="search__icon" width="14" height="14">
+                <use xlink:href="images/icons/stack.svg#search"></use>
+              </svg>
             </button>
           </form>
         </div>

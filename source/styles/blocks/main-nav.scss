@@ -1,3 +1,9 @@
+.main-nav__shortcut-logo {
+  @media (min-width: $desktop-width) {
+    fill: $black;
+  }
+}
+
 .main-nav__cupture-logo {
   font-size: 13px;
   font-weight: 500;

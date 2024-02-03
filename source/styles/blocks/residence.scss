@@ -7,6 +7,29 @@
   // color: $white;
 }
 
+.residence__triangle {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.residence__item--letter.residence__item--current .residence__triangle {
+  display: block;
+  fill: $blue;
+}
+
+.residence__item--registration.residence__item--current .residence__triangle {
+  display: block;
+  fill: $light-blue;
+}
+
+.residence__item--visa.residence__item--current .residence__triangle {
+  display: block;
+  fill: $teal;
+}
+
 .residence__description {
   line-height: 1.5;
   font-weight: 500;
@@ -22,8 +45,12 @@
   line-height: 1;
 }
 
-.residence__submission-item {
+.residence__submission-list {
   display: none;
+  padding-top: 48px;
+  background-image: url(../../images/separator.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
 
   @media (min-width: $desktop-width) {
     display: block;

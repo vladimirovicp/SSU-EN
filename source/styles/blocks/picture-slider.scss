@@ -13,4 +13,11 @@
     }
   }
 }
-// - вложенность не работает
+
+.picture-slider__arrow-right .picture-slider__arrow-icon {
+  transform: rotate(180deg);
+
+  @media (min-width: $desktop-width) {
+    fill: $blue;
+  }
+}

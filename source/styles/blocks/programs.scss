@@ -9,3 +9,13 @@
 .programs__item {
   font-size: 20px;
 }
+
+.programs__arrow {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.programs__arrow--right .programs__arrow-icon {
+  transform: rotate(180deg);
+}

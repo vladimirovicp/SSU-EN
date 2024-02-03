@@ -19,6 +19,29 @@
   // color: $white;
 }
 
+.foreigners__triangle {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.foreigners__item--subjects.foreigners__item--current .foreigners__triangle {
+  display: block;
+  fill: $blue;
+}
+
+.foreigners__item--russian-A1.foreigners__item--current .foreigners__triangle {
+  display: block;
+  fill: $light-blue;
+}
+
+.foreigners__item--russian-A2.foreigners__item--current .foreigners__triangle {
+  display: block;
+  fill: $teal;
+}
+
 .foreigners__description {
   line-height: 1.5;
   font-weight: 500;
@@ -28,10 +51,49 @@
   line-height: 1;
 }
 
-.foreigners__condition-item {
+.foreigners__condition-list {
   display: none;
+  padding-left: 40px;
+  padding-top: 48px;
+  background-image: url(../../images/separator.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
 
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.foreigners__condition-item {
+  position: relative;
+}
+
+.foreigners__condition-item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  left: -40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.foreigners__condition-item--hours::before {
+  background-image: url("../../images/conditions/hours.svg");
+}
+
+.foreigners__condition-item--mode::before {
+  background-image: url("../../images/conditions/mode.svg");
+}
+
+.foreigners__condition-item--fee::before {
+  background-image: url("../../images/conditions/fee.svg");
+}
+
+.foreigners__condition-item--start::before {
+  background-image: url("../../images/conditions/start.svg");
+}
+
+.foreigners__condition-item--deadline::before {
+  background-image: url("../../images/conditions/deadline.svg");
 }
