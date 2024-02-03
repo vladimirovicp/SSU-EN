@@ -1,0 +1,9 @@
+.search__input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: $dark-lilac;
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+  }
+}

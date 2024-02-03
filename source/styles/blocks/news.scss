@@ -1,0 +1,52 @@
+.news__header {
+  font-size: 32px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.news__filters {
+  font-weight: 500;
+  color: $blue;
+}
+
+.news__slides {
+  color: $gray;
+}
+
+.news__slide {
+  line-height: 25px;
+  letter-spacing: 17%;
+
+  &--current {
+    color: $blue;
+  }
+}
+
+.news__publication-time {
+  font-weight: 400;
+  color: $blue;
+}
+
+.news__item-header {
+  font-size: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.news__hashtag {
+  font-weight: 400;
+  color: $blue;
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+  }
+}
+
+.news__button-all {
+  font-size: 500;
+  color: $white;
+}

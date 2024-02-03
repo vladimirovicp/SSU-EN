@@ -1,0 +1,7 @@
+.science__header {
+  font-size: 32px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}

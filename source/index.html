@@ -187,11 +187,10 @@
           <div class="region__text-slider text-slider">
             <div class="text-slider__control">
               <div class="text-slider__slides">
-                <span
-                  class="text-slider__slide text-slider__slide--current-slide"
+                <span class="text-slider__slide text-slider__slide--current"
                   >02</span
                 >&ensp;&mdash;&ensp;<span
-                  class="text-slider__slide text-slider__slide--last-slide"
+                  class="text-slider__slide text-slider__slide--last"
                   >10</span
                 >
               </div>
@@ -247,7 +246,7 @@
             <!-- Sprite -->
           </button>
           <ul class="picture-slider__list">
-            <li class="picture-slider__item">
+            <li class="picture-slider__item picture-slider__item--current">
               <img
                 class="picture-slider__picture"
                 src="images/landing-site.jpg"
@@ -713,7 +712,7 @@
               <!-- Sprite -->
             </div>
             <div class="residence__description">
-              <p>
+              <p class="residence__description-header">
                 <b
                   >Processing of an invitation letter for entry into the Russian
                   Federation for foreign citizens</b
@@ -746,7 +745,10 @@
                 </li>
               </ul>
               <p>
-                For submission of documents for invitation processing, you need:
+                <b
+                  >For submission of documents for invitation processing, you
+                  need:</b
+                >
               </p>
               <ol class="residence__submission-list">
                 <li class="residence__submission-item">
@@ -809,11 +811,10 @@
           <div class="science__text-slider text-slider">
             <div class="text-slider__control">
               <div class="text-slider__slides">
-                <span
-                  class="text-slider__slide text-slider__slide--current-slide"
+                <span class="text-slider__slide text-slider__slide--current"
                   >02</span
                 >&ensp;&mdash;&ensp;<span
-                  class="text-slider__slide text-slider__slide--last-slide"
+                  class="text-slider__slide text-slider__slide--last"
                   >10</span
                 >
               </div>
@@ -926,8 +927,10 @@
             </div>
             <div class="news__control">
               <div class="news__slides">
-                <span class="news__current-slide">02</span
-                >&ensp;&mdash;&ensp;<span class="news__last-slide">05</span>
+                <span class="news__slide news__slide--current">02</span
+                >&ensp;&mdash;&ensp;<span class="news__slide news__slide--last"
+                  >05</span
+                >
               </div>
               <div class="news__arrows">
                 <button class="news__arrow news__arrow-left" type="button">
@@ -949,10 +952,12 @@
                 alt="Scientific discussion"
               />
               <div class="news__publication-time">
-                <span class="news__date">14.08.2022</span
-                >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
+                <span class="news__date">14.08.2022</span>&ensp;/&ensp;<span
+                  class="news__time"
+                  >14:35</span
+                >
               </div>
-              <h3 class="news__new-header">
+              <h3 class="news__item-header">
                 Scientists Discussed Neurophysiology Research Results
               </h3>
               <span class="news__hashtag"
@@ -989,7 +994,7 @@
                 <span class="news__date">14.08.2022</span
                 >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
               </div>
-              <h3 class="news__new-header">
+              <h3 class="news__item-header">
                 SSU Suggested Projects at Meeting of Galaxy Centre Board of
                 Trustees
               </h3>
@@ -1009,7 +1014,7 @@
                 <span class="news__date">14.08.2022</span
                 >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
               </div>
-              <h3 class="news__new-header">
+              <h3 class="news__item-header">
                 Awarding Ceremony of Best Academic Graduates Took Place at SSU
               </h3>
               <span class="news__hashtag"
@@ -1028,7 +1033,7 @@
                 <span class="news__date">14.08.2022</span
                 >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
               </div>
-              <h3 class="news__new-header">
+              <h3 class="news__item-header">
                 Olga Nesterova Reported at The Future of Higher Education Forum
                 of Leading Universities
               </h3>
@@ -1037,7 +1042,7 @@
               </span>
             </li>
           </ul>
-          <button class="news__all" type="button">All news</button>
+          <button class="news__button-all" type="button">All news</button>
         </div>
       </section>
 
@@ -1046,7 +1051,9 @@
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--address">
             <div class="contacts__inner">
-              <h3 class="contacts__item-header">Address</h3>
+              <h3 class="contacts__item-header contacts__item-header--address">
+                Address
+              </h3>
               <span class="contacts__address"
                 >72/74 Zheleznodorozhnaya str, Saratov, Russia 410012</span
               >
@@ -1054,7 +1061,9 @@
           </li>
           <li class="contacts__item contacts__item--phones">
             <div class="contacts__inner">
-              <h3 class="contacts__item-header">Phones</h3>
+              <h3 class="contacts__item-header contacts__item-header--phones">
+                Phones
+              </h3>
               <a class="contacts__phone-1" href="tel:+78452508707"
                 >+7 (8452) 50 - 87 - 07</a
               >
@@ -1065,13 +1074,17 @@
           </li>
           <li class="contacts__item contacts__item--mail">
             <div class="contacts__inner">
-              <h3 class="contacts__item-header">E-mail</h3>
+              <h3 class="contacts__item-header contacts__item-header--mail">
+                E-mail
+              </h3>
               <a class="contacts__mail" href="mailto:ied@sgu.ru">ied@sgu.ru</a>
             </div>
           </li>
           <li class="contacts__item contacts__item--social-media">
             <div class="contacts__inner">
-              <h3 class="contacts__item-header">Social media</h3>
+              <h3 class="contacts__item-header contacts__item-header--social">
+                Social media
+              </h3>
               <div class="contacts__social-media">
                 <a
                   class="contacts__vk"
@@ -1175,7 +1188,11 @@
               </div>
             </div>
             <div class="page-footer__wrapper-2">
-              <a class="page-footer__SSU-site" href="#">To the SSU website</a>
+              <a
+                class="page-footer__button page-footer__button--SSU-site"
+                href="#"
+                >To the SSU website</a
+              >
             </div>
             <div class="page-footer__wrapper-3">
               <div class="page-footer__commission">
@@ -1217,8 +1234,12 @@
               <br />
               press@sgu.ru
             </div>
-            <a class="page-footer__sitemap" href="#">Sitemap</a>
-            <a class="page-footer__account" href="#">Personal account</a>
+            <a class="page-footer__button page-footer__button--sitemap" href="#"
+              >Sitemap</a
+            >
+            <a class="page-footer__button page-footer__button--account" href="#"
+              >Personal account</a
+            >
           </div>
         </div>
       </div>

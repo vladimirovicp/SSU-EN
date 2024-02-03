@@ -1,12 +1,13 @@
+.text-slider__slides {
+  color: $gray;
+}
+
 .text-slider__slide {
   line-height: 25px;
+  letter-spacing: 17%;
 
-  &--current-slide {
+  &--current {
     color: $blue;
-  }
-
-  &--last-slide {
-    color: $light-lilac;
   }
 }
 

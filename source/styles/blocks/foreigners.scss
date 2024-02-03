@@ -14,22 +14,24 @@
   }
 }
 
-.foreigners__item {
+.foreigners__item > p {
   font-size: 20px;
   // color: $white;
 }
 
 .foreigners__description {
-  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
 }
 
 .foreigners__subject-item {
-  line-height: 16px;
+  line-height: 1;
 }
 
 .foreigners__condition-item {
+  display: none;
+
   @media (min-width: $desktop-width) {
-    line-height: 24px;
+    display: block;
   }
 }

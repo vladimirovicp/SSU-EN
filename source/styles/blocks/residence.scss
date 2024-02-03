@@ -1,0 +1,31 @@
+.residence__header {
+  font-size: 40px;
+}
+
+.residence__item > p {
+  font-size: 20px;
+  // color: $white;
+}
+
+.residence__description {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.residence__description-header {
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.residence__infomation-item {
+  line-height: 1;
+}
+
+.residence__submission-item {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

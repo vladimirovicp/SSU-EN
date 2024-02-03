@@ -1,0 +1,18 @@
+.page-footer {
+  font-weight: 400;
+  color: $dark-lilac;
+}
+
+.page-footer__information {
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
+}
+
+.page-footer__button {
+  font-weight: 500;
+}
+
+.page-footer__copyright {
+  font-size: 14px;
+}
