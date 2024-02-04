@@ -1,5 +1,29 @@
+.residence {
+  padding: 0 16px 50px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 52px 100px;
+  }
+}
+
 .residence__header {
   font-size: 40px;
+}
+
+.residence__item {
+  border-radius: 15px;
+}
+
+.residence__item--letter {
+  background-color: $blue;
+}
+
+.residence__item--registration {
+  background-color: $light-blue;
+}
+
+.residence__item--visa {
+  background-color: $teal;
 }
 
 .residence__item > p {
