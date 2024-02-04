@@ -239,7 +239,7 @@
               </div>
               <div class="text-slider__arrows">
                 <button
-                  class="text-slider__arrow text-slider__arrow-left"
+                  class="text-slider__arrow text-slider__arrow--left"
                   type="button"
                   aria-label="flip slider to the left"
                 >
@@ -249,13 +249,11 @@
                     height="15"
                     fill="#ffffff"
                   >
-                    <use
-                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
-                    ></use>
+                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
                   </svg>
                 </button>
                 <button
-                  class="text-slider__arrow text-slider__arrow-right"
+                  class="text-slider__arrow text-slider__arrow--right"
                   type="button"
                   aria-label="flip slider to the right"
                 >
@@ -265,9 +263,7 @@
                     height="15"
                     fill="#ffffff"
                   >
-                    <use
-                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
-                    ></use>
+                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
                   </svg>
                 </button>
               </div>
@@ -297,7 +293,7 @@
         </div>
         <div class="region__picture-slider picture-slider">
           <button
-            class="picture-slider__arrow picture-slider__arrow-left"
+            class="picture-slider__arrow picture-slider__arrow--left"
             type="button"
             aria-label="flip slider to the left"
           >
@@ -311,7 +307,7 @@
             </svg>
           </button>
           <button
-            class="picture-slider__arrow picture-slider__arrow-right"
+            class="picture-slider__arrow picture-slider__arrow--right"
             type="button"
             aria-label="flip slider to the right"
           >
@@ -1118,7 +1114,7 @@
               </div>
               <div class="text-slider__arrows">
                 <button
-                  class="text-slider__arrow text-slider__arrow-left"
+                  class="text-slider__arrow text-slider__arrow--left"
                   type="button"
                   aria-label="flip slider to the left"
                 >
@@ -1128,13 +1124,11 @@
                     height="15"
                     fill="#ffffff"
                   >
-                    <use
-                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
-                    ></use>
+                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
                   </svg>
                 </button>
                 <button
-                  class="text-slider__arrow text-slider__arrow-right"
+                  class="text-slider__arrow text-slider__arrow--right"
                   type="button"
                   aria-label="flip slider to the right"
                 >
@@ -1144,9 +1138,7 @@
                     height="15"
                     fill="#ffffff"
                   >
-                    <use
-                      xlink:href="images/icons/stack.svg#text-slider-arrow-left"
-                    ></use>
+                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
                   </svg>
                 </button>
               </div>
@@ -1179,7 +1171,7 @@
         </div>
         <div class="science__picture-slider picture-slider">
           <button
-            class="picture-slider__arrow picture-slider__arrow-left"
+            class="picture-slider__arrow picture-slider__arrow--left"
             type="button"
             aria-label="flip slider to the left"
           >
@@ -1193,7 +1185,7 @@
             </svg>
           </button>
           <button
-            class="picture-slider__arrow picture-slider__arrow-right"
+            class="picture-slider__arrow picture-slider__arrow--right"
             type="button"
             aria-label="flip slider to the right"
           >
@@ -1254,11 +1246,10 @@
         <h2 class="news__header">News</h2>
         <div class="news__slider">
           <div class="news__assortment">
-            <div class="news__filters">
-              <button class="news__filters" type="button">
-                <span>Show filters</span>
-              </button>
-            </div>
+            <button class="news__filters" type="button">
+              <span class="news__filters-capture">Show filters</span>
+              <span class="news__filters-cross"></span>
+            </button>
             <div class="news__control">
               <div class="news__slides">
                 <span class="news__slide news__slide--current">02</span
@@ -1268,18 +1259,32 @@
               </div>
               <div class="news__arrows">
                 <button
-                  class="news__arrow news__arrow-left"
+                  class="news__arrow news__arrow--left"
                   type="button"
                   aria-label="flip slider to the left"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="news__arrow-icon"
+                    width="8"
+                    height="15"
+                    fill="#ffffff"
+                  >
+                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+                  </svg>
                 </button>
                 <button
-                  class="news__arrow news__arrow-right"
+                  class="news__arrow news__arrow--right"
                   type="button"
                   aria-label="flip slider to the right"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="news__arrow-icon"
+                    width="8"
+                    height="15"
+                    fill="#ffffff"
+                  >
+                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -1309,14 +1314,14 @@
             <li class="news__item">
               <div class="news__picture-slider">
                 <button
-                  class="news__picture-slider__arrow news__picture-slider__arrow-left"
+                  class="news__picture-slider__arrow news__picture-slider__arrow--left"
                   type="button"
                   aria-label="flip slider to the left"
                 >
                   <!-- Sprite -->
                 </button>
                 <button
-                  class="news__picture-slider__arrow news__picture-slider__arrow-right"
+                  class="news__picture-slider__arrow news__picture-slider__arrow--right"
                   type="button"
                   aria-label="flip slider to the right"
                 >
@@ -1435,14 +1440,30 @@
                   href="https://vk.com/saruniversity"
                   aria-label="Vkontakte"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="contacts__vk-icon"
+                    width="23"
+                    height="13"
+                    fill="#ffffff"
+                  >
+                    <use xlink:href="images/icons/stack.svg#shortcut-vk"></use>
+                  </svg>
                 </a>
                 <a
                   class="contacts__telegram"
                   href="https://t.me/saruniversity"
                   aria-label="Telegram"
                 >
-                  <!-- Sprite -->
+                  <svg
+                    class="contacts__telegram-icon"
+                    width="22"
+                    height="19"
+                    fill="#ffffff"
+                  >
+                    <use
+                      xlink:href="images/icons/stack.svg#shortcut-telegram"
+                    ></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -1465,7 +1486,14 @@
                 href="https://vk.com/saruniversity"
                 aria-label="Vkontakte"
               >
-                <!-- Sprite -->
+                <svg
+                  class="social-media__vk-icon"
+                  width="19"
+                  height="12"
+                  fill="#949ABC"
+                >
+                  <use xlink:href="images/icons/stack.svg#shortcut-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social-media__item">
@@ -1474,7 +1502,16 @@
                 href="https://ok.ru/saruniversity"
                 aria-label="Odnoklassniki"
               >
-                <!-- Sprite -->
+                <svg
+                  class="social-media__odnoklassniki-icon"
+                  width="14"
+                  height="14"
+                  fill="#949ABC"
+                >
+                  <use
+                    xlink:href="images/icons/stack.svg#shortcut-odnoklassniki"
+                  ></use>
+                </svg>
               </a>
             </li>
             <li class="social-media__item">
@@ -1483,7 +1520,16 @@
                 href="https://t.me/saruniversity"
                 aria-label="Telegram"
               >
-                <!-- Sprite -->
+                <svg
+                  class="social-media__telegram-icon"
+                  width="18"
+                  height="15"
+                  fill="#949ABC"
+                >
+                  <use
+                    xlink:href="images/icons/stack.svg#shortcut-telegram"
+                  ></use>
+                </svg>
               </a>
             </li>
             <li class="social-media__item">
@@ -1492,7 +1538,16 @@
                 href="https://rutube.ru/channel/23787053/"
                 aria-label="Rutube"
               >
-                <!-- Sprite -->
+                <svg
+                  class="social-media__rutube-icon"
+                  width="16"
+                  height="16"
+                  fill="#949ABC"
+                >
+                  <use
+                    xlink:href="images/icons/stack.svg#shortcut-rutube"
+                  ></use>
+                </svg>
               </a>
             </li>
             <li class="social-media__item">
@@ -1501,7 +1556,14 @@
                 href="https://zen.yandex.ru/id/61e7f00ecf77372412e737e8?utm_source=main_stripe_big"
                 aria-label="Zen"
               >
-                <!-- Sprite -->
+                <svg
+                  class="social-media__zen-icon"
+                  width="15"
+                  height="15"
+                  fill="#949ABC"
+                >
+                  <use xlink:href="images/icons/stack.svg#shortcut-zen"></use>
+                </svg>
               </a>
             </li>
           </ul>

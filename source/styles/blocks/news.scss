@@ -24,9 +24,23 @@
   }
 }
 
+.news__arrow--right .news__arrow-icon {
+  transform: rotate(180deg);
+}
+
 .news__publication-time {
   font-weight: 400;
   color: $blue;
+  padding-left: 36px;
+  background-image: url(../../images/icons/clock.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px 16px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+    background-size: 15px 15px;
+  }
 }
 
 .news__item-header {
@@ -49,4 +63,34 @@
 .news__button-all {
   font-size: 500;
   color: $white;
+}
+
+.news__filters {
+  position: relative;
+  font-size: inherit;
+  width: 220px;
+  padding: 14px 17px;
+  border: 2px solid $gray;
+  border-radius: 55px;
+  background-color: transparent;
+}
+
+.news__filters::before,
+.news__filters::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2.4px;
+  right: 17px;
+  top: calc(50% - 2.4px);
+  background-color: $blue;
+  border-radius: 50%;
+}
+
+.news__filters::before {
+  transform: rotate(45deg);
+}
+
+.news__filters::after {
+  transform: rotate(-45deg);
 }

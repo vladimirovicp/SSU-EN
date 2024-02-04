@@ -47,11 +47,29 @@
   font-weight: 500;
 }
 
+.foreigners__subject-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
 .foreigners__subject-item {
   line-height: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -20px;
+    top: calc(50% - 5px);
+    border-radius: 50%;
+    background-color: $blue;
+  }
 }
 
 .foreigners__condition-list {
+  list-style: none;
   display: none;
   padding-left: 40px;
   padding-top: 48px;

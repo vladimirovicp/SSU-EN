@@ -15,9 +15,18 @@
   }
 }
 
+.admission__list {
+  counter-reset: li;
+}
+
 .admission__item {
   font-weight: 400;
   // color: $white;
+  counter-increment: li;
+}
+
+.admission__item::before {
+  content: "#0" counter(li);
 }
 
 .admission__compling,

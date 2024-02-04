@@ -41,8 +41,25 @@
   }
 }
 
+.residence__information-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
 .residence__infomation-item {
   line-height: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -20px;
+    top: calc(50% - 5px);
+    border-radius: 50%;
+    background-color: $blue;
+  }
 }
 
 .residence__submission-list {
@@ -55,4 +72,9 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.residence__submission-item::marker {
+  font-weight: 700;
+  color: $blue;
 }
