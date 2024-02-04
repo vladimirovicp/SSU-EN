@@ -29,183 +29,203 @@
   }
 }
 
-.foreigners__list {
-  position: relative;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+// .foreigners__list {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
 
-.foreigners__item:not(:last-child) {
-  padding-bottom: 20px;
-}
+//   @media (min-width: $desktop-width) {
+//     position: relative;
+//   }
+// }
 
-.foreigners__name {
-  font-size: 20px;
-  color: $white;
-  min-height: 112px;
-  padding: 20px 27px;
-  border-radius: 15px;
+// .foreigners__item:not(:last-child) {
+//   padding-bottom: 20px;
+// }
 
-  @media (min-width: $desktop-width) {
-    width: 412px;
-    padding: 20px 25px;
-  }
-}
+// .foreigners__name {
+//   position: relative;
+//   font-size: 20px;
+//   color: $white;
+//   min-height: 112px;
+//   padding: 20px 27px;
+//   border-radius: 15px;
+//   display: flex;
+//   align-items: center;
+//   cursor: pointer;
 
-.foreigners__item--subjects .foreigners__name {
-  background-color: $blue;
-}
+//   @media (min-width: $desktop-width) {
+//     width: 412px;
+//     padding: 20px 25px;
+//   }
+// }
 
-.foreigners__item--russian-A1 .foreigners__name {
-  background-color: $light-blue;
-}
+// .foreigners__item--current .foreigners__name {
+//   margin-bottom: 30px;
+//   cursor: auto;
 
-.foreigners__item--russian-A2 .foreigners__name {
-  background-color: $teal;
-}
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 0;
+//   }
+// }
 
-.foreigners__triangle {
-  display: none;
-  width: 44px;
-  margin: 0 auto 12px;
+// .foreigners__item--subjects .foreigners__name {
+//   background-color: $blue;
+// }
 
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
+// .foreigners__item--russian-A1 .foreigners__name {
+//   background-color: $light-blue;
+// }
 
-.foreigners__item:nth-of-type(4n + 1).foreigners__item--current
-  .foreigners__triangle {
-  display: block;
-  fill: $blue;
-}
+// .foreigners__item--russian-A2 .foreigners__name {
+//   background-color: $teal;
+// }
 
-.foreigners__item:nth-of-type(4n + 2).foreigners__item--current
-  .foreigners__triangle {
-  display: block;
-  fill: $light-blue;
-}
+// .foreigners__triangle {
+//   display: none;
+//   position: absolute;
+//   bottom: -18px;
+//   right: calc(50% - 22px);
 
-.foreigners__item:nth-of-type(4n + 3).foreigners__item--current
-  .foreigners__triangle {
-  display: block;
-  fill: $teal;
-}
+//   @media (min-width: $desktop-width) {
+//     display: block;
+//     transform: rotate(-90deg);
+//     bottom: calc(50% - 9px);
+//     right: -33px;
+//   }
+// }
 
-.foreigners__item:nth-of-type(4n + 4).foreigners__item--current
-  .foreigners__triangle {
-  display: block;
-  fill: $green;
-}
+// .foreigners__item:nth-of-type(4n + 1).foreigners__item--current
+//   .foreigners__triangle {
+//   display: block;
+//   fill: $blue;
+// }
 
-.foreigners__description {
-  display: none;
-  line-height: 1.5;
-  font-weight: 500;
-  padding-top: 12px;
-  border-radius: 15px;
+// .foreigners__item:nth-of-type(4n + 2).foreigners__item--current
+//   .foreigners__triangle {
+//   display: block;
+//   fill: $light-blue;
+// }
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 441px;
-    top: 0;
-  }
-}
+// .foreigners__item:nth-of-type(4n + 3).foreigners__item--current
+//   .foreigners__triangle {
+//   display: block;
+//   fill: $teal;
+// }
 
-.foreigners__item--current .foreigners__description {
-  display: block;
-}
+// .foreigners__item:nth-of-type(4n + 4).foreigners__item--current
+//   .foreigners__triangle {
+//   display: block;
+//   fill: $green;
+// }
 
-.foreigners__item:nth-of-type(4n + 1) .foreigners__description {
-  background-color: $blue;
-}
+// .foreigners__description {
+//   display: none;
+//   line-height: 1.5;
+//   font-weight: 500;
+//   padding-top: 12px;
+//   border-radius: 15px;
+//   box-shadow: 0 0 22px 5px $shadow;
 
-.foreigners__item:nth-of-type(4n + 2) .foreigners__description {
-  background-color: $light-blue;
-}
+//   @media (min-width: $desktop-width) {
+//     position: absolute;
+//     left: 441px;
+//     top: 0;
+//   }
+// }
 
-.foreigners__item:nth-of-type(4n + 3) .foreigners__description {
-  background-color: $teal;
-}
+// .foreigners__item--current .foreigners__description {
+//   display: block;
+// }
 
-.foreigners__item:nth-of-type(4n + 4) .foreigners__description {
-  background-color: $green;
-}
+// .foreigners__item:nth-of-type(4n + 1) .foreigners__description {
+//   background-color: $blue;
+// }
 
-.foreigners__description-inner {
-  height: 648px;
-  overflow-y: auto;
-  padding: 20px 20px 50px 18px;
-  background-color: $white;
-  border-radius: 15px;
-}
+// .foreigners__item:nth-of-type(4n + 2) .foreigners__description {
+//   background-color: $light-blue;
+// }
 
-.foreigners__description-inner p {
-  display: block;
-  margin: 0;
-}
+// .foreigners__item:nth-of-type(4n + 3) .foreigners__description {
+//   background-color: $teal;
+// }
 
-.foreigners__subject-list {
-  list-style: none;
-  padding: 20px 0 40px 20px;
-}
+// .foreigners__item:nth-of-type(4n + 4) .foreigners__description {
+//   background-color: $green;
+// }
 
-.foreigners__subject-item {
-  line-height: 1;
-  position: relative;
+// .foreigners__description-inner {
+//   max-height: 648px;
+//   overflow-y: auto;
+//   padding: 20px 20px 50px 18px;
+//   background-color: $white;
+//   border-radius: 15px;
+// }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: -20px;
-    top: calc(50% - 5px);
-    border-radius: 50%;
-    background-color: $blue;
-  }
-}
+// .foreigners__description-inner p {
+//   margin: 0;
+// }
 
-.foreigners__condition-list {
-  list-style: none;
-  padding-left: 40px;
-  padding-top: 48px;
-  background-image: url(../../images/separator.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
-}
+// .foreigners__subject-list {
+//   list-style: none;
+//   padding: 20px 0 40px 20px;
+// }
 
-.foreigners__condition-item {
-  position: relative;
-}
+// .foreigners__subject-item {
+//   line-height: 1;
+//   position: relative;
 
-.foreigners__condition-item::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 25px;
-  left: -40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     left: -20px;
+//     top: 3px;
+//     border-radius: 50%;
+//     background-color: $blue;
+//   }
+// }
 
-.foreigners__condition-item--hours::before {
-  background-image: url("../../images/conditions/hours.svg");
-}
+// .foreigners__condition-list {
+//   list-style: none;
+//   padding-left: 40px;
+//   padding-top: 48px;
+//   background-image: url(../../images/separator.svg);
+//   background-repeat: no-repeat;
+//   background-position: center top;
+// }
 
-.foreigners__condition-item--mode::before {
-  background-image: url("../../images/conditions/mode.svg");
-}
+// .foreigners__condition-item {
+//   position: relative;
+// }
 
-.foreigners__condition-item--fee::before {
-  background-image: url("../../images/conditions/fee.svg");
-}
+// .foreigners__condition-item::before {
+//   content: "";
+//   position: absolute;
+//   width: 20px;
+//   height: 25px;
+//   left: -40px;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
 
-.foreigners__condition-item--start::before {
-  background-image: url("../../images/conditions/start.svg");
-}
+// .foreigners__condition-item--hours::before {
+//   background-image: url("../../images/conditions/hours.svg");
+// }
 
-.foreigners__condition-item--deadline::before {
-  background-image: url("../../images/conditions/deadline.svg");
-}
+// .foreigners__condition-item--mode::before {
+//   background-image: url("../../images/conditions/mode.svg");
+// }
+
+// .foreigners__condition-item--fee::before {
+//   background-image: url("../../images/conditions/fee.svg");
+// }
+
+// .foreigners__condition-item--start::before {
+//   background-image: url("../../images/conditions/start.svg");
+// }
+
+// .foreigners__condition-item--deadline::before {
+//   background-image: url("../../images/conditions/deadline.svg");
+// }

@@ -1,0 +1,244 @@
+.arrow-accordion__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.arrow-accordion__item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.arrow-accordion__name {
+  position: relative;
+  font-size: 20px;
+  color: $white;
+  min-height: 112px;
+  padding: 20px 27px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    width: 412px;
+    padding: 20px 25px;
+  }
+}
+
+.arrow-accordion__item--current .arrow-accordion__name {
+  margin-bottom: 30px;
+  cursor: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.arrow-accordion__item--first .arrow-accordion__name {
+  background-color: $blue;
+}
+
+.arrow-accordion__item--second .arrow-accordion__name {
+  background-color: $light-blue;
+}
+
+.arrow-accordion__item--third .arrow-accordion__name {
+  background-color: $teal;
+}
+
+.arrow-accordion__triangle {
+  display: none;
+  position: absolute;
+  bottom: -18px;
+  right: calc(50% - 22px);
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    transform: rotate(-90deg);
+    bottom: calc(50% - 9px);
+    right: -33px;
+  }
+}
+
+.arrow-accordion__item:nth-of-type(4n + 1).arrow-accordion__item--current
+  .arrow-accordion__triangle {
+  display: block;
+  fill: $blue;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 2).arrow-accordion__item--current
+  .arrow-accordion__triangle {
+  display: block;
+  fill: $light-blue;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 3).arrow-accordion__item--current
+  .arrow-accordion__triangle {
+  display: block;
+  fill: $teal;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 4).arrow-accordion__item--current
+  .arrow-accordion__triangle {
+  display: block;
+  fill: $green;
+}
+
+.arrow-accordion__description {
+  display: none;
+  line-height: 1.5;
+  font-weight: 500;
+  padding-top: 12px;
+  border-radius: 15px;
+  box-shadow: 0 0 22px 5px $shadow;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 441px;
+    top: 0;
+  }
+}
+
+.arrow-accordion__item--current .arrow-accordion__description {
+  display: block;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 1) .arrow-accordion__description {
+  background-color: $blue;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 2) .arrow-accordion__description {
+  background-color: $light-blue;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 3) .arrow-accordion__description {
+  background-color: $teal;
+}
+
+.arrow-accordion__item:nth-of-type(4n + 4) .arrow-accordion__description {
+  background-color: $green;
+}
+
+.arrow-accordion__description-inner {
+  max-height: 648px;
+  overflow-y: auto;
+  padding: 20px 20px 50px 18px;
+  background-color: $white;
+  border-radius: 15px;
+}
+
+.arrow-accordion__description-inner p {
+  margin: 0;
+}
+
+.arrow-accordion__subject-list {
+  list-style: none;
+  padding: 20px 0 40px 20px;
+}
+
+.arrow-accordion__subject-item {
+  line-height: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -20px;
+    top: 3px;
+    border-radius: 50%;
+    background-color: $blue;
+  }
+}
+
+.arrow-accordion__condition-list {
+  list-style: none;
+  padding-left: 40px;
+  padding-top: 48px;
+  background-image: url(../../images/separator.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.arrow-accordion__condition-item {
+  position: relative;
+}
+
+.arrow-accordion__condition-item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  left: -40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.arrow-accordion__condition-item--hours::before {
+  background-image: url("../../images/conditions/hours.svg");
+}
+
+.arrow-accordion__condition-item--mode::before {
+  background-image: url("../../images/conditions/mode.svg");
+}
+
+.arrow-accordion__condition-item--fee::before {
+  background-image: url("../../images/conditions/fee.svg");
+}
+
+.arrow-accordion__condition-item--start::before {
+  background-image: url("../../images/conditions/start.svg");
+}
+
+.arrow-accordion__condition-item--deadline::before {
+  background-image: url("../../images/conditions/deadline.svg");
+}
+
+.arrow-accordion__description-header {
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.arrow-accordion__information-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.arrow-accordion__infomation-item {
+  line-height: 1;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -20px;
+    top: calc(50% - 5px);
+    border-radius: 50%;
+    background-color: $blue;
+  }
+}
+
+.arrow-accordion__submission-list {
+  display: none;
+  padding-top: 48px;
+  background-image: url(../../images/separator.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.arrow-accordion__submission-item::marker {
+  font-weight: 700;
+  color: $blue;
+}
