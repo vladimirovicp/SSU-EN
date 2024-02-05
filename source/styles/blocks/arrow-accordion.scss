@@ -129,6 +129,19 @@
   padding: 20px 20px 50px 18px;
   background-color: $white;
   border-radius: 15px;
+
+  @media (min-width: $desktop-width) {
+    max-height: 722px;
+    padding: 30px 30px 60px 40px;
+  }
+}
+
+.arrow-accordion__description-inner--second {
+  // overflow-y: auto;
+
+  @media (min-width: $desktop-width) {
+    max-height: 814px;
+  }
 }
 
 .arrow-accordion__description-inner p {
@@ -137,7 +150,10 @@
 
 .arrow-accordion__subject-list {
   list-style: none;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 88px 20px;
+  background-image: url(../../images/separator.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom 40px;
 }
 
 .arrow-accordion__subject-item {
@@ -159,10 +175,6 @@
 .arrow-accordion__condition-list {
   list-style: none;
   padding-left: 40px;
-  padding-top: 48px;
-  background-image: url(../../images/separator.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 .arrow-accordion__condition-item {
@@ -207,7 +219,14 @@
 
 .arrow-accordion__information-list {
   list-style: none;
-  padding-left: 20px;
+  padding: 20px 0 88px 20px;
+  background-image: url(../../images/separator.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
 }
 
 .arrow-accordion__infomation-item {
@@ -227,11 +246,7 @@
 }
 
 .arrow-accordion__submission-list {
-  display: none;
-  padding-top: 48px;
-  background-image: url(../../images/separator.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
+  padding: 17px 0 0 20px;
 
   @media (min-width: $desktop-width) {
     display: block;

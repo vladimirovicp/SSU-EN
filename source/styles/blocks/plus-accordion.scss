@@ -1,0 +1,115 @@
+.plus-accordion__header {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.plus-accordion__list {
+  display: none;
+  list-style: none;
+  padding: 40px 16px 60px;
+  margin: 0;
+  background-color: $light-lilac;
+
+  @media (min-width: $desktop-width) {
+    padding: 64px 52px 120px;
+    // position: absolute;
+    // bottom: 0;
+  }
+}
+
+.plus-accordion__item {
+  padding-left: 10px;
+  border-radius: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+  }
+}
+
+.plus-accordion__item:not(:last-child) {
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.plus-accordion__item:nth-of-type(4n + 1) {
+  background-color: $blue;
+}
+
+.plus-accordion__item:nth-of-type(4n + 2) {
+  background-color: $light-blue;
+}
+
+.plus-accordion__item:nth-of-type(4n + 3) {
+  background-color: $teal;
+}
+
+.plus-accordion__item:nth-of-type(4n + 4) {
+  background-color: $green;
+}
+
+.plus-accordion__inner {
+  border-radius: 15px;
+  padding: 14px 17px;
+  background-color: $white;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  row-gap: 15px;
+  column-gap: 50px;
+  align-items: center;
+  min-height: 70px;
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 52px 15px 35px;
+    min-height: 72px;
+  }
+}
+
+.plus-accordion__button {
+  width: 41px;
+  height: 41px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus-accordion__item:nth-of-type(4n + 1) .plus-accordion__button {
+  background-color: $blue;
+}
+
+.plus-accordion__item:nth-of-type(4n + 2) .plus-accordion__button {
+  background-color: $light-blue;
+}
+
+.plus-accordion__item:nth-of-type(4n + 3) .plus-accordion__button {
+  background-color: $teal;
+}
+
+.plus-accordion__item:nth-of-type(4n + 4) .plus-accordion__button {
+  background-color: $green;
+}
+
+.plus-accordion__content {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  grid-column: 1 / 3;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+  }
+}
+
+.plus-accordion__content p {
+  margin: 0;
+}

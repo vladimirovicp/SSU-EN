@@ -8,53 +8,10 @@
 
 .residence__header {
   font-size: 40px;
-}
-
-.residence__item {
-  border-radius: 15px;
-}
-
-.residence__item--letter {
-  background-color: $blue;
-}
-
-.residence__item--registration {
-  background-color: $light-blue;
-}
-
-.residence__item--visa {
-  background-color: $teal;
-}
-
-.residence__item > p {
-  font-size: 20px;
-  // color: $white;
-}
-
-.residence__triangle {
-  display: none;
+  margin: 0 0 30px;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    margin: 0 0 50px;
   }
-}
-
-.residence__item--letter.residence__item--current .residence__triangle {
-  display: block;
-  fill: $blue;
-}
-
-.residence__item--registration.residence__item--current .residence__triangle {
-  display: block;
-  fill: $light-blue;
-}
-
-.residence__item--visa.residence__item--current .residence__triangle {
-  display: block;
-  fill: $teal;
-}
-
-.residence__description {
-  line-height: 1.5;
-  font-weight: 500;
 }

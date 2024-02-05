@@ -6,8 +6,22 @@
   }
 }
 
+.programs__list {
+  // position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content;
+}
+
 .programs__item {
   font-size: 20px;
+}
+
+.programs__item--current .plus-accordion__list {
+  display: block;
 }
 
 .programs__arrow {
