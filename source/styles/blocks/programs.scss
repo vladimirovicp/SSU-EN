@@ -1,28 +1,154 @@
 .programs__header {
   font-size: 32px;
+  margin: 0 0 30px;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    margin: 0 0 50px;
+  }
+}
+
+.programs__controls {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 52px;
+  }
+}
+
+.programs__pagination {
+  width: 364px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    width: 1299px;
+  }
+}
+
+.programs__pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // transform: translate(-364px);
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.programs__pagination-item {
+  padding-top: 8px;
+  border-radius: 15px 15px 0 0;
+}
+
+.programs__pagination-item--current.programs__pagination-item:nth-of-type(
+    4n + 1
+  ) {
+  background-color: $blue;
+}
+
+.programs__pagination-item--current.programs__pagination-item:nth-of-type(
+    4n + 2
+  ) {
+  background-color: $light-blue;
+}
+
+.programs__pagination-item--current.programs__pagination-item:nth-of-type(
+    4n + 3
+  ) {
+  background-color: $teal;
+}
+
+.programs__pagination-item--current.programs__pagination-item:nth-of-type(
+    4n + 4
+  ) {
+  background-color: $green;
+}
+
+.programs__pagination-inner {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  padding: 16px 27px 21px;
+  border: none;
+  border-radius: 15px 15px 0 0;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.programs__pagination-item--current .programs__pagination-inner {
+  background-color: $light-lilac;
+}
+
+.programs__arrow {
+  margin-top: 4px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.programs__accordion {
+  width: 480px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    width: 1400px;
   }
 }
 
 .programs__list {
-  // position: relative;
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 300%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content;
+  // transform: translate(-480px);
+  transition: transform 0.7s ease-in-out;
+}
+
+.programs__list--masters {
+  transform: translate(-480px);
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-1400px);
+  }
+}
+
+.programs__list--postgraduate {
+  transform: translate(-960px);
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-2800px);
+  }
 }
 
 .programs__item {
   font-size: 20px;
+  width: 480px;
+
+  @media (min-width: $desktop-width) {
+    width: 1400px;
+  }
 }
 
-.programs__item--current .plus-accordion__list {
-  display: block;
-}
+// .programs__item--current .plus-accordion__list {
+//   display: block;
+// }
 
 .programs__arrow {
   @media (min-width: $desktop-width) {

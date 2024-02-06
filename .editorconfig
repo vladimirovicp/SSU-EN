@@ -10,3 +10,6 @@ insert_final_newline = true
 
 [*.svg]
 insert_final_newline = false
+
+[*.js]
+quote_type = single
