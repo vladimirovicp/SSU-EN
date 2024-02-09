@@ -3,6 +3,18 @@
 const programs = document.querySelectorAll('.programs__pagination-inner');
 const programsList = document.querySelector('.programs__list');
 
+if (window.innerWidth >= 1400) {
+  programs.forEach((program) => {
+    program.setAttribute('tabindex', '0');
+  });
+} else {
+  programs.forEach((program) => {
+    if (program.classList.contains('tabindex')) {
+      program.removeAttribute('tabindex');
+    }
+  });
+}
+
 programs.forEach((product) => {
   product.addEventListener('click', () => {
     const currentProgram = document.querySelector(

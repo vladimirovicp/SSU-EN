@@ -65,8 +65,13 @@
       crossorigin
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/index.js" defer></script>
+
+    <!-- <script src="scripts/index.js" defer></script> -->
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -138,9 +143,51 @@
       <h1 class="page-main__header visually-hidden">
         Site of Saratov state university
       </h1>
-      <div class="slider">
-        <ul class="slider__list">
-          <li class="slider__item">
+      <div class="slider swiper">
+        <ul class="slider__list swiper-wrapper">
+          <li class="slider__item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1400px)"
+                srcset="images/desktop/university.jpg"
+              />
+              <img
+                class="slider__picture"
+                src="images/mobile/university.jpg"
+                alt="University view"
+              />
+            </picture>
+            <p class="slider__info">
+              Rooted in the traditions of Classical Education, SSU was founded
+              in 1909 by the highest edict of the last Emperor Nicholas II
+            </p>
+            <a class="slider__button-admission" href="#"
+              >Become a student of ssu</a
+            >
+            <a class="slider__button-partnership" href="#">Become a partner</a>
+          </li>
+          <li class="slider__item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1400px)"
+                srcset="mages/desktop/university.jpg"
+              />
+              <img
+                class="slider__picture"
+                src="mages/mobile/university.jpg"
+                alt="University view"
+              />
+            </picture>
+            <p class="slider__info">
+              Rooted in the traditions of Classical Education, SSU was founded
+              in 1909 by the highest edict of the last Emperor Nicholas II
+            </p>
+            <a class="slider__button-admission" href="#"
+              >Become a student of ssu</a
+            >
+            <a class="slider__button-partnership" href="#">Become a partner</a>
+          </li>
+          <li class="slider__item swiper-slide">
             <picture>
               <source
                 media="(min-width: 1400px)"
@@ -162,36 +209,31 @@
             <a class="slider__button-partnership" href="#">Become a partner</a>
           </li>
         </ul>
-        <div class="slider__arrows">
-          <button
-            class="slider__arrow slider__arrow-left"
-            type="button"
-            aria-label="flip slider to the left"
+        <div class="swiper-pagination"></div>
+
+        <button
+          class="slider__arrow slider__arrow-left swiper-button-prev"
+          type="button"
+          aria-label="flip slider to the left"
+        >
+          <svg
+            class="slider__arrow-icon slider__arrow-icon"
+            width="17"
+            height="33"
+            fill="#ffffff"
           >
-            <svg
-              class="slider__arrow-icon slider__arrow-icon"
-              width="17"
-              height="33"
-              fill="#ffffff"
-            >
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-            </svg>
-          </button>
-          <button
-            class="slider__arrow slider__arrow-right"
-            type="button"
-            aria-label="flip slider to the right"
-          >
-            <svg
-              class="slider__arrow-icon"
-              width="17"
-              height="33"
-              fill="#ffffff"
-            >
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-            </svg>
-          </button>
-        </div>
+            <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="slider__arrow slider__arrow-right swiper-button-next"
+          type="button"
+          aria-label="flip slider to the right"
+        >
+          <svg class="slider__arrow-icon" width="17" height="33" fill="#ffffff">
+            <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+          </svg>
+        </button>
       </div>
 
       <section class="region">
@@ -646,28 +688,25 @@
               <li
                 class="programs__pagination-item programs__pagination-item--current"
               >
-                <button
+                <div
                   class="programs__pagination-inner programs__pagination-inner--bachelors"
-                  type="button"
                 >
                   Bachelors Degree Programs
-                </button>
+                </div>
               </li>
               <li class="programs__pagination-item">
-                <button
+                <div
                   class="programs__pagination-inner programs__pagination-inner--masters"
-                  type="button"
                 >
                   Masters Degree Programs
-                </button>
+                </div>
               </li>
               <li class="programs__pagination-item">
-                <button
+                <div
                   class="programs__pagination-inner programs__pagination-inner--postgraduate"
-                  type="button"
                 >
                   Postgraduate Programs
-                </button>
+                </div>
               </li>
             </ul>
           </div>

@@ -77,13 +77,17 @@
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
+  text-align: center;
   width: 100%;
   height: 100%;
   padding: 16px 27px 21px;
   border: none;
   border-radius: 15px 15px 0 0;
   background-color: $white;
-  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    cursor: pointer;
+  }
 }
 
 .programs__pagination-item--current .programs__pagination-inner {
@@ -95,6 +99,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     display: none;

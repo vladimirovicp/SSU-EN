@@ -1,3 +1,15 @@
+.slider {
+  position: relative;
+  width: 480px;
+  height: 442px;
+}
+
+.slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .slider__info {
   font-weight: 400;
   color: $white;
@@ -10,6 +22,23 @@
 .slider__button-admission,
 .slider__button-partnership {
   color: $white;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 204px;
+  border: none;
+  background-color: transparent;
+}
+
+.slider__arrow-left {
+  right: 22px;
+}
+
+.slider__arrow-icon {
+  width: 17px;
+  height: 33px;
+  fill: $white;
 }
 
 .slider__arrow-right .slider__arrow-icon {
