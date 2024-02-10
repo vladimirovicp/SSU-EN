@@ -1,5 +1,24 @@
+.picture-slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.picture-slider__item {
+  padding-bottom: 35px;
+}
+
+.picture-slider__picture {
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+
 .picture-slider__description {
   font-weight: 400;
+  color: $gray;
+  margin: 0;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     font-size: 14px;
@@ -19,5 +38,17 @@
 
   @media (min-width: $desktop-width) {
     fill: $blue;
+  }
+}
+
+.picture-slider__pagination {
+  height: 10px;
+  --swiper-pagination-bottom: 5px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+
+  @media (min-width: $desktop-width) {
+    // --swiper-pagination-top: 526px;
   }
 }
