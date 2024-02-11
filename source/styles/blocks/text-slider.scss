@@ -58,6 +58,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 469px;
+  }
 }
 
 .text-slider__header {

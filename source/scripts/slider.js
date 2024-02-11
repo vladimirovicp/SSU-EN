@@ -4,7 +4,20 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  // autoHeight: true,
+  lazy: true,
+  loopAddBlankSlides: true,
+  speed: 500,
+
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  effect: 'coverflow',
+  coverflowEffect: {
+    depth: 0,
+    rotate: 0,
+    scale: 0.78,
+    slideShadows: false,
+    stretch: 17,
+  },
 
   // If we need pagination
   pagination: {
