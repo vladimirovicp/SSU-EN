@@ -261,105 +261,124 @@
               height="252"
               alt="University view"
             />
-            <!-- <div class="region__text-slider "></div> -->
-            <div class="region__text-slider text-slider swiper">
-              <div class="text-slider__control">
-                <div class="text-slider__slides">
-                  <span class="text-slider__slide text-slider__slide--current"
+            <div class="text-slider-container">
+              <div class="text-slider-container__controls">
+                <div class="text-slider-container__slides">
+                  <span
+                    class="text-slider-container__slide text-slider-container__slide--current"
                     >02</span
                   >&ensp;&mdash;&ensp;<span
-                    class="text-slider__slide text-slider__slide--last"
-                    >10</span
+                    class="text-slider-container__slide text-slider-container__slide--last"
+                  ></span>
+                </div>
+                <div class="text-slider-container__arrows">
+                  <button
+                    class="text-slider-container__arrow text-slider-container__arrow--left"
+                    type="button"
+                    aria-label="flip slider to the left"
                   >
+                    <svg
+                      class="text-slider-container__arrow-icon"
+                      width="8"
+                      height="15"
+                      fill="#ffffff"
+                    >
+                      <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="text-slider-container__arrow text-slider-container__arrow--right"
+                    type="button"
+                    aria-label="flip slider to the right"
+                  >
+                    <svg
+                      class="text-slider-container__arrow-icon"
+                      width="8"
+                      height="15"
+                      fill="#ffffff"
+                    >
+                      <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
-              <ul class="text-slider__list swiper-wrapper">
-                <li class="text-slider__item swiper-slide">
-                  <h3 class="text-slider__header">Saratov region</h3>
-                  <div class="text-slider__description">
-                    <p>
-                      Saratov Region
-                      <b>(Russian: Сара́товская о́бласть, Saratovskaya oblast)</b>
-                      is located in the southeast of European Russia, in the
-                      northern part of the Lower Volga region, 858 km southeast
-                      of Moscow.
-                    </p>
-                    <p>
-                      Saratov is the administrative center of the Saratov Region
-                      <b>ranked among the top 20 cities in Russia</b>. Not being
-                      a city with a million-plus population, it is the center of
-                      the Saratov agglomeration, where
-                      <b>population is more than 1.2 million people</b>.
-                    </p>
-                  </div>
-                </li>
-                <li class="text-slider__item swiper-slide">
-                  <h3 class="text-slider__header">Saratov region</h3>
-                  <div class="text-slider__description">
-                    <p>
-                      Saratov Region
-                      <b>(Russian: Сара́товская о́бласть, Saratovskaya oblast)</b>
-                      is located in the southeast of European Russia, in the
-                      northern part of the Lower Volga region, 858 km southeast
-                      of Moscow.
-                    </p>
-                    <p>
-                      Saratov is the administrative center of the Saratov Region
-                      <b>ranked among the top 20 cities in Russia</b>. Not being
-                      a city with a million-plus population, it is the center of
-                      the Saratov agglomeration, where
-                      <b>population is more than 1.2 million people</b>.
-                    </p>
-                  </div>
-                </li>
-                <li class="text-slider__item swiper-slide">
-                  <h3 class="text-slider__header">Saratov region</h3>
-                  <div class="text-slider__description">
-                    <p>
-                      Saratov Region
-                      <b>(Russian: Сара́товская о́бласть, Saratovskaya oblast)</b>
-                      is located in the southeast of European Russia, in the
-                      northern part of the Lower Volga region, 858 km southeast
-                      of Moscow.
-                    </p>
-                    <p>
-                      Saratov is the administrative center of the Saratov Region
-                      <b>ranked among the top 20 cities in Russia</b>. Not being
-                      a city with a million-plus population, it is the center of
-                      the Saratov agglomeration, where
-                      <b>population is more than 1.2 million people</b>.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <button
-                class="text-slider__arrow text-slider__arrow--left swiper-button-prev"
-                type="button"
-                aria-label="flip slider to the left"
+              <div
+                class="text-slider-container__slider text-slider swiper swiperText"
               >
-                <svg
-                  class="text-slider__arrow-icon"
-                  width="8"
-                  height="15"
-                  fill="#ffffff"
-                >
-                  <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-                </svg>
-              </button>
-              <button
-                class="text-slider__arrow text-slider__arrow--right swiper-button-next"
-                type="button"
-                aria-label="flip slider to the right"
-              >
-                <svg
-                  class="text-slider__arrow-icon"
-                  width="8"
-                  height="15"
-                  fill="#ffffff"
-                >
-                  <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-                </svg>
-              </button>
+                <ul class="text-slider__list swiper-wrapper">
+                  <li class="text-slider__item swiper-slide">
+                    <h3 class="text-slider__header">Saratov region</h3>
+                    <div class="text-slider__description">
+                      <p>
+                        Saratov Region
+                        <b
+                          >(Russian: Сара́товская о́бласть, Saratovskaya
+                          oblast)</b
+                        >
+                        is located in the southeast of European Russia, in the
+                        northern part of the Lower Volga region, 858 km
+                        southeast of Moscow.
+                      </p>
+                      <p>
+                        Saratov is the administrative center of the Saratov
+                        Region
+                        <b>ranked among the top 20 cities in Russia</b>. Not
+                        being a city with a million-plus population, it is the
+                        center of the Saratov agglomeration, where
+                        <b>population is more than 1.2 million people</b>.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="text-slider__item swiper-slide">
+                    <h3 class="text-slider__header">Saratov region</h3>
+                    <div class="text-slider__description">
+                      <p>
+                        Saratov Region
+                        <b
+                          >(Russian: Сара́товская о́бласть, Saratovskaya
+                          oblast)</b
+                        >
+                        is located in the southeast of European Russia, in the
+                        northern part of the Lower Volga region, 858 km
+                        southeast of Moscow.
+                      </p>
+                      <p>
+                        Saratov is the administrative center of the Saratov
+                        Region
+                        <b>ranked among the top 20 cities in Russia</b>. Not
+                        being a city with a million-plus population, it is the
+                        center of the Saratov agglomeration, where
+                        <b>population is more than 1.2 million people</b>.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="text-slider__item swiper-slide">
+                    <h3 class="text-slider__header">Saratov region</h3>
+                    <div class="text-slider__description">
+                      <p>
+                        Saratov Region
+                        <b
+                          >(Russian: Сара́товская о́бласть, Saratovskaya
+                          oblast)</b
+                        >
+                        is located in the southeast of European Russia, in the
+                        northern part of the Lower Volga region, 858 km
+                        southeast of Moscow.
+                      </p>
+                      <p>
+                        Saratov is the administrative center of the Saratov
+                        Region
+                        <b>ranked among the top 20 cities in Russia</b>. Not
+                        being a city with a million-plus population, it is the
+                        center of the Saratov agglomeration, where
+                        <b>population is more than 1.2 million people</b>.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-button-prev swiper-button-hidden"></div>
+                <div class="swiper-button-next swiper-button-hidden"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -594,7 +613,7 @@
             </div>
           </li>
         </ul>
-        <!-- <ul class="foreigners__list">
+        <ul class="foreigners__list">
           <li
             class="foreigners__item foreigners__item--subjects foreigners__item--current"
           >
@@ -718,7 +737,7 @@
               <div class="foreigners__description-inner"></div>
             </div>
           </li>
-        </ul> -->
+        </ul>
       </section>
 
       <section class="programs">

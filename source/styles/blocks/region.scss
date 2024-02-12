@@ -59,6 +59,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 52px;
     padding-bottom: 0;
   }
 }
@@ -66,23 +68,21 @@
 .region__picture {
   display: block;
   border-radius: 15px;
+  margin-bottom: 34px;
 
   @media (min-width: $desktop-width) {
     width: 636px;
     height: 358px;
+    margin: 0;
   }
 }
 
-.region__text-slider {
-  width: 412px;
-  margin: 0 auto;
-
+.text-slider-container__slider {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: auto;
-    padding: 60px 0 63px 27px;
-    margin: 0;
+    gap: 27px;
+    padding: 45px 0 63px 27px;
   }
 }
 
