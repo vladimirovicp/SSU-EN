@@ -77,15 +77,6 @@
   }
 }
 
-.text-slider-container__slider {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    gap: 27px;
-    padding: 45px 0 63px 27px;
-  }
-}
-
 .region__overlay {
   padding: 296px 16px 50px;
   background-color: $black;
