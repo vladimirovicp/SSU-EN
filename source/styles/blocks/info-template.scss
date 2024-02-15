@@ -1,3 +1,46 @@
+.info-template {
+  position: relative;
+  width: 448px;
+  padding-top: 12px;
+  margin: 0 auto -266px;
+  border-radius: 15px;
+  background-color: $gray;
+  box-shadow: 0 4px 4px 0 $shadow;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 1296px;
+    padding-top: 15px;
+    margin: 0 auto -174px;
+  }
+}
+
+.info-template__inner {
+  padding-bottom: 40px;
+  border-radius: 15px;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 52px;
+    padding-bottom: 0;
+  }
+}
+
+.info-template__picture {
+  display: block;
+  border-radius: 15px;
+  margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    width: 636px;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+
 .info-template__container {
   @media (min-width: $desktop-width) {
     padding: 45px 0 60px 27px;

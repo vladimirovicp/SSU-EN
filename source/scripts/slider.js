@@ -20,15 +20,30 @@ const swiperMain = new Swiper('.swiperMain', {
   },
 });
 
-/* Text-slider */
+/* Text sliders */
 
-const arrowLeft = document.querySelector('.info-template__arrow--left');
-const arrowRight = document.querySelector('.info-template__arrow--right');
+const showCurrentSlide = (list, slide) => {
+  setTimeout(() => {
+    for (let i = 0; i < list.length; i++) {
+      if (list[i].classList.contains('swiper-slide-active')) {
+        slide.textContent = `0${i + 1}`;
+      }
+    }
+  }, 0);
+};
 
-const currentSlide = document.querySelector('.info-template__slide--current');
-const lastSlide = document.querySelector('.info-template__slide--last');
+/* Text-slider 1 */
 
-const swiperText = new Swiper('.swiperText', {
+const regionBlock = document.querySelector('.region');
+const arrowLeft1 = regionBlock.querySelector('.info-template__arrow--left');
+const arrowRight1 = regionBlock.querySelector('.info-template__arrow--right');
+
+const currentSlide1 = regionBlock.querySelector(
+  '.info-template__slide--current'
+);
+const lastSlide1 = regionBlock.querySelector('.info-template__slide--last');
+
+const swiperText1 = new Swiper('.swiperText1', {
   // Optional parameters
   direction: 'horizontal',
   speed: 500,
@@ -36,83 +51,107 @@ const swiperText = new Swiper('.swiperText', {
   autoHeight: true,
 });
 
-arrowLeft.addEventListener('click', () => {
-  swiperText.slidePrev();
+arrowLeft1.addEventListener('click', () => {
+  swiperText1.slidePrev();
 });
 
-arrowRight.addEventListener('click', () => {
-  swiperText.slideNext();
+arrowRight1.addEventListener('click', () => {
+  swiperText1.slideNext();
 });
 
-const listSlides = document.querySelectorAll('.text-slider__item');
-lastSlide.textContent = `0${listSlides.length - 1}`;
+const listSlides1 = regionBlock.querySelectorAll('.text-slider__item');
+lastSlide1.textContent = `0${listSlides1.length}`;
 
-const showCurrentSlide = () => {
-  for (let i = 0; i < listSlides.length; i++) {
-    if (listSlides[i].classList.contains('swiper-slide-active')) {
-      currentSlide.textContent = `0${i + 1}`;
-    }
-  }
+showCurrentSlide(listSlides1, currentSlide1);
+
+swiperText1.on('slideChange', () => {
+  showCurrentSlide(listSlides1, currentSlide1);
+});
+
+/* Text-slider 2 */
+
+const scienceBlock = document.querySelector('.science');
+const arrowLeft2 = scienceBlock.querySelector('.info-template__arrow--left');
+const arrowRight2 = scienceBlock.querySelector('.info-template__arrow--right');
+
+const currentSlide2 = scienceBlock.querySelector(
+  '.info-template__slide--current'
+);
+const lastSlide2 = scienceBlock.querySelector('.info-template__slide--last');
+
+const swiperText2 = new Swiper('.swiperText2', {
+  // Optional parameters
+  direction: 'horizontal',
+  speed: 500,
+  loop: true,
+  autoHeight: true,
+});
+
+arrowLeft2.addEventListener('click', () => {
+  swiperText2.slidePrev();
+});
+
+arrowRight2.addEventListener('click', () => {
+  swiperText2.slideNext();
+});
+
+const listSlides2 = scienceBlock.querySelectorAll('.text-slider__item');
+lastSlide2.textContent = `0${listSlides2.length}`;
+
+showCurrentSlide(listSlides2, currentSlide2);
+
+swiperText2.on('slideChange', () => {
+  showCurrentSlide(listSlides2, currentSlide2);
+});
+
+/* Picture slider */
+
+const screenWidth = window.innerWidth;
+
+// window.addEventListener('resize', () => {
+//   screenWidth = window.innerWidth;
+// });
+
+const swiperOptions = {
+  // Optional parameters
+  direction: 'horizontal',
+  speed: 500,
+  loop: true,
+  centeredSlides: screenWidth > 1400,
+  slidesPerView: 'auto',
+  effect: screenWidth > 1400 ? 'coverflow' : 'slide',
+  coverflowEffect: {
+    depth: 0,
+    rotate: 0,
+    scale: 0.78,
+    slideShadows: false,
+    stretch: 17,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 };
 
-showCurrentSlide();
+/* Picture slider 1 */
 
-// swiperText.onAny(showCurrentSlide);
+const swiperPicture1 = new Swiper('.swiperPicture1', swiperOptions);
 
-/* Picture-slider */
+// window.addEventListener('resize', () => {
+//   swiperPicture1.update();
+// });
 
-const swiperPicture1 = new Swiper('.swiperPicture1', {
-  // Optional parameters
-  direction: 'horizontal',
-  speed: 500,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  effect: 'coverflow',
-  coverflowEffect: {
-    depth: 0,
-    rotate: 0,
-    scale: 0.78,
-    slideShadows: false,
-    stretch: 17,
-  },
+/* Picture slider 2 */
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+const swiperPicture2 = new Swiper('.swiperPicture2', swiperOptions);
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-const swiperPicture2 = new Swiper('.swiperPicture2', {
-  // Optional parameters
-  direction: 'horizontal',
-  speed: 500,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  effect: 'coverflow',
-  coverflowEffect: {
-    depth: 0,
-    rotate: 0,
-    scale: 0.78,
-    slideShadows: false,
-    stretch: 17,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// window.addEventListener('resize', () => {
+//   swiperPicture2.update();
+// });
