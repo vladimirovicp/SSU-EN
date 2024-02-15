@@ -1,12 +1,12 @@
-.text-slider-container {
+.info-template__container {
   @media (min-width: $desktop-width) {
-    padding: 45px 0 63px 27px;
+    padding: 45px 0 60px 27px;
     display: flex;
     gap: 27px;
   }
 }
 
-.text-slider-container__controls {
+.info-template__controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,11 +20,11 @@
   }
 }
 
-.text-slider-container__slides {
+.info-template__slides {
   color: $blue;
 }
 
-.text-slider-container__slide {
+.info-template__slide {
   line-height: 25px;
   letter-spacing: 0.17em;
 
@@ -33,12 +33,12 @@
   }
 }
 
-.text-slider-container__arrows {
+.info-template__arrows {
   display: flex;
   gap: 15px;
 }
 
-.text-slider-container__arrow {
+.info-template__arrow {
   width: 35px;
   height: 35px;
   border: none;
@@ -50,11 +50,11 @@
   cursor: pointer;
 }
 
-.text-slider-container__arrow .text-slider-container__arrow-icon {
+.info-template__arrow .info-template__arrow-icon {
   width: 8px;
   height: 15px;
 }
 
-.text-slider-container__arrow--right .text-slider-container__arrow-icon {
+.info-template__arrow--right .info-template__arrow-icon {
   transform: rotate(180deg);
 }

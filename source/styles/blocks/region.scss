@@ -34,7 +34,7 @@
   }
 }
 
-.region__container {
+.info-template {
   position: relative;
   width: 448px;
   padding-top: 12px;
@@ -51,7 +51,7 @@
   }
 }
 
-.region__inner {
+.info-template__inner {
   padding-bottom: 40px;
   border-radius: 15px;
   background-color: $white;
@@ -65,23 +65,23 @@
   }
 }
 
-.region__picture {
+.info-template__picture {
   display: block;
   border-radius: 15px;
   margin-bottom: 34px;
 
   @media (min-width: $desktop-width) {
     width: 636px;
-    height: 358px;
     margin: 0;
+    object-fit: cover;
   }
 }
 
 .region__overlay {
-  padding: 296px 16px 50px;
+  padding: 296px 0 50px;
   background-color: $black;
 
   @media (min-width: $desktop-width) {
-    padding: 234px 52px 90px;
+    padding: 234px 0 90px;
   }
 }

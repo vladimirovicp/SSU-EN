@@ -22,21 +22,18 @@ const swiperMain = new Swiper('.swiperMain', {
 
 /* Text-slider */
 
-const arrowLeft = document.querySelector('.text-slider-container__arrow--left');
-const arrowRight = document.querySelector(
-  '.text-slider-container__arrow--right'
-);
+const arrowLeft = document.querySelector('.info-template__arrow--left');
+const arrowRight = document.querySelector('.info-template__arrow--right');
 
-const currentSlide = document.querySelector(
-  '.text-slider-container__slide--current'
-);
-const lastSlide = document.querySelector('.text-slider-container__slide--last');
+const currentSlide = document.querySelector('.info-template__slide--current');
+const lastSlide = document.querySelector('.info-template__slide--last');
 
 const swiperText = new Swiper('.swiperText', {
   // Optional parameters
   direction: 'horizontal',
   speed: 500,
   loop: true,
+  autoHeight: true,
 });
 
 arrowLeft.addEventListener('click', () => {
@@ -60,11 +57,39 @@ const showCurrentSlide = () => {
 
 showCurrentSlide();
 
-swiperText.onAny(showCurrentSlide);
+// swiperText.onAny(showCurrentSlide);
 
 /* Picture-slider */
 
-const swiperPicture = new Swiper('.swiperPicture', {
+const swiperPicture1 = new Swiper('.swiperPicture1', {
+  // Optional parameters
+  direction: 'horizontal',
+  speed: 500,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  effect: 'coverflow',
+  coverflowEffect: {
+    depth: 0,
+    rotate: 0,
+    scale: 0.78,
+    slideShadows: false,
+    stretch: 17,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiperPicture2 = new Swiper('.swiperPicture2', {
   // Optional parameters
   direction: 'horizontal',
   speed: 500,

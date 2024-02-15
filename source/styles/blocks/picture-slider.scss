@@ -1,3 +1,10 @@
+.picture-slider {
+  @media (min-width: $desktop-width) {
+    width: 1296px;
+    margin: 0 auto;
+  }
+}
+
 .picture-slider__list {
   list-style: none;
   padding: 0;
@@ -32,14 +39,6 @@
     font-size: 20px;
   }
 }
-
-// .picture-slider__item--current {
-//   .picture-slider__description {
-//     @media (min-width: $desktop-width) {
-//       font-size: 20px;
-//     }
-//   }
-// }
 
 .picture-slider__arrow--right .picture-slider__arrow-icon {
   transform: rotate(180deg);

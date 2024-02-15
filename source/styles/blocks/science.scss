@@ -1,7 +1,17 @@
 .science__header {
   font-size: 32px;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+  }
+}
+
+.science__overlay {
+  padding: 296px 0 50px;
+  background-color: $black;
+
+  @media (min-width: $desktop-width) {
+    padding: 234px 0 90px;
   }
 }
