@@ -5,12 +5,22 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    min-height: 737px;
+    // min-height: 737px;
+  }
+}
+
+.arrow-accordion__item {
+  @media (min-width: $desktop-width) {
+    width: 412px;
   }
 }
 
 .arrow-accordion__item:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .arrow-accordion__name {
@@ -52,60 +62,79 @@
 }
 
 .arrow-accordion__triangle {
-  display: none;
   position: absolute;
-  bottom: -18px;
   right: calc(50% - 22px);
+  bottom: 0;
+  transition: bottom 0.5s ease-in-out;
 
   @media (min-width: $desktop-width) {
     display: block;
     transform: rotate(-90deg);
     bottom: calc(50% - 9px);
     right: -33px;
+    fill: $gray;
+  }
+}
+
+.arrow-accordion__item--current .arrow-accordion__triangle {
+  bottom: -18px;
+
+  @media (min-width: $desktop-width) {
+    bottom: calc(50% - 9px);
   }
 }
 
 .arrow-accordion__item:nth-of-type(4n + 1).arrow-accordion__item--current
   .arrow-accordion__triangle {
-  display: block;
   fill: $blue;
 }
 
 .arrow-accordion__item:nth-of-type(4n + 2).arrow-accordion__item--current
   .arrow-accordion__triangle {
-  display: block;
   fill: $light-blue;
 }
 
 .arrow-accordion__item:nth-of-type(4n + 3).arrow-accordion__item--current
   .arrow-accordion__triangle {
-  display: block;
   fill: $teal;
 }
 
 .arrow-accordion__item:nth-of-type(4n + 4).arrow-accordion__item--current
   .arrow-accordion__triangle {
-  display: block;
   fill: $green;
 }
 
 .arrow-accordion__description {
-  display: none;
   line-height: 1.5;
   font-weight: 500;
-  padding-top: 12px;
   border-radius: 15px;
   box-shadow: 0 4px 4px 0 $shadow;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
 
   @media (min-width: $desktop-width) {
     position: absolute;
     left: 441px;
+    right: 0;
     top: 0;
+    transition: none;
   }
 }
 
 .arrow-accordion__item--current .arrow-accordion__description {
-  display: block;
+  max-height: 654px;
+
+  @media (min-width: $desktop-width) {
+    max-height: 730px;
+    transition: max-height 0.5s ease-in-out;
+  }
+}
+
+.arrow-accordion__item--current .arrow-accordion__description--second {
+  @media (min-width: $desktop-width) {
+    max-height: 829px;
+  }
 }
 
 .arrow-accordion__item:nth-of-type(4n + 1) .arrow-accordion__description {
@@ -125,21 +154,21 @@
 }
 
 .arrow-accordion__description-inner {
-  max-height: 648px;
+  max-height: 654px;
   overflow-y: auto;
-  padding: 20px 20px 50px 18px;
+  padding: 20px 30px 50px 18px;
+  margin-top: 12px;
   background-color: $white;
   border-radius: 15px;
 
   @media (min-width: $desktop-width) {
-    max-height: 722px;
-    padding: 30px 30px 60px 40px;
+    max-height: 734px;
+    padding: 30px 40px 60px;
+    margin-top: 15px;
   }
 }
 
 .arrow-accordion__description-inner--second {
-  // overflow-y: auto;
-
   @media (min-width: $desktop-width) {
     max-height: 814px;
   }
@@ -149,17 +178,25 @@
   margin: 0;
 }
 
+.arrow-accordion__description-inner p:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
 .arrow-accordion__subject-list {
   list-style: none;
-  padding: 20px 0 88px 20px;
+  padding: 18px 0 71px 20px;
   background-image: url(../../images/separator.svg);
   background-repeat: no-repeat;
-  background-position: center bottom 40px;
+  background-position: center bottom 33px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+  }
 }
 
 .arrow-accordion__subject-item {
-  line-height: 1;
   position: relative;
+  line-height: 1.1;
 
   &::before {
     content: "";
@@ -171,6 +208,22 @@
     border-radius: 50%;
     background-color: $blue;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 2;
+
+    &::before {
+      top: 10px;
+    }
+  }
+}
+
+.arrow-accordion__subject-item:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .arrow-accordion__condition-list {
@@ -180,6 +233,19 @@
 
 .arrow-accordion__condition-item {
   position: relative;
+  line-height: 1.1;
+
+  @media (min-width: $desktop-width) {
+    line-height: 2.5;
+  }
+}
+
+.arrow-accordion__condition-item:not(:last-child) {
+  margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .arrow-accordion__condition-item::before {
@@ -187,9 +253,14 @@
   position: absolute;
   width: 20px;
   height: 25px;
+  top: -3px;
   left: -40px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+  }
 }
 
 .arrow-accordion__condition-item--hours::before {
@@ -226,13 +297,13 @@
   background-position: center bottom 40px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 16px;
+    padding-top: 14px;
   }
 }
 
 .arrow-accordion__infomation-item {
-  line-height: 1;
   position: relative;
+  line-height: 1.1;
 
   &::before {
     content: "";
@@ -240,18 +311,40 @@
     width: 10px;
     height: 10px;
     left: -20px;
-    top: calc(50% - 5px);
+    top: 3px;
     border-radius: 50%;
     background-color: $blue;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.5;
+
+    &::before {
+      top: 8px;
+    }
+  }
+}
+
+.arrow-accordion__infomation-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .arrow-accordion__submission-list {
-  padding: 17px 0 0 20px;
+  padding: 16px 0 0 18px;
 
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.arrow-accordion__submission-item {
+  @media (min-width: $desktop-width) {
+    line-height: 1.5;
+  }
+}
+
+.arrow-accordion__submission-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .arrow-accordion__submission-item::marker {

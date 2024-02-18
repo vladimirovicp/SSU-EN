@@ -69,8 +69,30 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
 
+    <noscript>
+      <style>
+        /**
+        * Reinstate scrolling for non-JS clients
+        */
+        .simplebar-content-wrapper {
+          scrollbar-width: auto;
+          -ms-overflow-style: auto;
+        }
+
+        .simplebar-content-wrapper::-webkit-scrollbar,
+        .simplebar-hide-scrollbar::-webkit-scrollbar {
+          display: initial;
+          width: initial;
+          height: initial;
+        }
+      </style>
+    </noscript>
     <!-- <script src="scripts/index.js" defer></script> -->
   </head>
   <body class="page-body">
@@ -515,13 +537,13 @@
                 class="arrow-accordion__triangle"
                 width="44"
                 height="18"
-                fill="#ffffff"
+                fill="#668BD4"
               >
                 <use xlink:href="images/icons/stack.svg#triangle"></use>
               </svg>
             </div>
             <div class="arrow-accordion__description">
-              <div class="arrow-accordion__description-inner">
+              <div class="arrow-accordion__description-inner" data-simplebar>
                 <p>
                   <b
                     >This program is targeted at foreign citizens who do not
@@ -601,52 +623,14 @@
                 class="arrow-accordion__triangle"
                 width="44"
                 height="18"
-                fill="#CDD2E4"
+                fill="#6CAFC9"
               >
                 <use xlink:href="images/icons/stack.svg#triangle"></use>
               </svg>
             </div>
 
             <div class="arrow-accordion__description">
-              <div class="arrow-accordion__description-inner"></div>
-            </div>
-          </li>
-          <li class="arrow-accordion__item arrow-accordion__item--third">
-            <div class="arrow-accordion__name">
-              The program “Russian as a Foreign Language. Level A2"
-              <svg
-                class="arrow-accordion__triangle"
-                width="44"
-                height="18"
-                fill="#CDD2E4"
-              >
-                <use xlink:href="images/icons/stack.svg#triangle"></use>
-              </svg>
-            </div>
-
-            <div class="arrow-accordion__description">
-              <div class="arrow-accordion__description-inner"></div>
-            </div>
-          </li>
-        </ul>
-        <ul class="foreigners__list">
-          <li
-            class="foreigners__item foreigners__item--subjects foreigners__item--current"
-          >
-            <div class="foreigners__name">
-              Pre-university training program (the Russian Language + other
-              subjects)
-              <svg
-                class="foreigners__triangle"
-                width="44"
-                height="18"
-                fill="#ffffff"
-              >
-                <use xlink:href="images/icons/stack.svg#triangle"></use>
-              </svg>
-            </div>
-            <div class="foreigners__description">
-              <div class="foreigners__description-inner">
+              <div class="arrow-accordion__description-inner" data-simplebar>
                 <p>
                   <b
                     >This program is targeted at foreign citizens who do not
@@ -667,50 +651,50 @@
                     profile of the future specialty:</b
                   >
                 </p>
-                <ul class="foreigners__subject-list">
-                  <li class="foreigners__subject-item">
+                <ul class="arrow-accordion__subject-list">
+                  <li class="arrow-accordion__subject-item">
                     Humanitarian/Humanities (History, Social Studies,
                     Literature)
                   </li>
-                  <li class="foreigners__subject-item">
+                  <li class="arrow-accordion__subject-item">
                     Economic (History, Social Studies, Mathematics)
                   </li>
-                  <li class="foreigners__subject-item">
+                  <li class="arrow-accordion__subject-item">
                     Medical and Biological (Biology, Chemistry, Physics)
                   </li>
-                  <li class="foreigners__subject-item">
+                  <li class="arrow-accordion__subject-item">
                     Natural Science (Mathematics, Physics, Chemistry)
                   </li>
-                  <li class="foreigners__subject-item">
+                  <li class="arrow-accordion__subject-item">
                     Engineering, Technical and Technological (Mathematics,
                     Physics, Computer Science)
                   </li>
                 </ul>
-                <ul class="foreigners__condition-list">
+                <ul class="arrow-accordion__condition-list">
                   <li
-                    class="foreigners__condition-item foreigners__condition-item--hours"
+                    class="arrow-accordion__condition-item arrow-accordion__condition-item--hours"
                   >
                     <b>Total hours:</b> 1012 contact hours
                   </li>
                   <li
-                    class="foreigners__condition-item foreigners__condition-item--mode"
+                    class="arrow-accordion__condition-item arrow-accordion__condition-item--mode"
                   >
                     <b>Mode of study:</b> full-time / via use of exclusively
                     distance learning technologies (online mode)
                   </li>
                   <li
-                    class="foreigners__condition-item foreigners__condition-item--fee"
+                    class="arrow-accordion__condition-item arrow-accordion__condition-item--fee"
                   >
                     <b>Fee:</b> 112,332 rubles / 101,200 rubles
                   </li>
                   <li
-                    class="foreigners__condition-item foreigners__condition-item--start"
+                    class="arrow-accordion__condition-item arrow-accordion__condition-item--start"
                   >
                     <b>Start:</b> upon arrival from September 1 to June 30, from
                     November 1 to August 31
                   </li>
                   <li
-                    class="foreigners__condition-item foreigners__condition-item--deadline"
+                    class="arrow-accordion__condition-item arrow-accordion__condition-item--deadline"
                   >
                     <b>Deadline for the program:</b> December 5
                   </li>
@@ -718,39 +702,24 @@
               </div>
             </div>
           </li>
-          <li class="foreigners__item foreigners__item--russian-A1">
-            <div class="foreigners__name">
-              "Russian as a Foreign Language" within the framework of the
-              pre-university training program
-              <svg
-                class="foreigners__triangle"
-                width="44"
-                height="18"
-                fill="#CDD2E4"
-              >
-                <use xlink:href="images/icons/stack.svg#triangle"></use>
-              </svg>
-            </div>
-
-            <div class="foreigners__description">
-              <div class="foreigners__description-inner"></div>
-            </div>
-          </li>
-          <li class="foreigners__item foreigners__item--russian-A2">
-            <div class="foreigners__name">
+          <li class="arrow-accordion__item arrow-accordion__item--third">
+            <div class="arrow-accordion__name">
               The program “Russian as a Foreign Language. Level A2"
               <svg
-                class="foreigners__triangle"
+                class="arrow-accordion__triangle"
                 width="44"
                 height="18"
-                fill="#CDD2E4"
+                fill="#6DC2AB"
               >
                 <use xlink:href="images/icons/stack.svg#triangle"></use>
               </svg>
             </div>
 
-            <div class="foreigners__description">
-              <div class="foreigners__description-inner"></div>
+            <div class="arrow-accordion__description">
+              <div
+                class="arrow-accordion__description-inner"
+                data-simplebar
+              ></div>
             </div>
           </li>
         </ul>
@@ -1314,7 +1283,7 @@
         </div>
       </section>
 
-      <section class="residence">
+      <section class="residence center">
         <h2 class="residence__header">Residence</h2>
         <ul class="arrow-accordion__list">
           <li
@@ -1327,14 +1296,17 @@
                 class="arrow-accordion__triangle"
                 width="44"
                 height="18"
-                fill="#CDD2E4"
+                fill="#668bd4"
               >
                 <use xlink:href="images/icons/stack.svg#triangle"></use>
               </svg>
             </div>
-            <div class="arrow-accordion__description">
+            <div
+              class="arrow-accordion__description arrow-accordion__description--second"
+            >
               <div
                 class="arrow-accordion__description-inner arrow-accordion__description-inner--second"
+                data-simplebar
               >
                 <p class="arrow-accordion__description-header">
                   <b
@@ -1349,7 +1321,7 @@
                     expiration date should not be less than 18 months from the
                     date of intended/planed entry.
                   </li>
-                  <li class="arrow-accordion__infomation-itemn-item">
+                  <li class="arrow-accordion__infomation-item">
                     Scanned copy of passport should be clear and easy-to-read.
                   </li>
                   <li class="arrow-accordion__infomation-item">
@@ -1369,12 +1341,12 @@
                     documents.
                   </li>
                 </ul>
-                <p>
+                <div>
                   <b
                     >For submission of documents for invitation processing, you
                     need:</b
                   >
-                </p>
+                </div>
                 <ol class="arrow-accordion__submission-list">
                   <li class="arrow-accordion__submission-item">
                     Send an original passport scan (the first page with a photo)
@@ -1412,13 +1384,16 @@
                 class="arrow-accordion__triangle"
                 width="44"
                 height="18"
-                fill="#CDD2E4"
+                fill="#6cafc9"
               >
                 <use xlink:href="images/icons/stack.svg#triangle"></use>
               </svg>
             </div>
             <div class="arrow-accordion__description">
-              <div class="arrow-accordion__description-inner"></div>
+              <div
+                class="arrow-accordion__description-inner"
+                data-simplebar
+              ></div>
             </div>
           </li>
           <li class="arrow-accordion__item arrow-accordion__item--third">
@@ -1428,14 +1403,17 @@
                 class="arrow-accordion__triangle"
                 width="44"
                 height="18"
-                fill="#CDD2E4"
+                fill="#6dc2ab"
               >
                 <use xlink:href="images/icons/stack.svg#triangle"></use>
               </svg>
             </div>
 
             <div class="arrow-accordion__description">
-              <div class="arrow-accordion__description-inner"></div>
+              <div
+                class="arrow-accordion__description-inner"
+                data-simplebar
+              ></div>
             </div>
           </li>
         </ul>
@@ -1683,154 +1661,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <h2 class="science__header">Science</h2>
-        <div class="science__container">
-          <img
-            class="science__picture"
-            src="images/science.jpg"
-            width="448"
-            height="252"
-            alt="A lab worker"
-          />
-          <div class="science__text-slider text-slider">
-            <div class="text-slider__control">
-              <div class="text-slider__slides">
-                <span class="text-slider__slide text-slider__slide--current"
-                  >02</span
-                >&ensp;&mdash;&ensp;<span
-                  class="text-slider__slide text-slider__slide--last"
-                  >10</span
-                >
-              </div>
-              <div class="text-slider__arrows">
-                <button
-                  class="text-slider__arrow text-slider__arrow--left"
-                  type="button"
-                  aria-label="flip slider to the left"
-                >
-                  <svg
-                    class="text-slider__arrow-icon"
-                    width="8"
-                    height="15"
-                    fill="#ffffff"
-                  >
-                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-                  </svg>
-                </button>
-                <button
-                  class="text-slider__arrow text-slider__arrow--right"
-                  type="button"
-                  aria-label="flip slider to the right"
-                >
-                  <svg
-                    class="text-slider__arrow-icon"
-                    width="8"
-                    height="15"
-                    fill="#ffffff"
-                  >
-                    <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <ul class="text-slider__list">
-              <li class="text-slider__item">
-                <h3 class="text-slider__header">Scientific Directions</h3>
-                <div class="text-slider__description">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <b
-                      >Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat</b
-                    >.
-                  </p>
-                  <p>
-                    <b
-                      >Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.</b
-                    >
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="science__picture-slider picture-slider">
-          <button
-            class="picture-slider__arrow picture-slider__arrow--left"
-            type="button"
-            aria-label="flip slider to the left"
-          >
-            <svg
-              class="picture-slider__arrow-icon"
-              width="17"
-              height="33"
-              fill="#BEC7E7"
-            >
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-            </svg>
-          </button>
-          <button
-            class="picture-slider__arrow picture-slider__arrow--right"
-            type="button"
-            aria-label="flip slider to the right"
-          >
-            <svg
-              class="picture-slider__arrow-icon"
-              width="17"
-              height="33"
-              fill="#BEC7E7"
-            >
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-            </svg>
-          </button>
-          <ul class="picture-slider__list">
-            <li class="picture-slider__item picture-slider__item--current">
-              <img
-                class="picture-slider__picture"
-                src="images/lab-worker-1.jpg"
-                width="448"
-                height="277"
-                alt="A worker in the laboratory"
-              />
-              <p class="picture-slider__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </li>
-            <li class="picture-slider__item">
-              <img
-                class="picture-slider__picture"
-                src="images/lab-worker-2.jpg"
-                width="448"
-                height="277"
-                alt="A worker in the laboratory"
-              />
-              <p class="picture-slider__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </li>
-            <li class="picture-slider__item">
-              <img
-                class="picture-slider__picture"
-                src="images/lab-worker-3.jpg"
-                width="448"
-                height="277"
-                alt="A worker in the laboratory"
-              />
-              <p class="picture-slider__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </li>
-          </ul>
-        </div> -->
       </section>
 
       <section class="news">
@@ -2254,6 +2084,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script type="module" src="scripts/main.js"></script>
   </body>
 </html>

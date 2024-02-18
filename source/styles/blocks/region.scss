@@ -1,5 +1,9 @@
 .region {
   padding-bottom: 54px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 100px;
+  }
 }
 
 .region__invitation {

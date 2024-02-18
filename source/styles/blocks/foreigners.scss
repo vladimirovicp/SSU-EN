@@ -2,17 +2,19 @@
   padding: 0 16px 50px;
 
   @media (min-width: $desktop-width) {
-    padding: 0 52px 100px;
+    padding: 0 52px 106px;
   }
 }
 
 .foreigners__header {
   font-size: 32px;
-  margin: 0 0 10px;
+  width: 420px;
+  margin: 0 auto 10px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    width: auto;
     margin: 0 0 20px;
   }
 }
