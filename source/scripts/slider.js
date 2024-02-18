@@ -32,7 +32,7 @@ const showCurrentSlide = (list, slide) => {
   }, 0);
 };
 
-/* Text-slider 1 */
+/* Text slider 1 */
 
 const regionBlock = document.querySelector('.region');
 const arrowLeft1 = regionBlock.querySelector('.info-template__arrow--left');
@@ -68,7 +68,7 @@ swiperText1.on('slideChange', () => {
   showCurrentSlide(listSlides1, currentSlide1);
 });
 
-/* Text-slider 2 */
+/* Text slider 2 */
 
 const scienceBlock = document.querySelector('.science');
 const arrowLeft2 = scienceBlock.querySelector('.info-template__arrow--left');
@@ -154,4 +154,19 @@ const swiperPicture2 = new Swiper('.swiperPicture2', swiperOptions);
 
 // window.addEventListener('resize', () => {
 //   swiperPicture2.update();
+// });
+
+/* Programs slider */
+
+// const swiperPrograms = new Swiper('.swiperPrograms', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   speed: 500,
+//   loop: true,
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
 // });

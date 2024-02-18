@@ -1,45 +1,229 @@
+.admission {
+  padding-bottom: 80px;
+}
+
+.admission__container {
+  position: relative;
+  margin-bottom: -395px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -282px;
+  }
+}
+
 .admission__header {
   font-size: 32px;
+  text-align: center;
+  width: 448px;
+  margin: 0 auto 10px;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    width: 728px;
+    margin-bottom: 20px;
   }
 }
 
 .admission__time,
 .admission__foreigners {
   font-weight: 400;
+  text-align: center;
+  width: 448px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    width: 728px;
   }
+}
+
+.admission__time {
+  margin-bottom: 20px;
+}
+
+.admission__foreigners {
+  margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.admission__main-information {
+  margin-top: -380px;
 }
 
 .admission__list {
   counter-reset: li;
+  list-style: none;
+  padding: 0 16px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 16px;
+  row-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 52px;
+    column-gap: 28px;
+    row-gap: 40px;
+  }
 }
 
 .admission__item {
+  position: relative;
   font-weight: 400;
-  // color: $white;
+  color: $white;
+  text-align: center;
   counter-increment: li;
+  width: 216px;
+  min-height: 245px;
+  padding: 10px 16px 30px;
+  border-radius: 15px;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    width: 413px;
+    min-height: 162px;
+    padding: 32px 25px 27px 13px;
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+  }
+}
+
+.admission__item:nth-of-type(6n + 1) {
+  background-color: $blue;
+}
+
+.admission__item:nth-of-type(6n + 2) {
+  background-color: $light-blue;
+}
+
+.admission__item:nth-of-type(6n + 3) {
+  background-color: $teal;
+}
+
+.admission__item:nth-of-type(6n + 4) {
+  background-color: $green;
+}
+
+.admission__item:nth-of-type(6n + 5) {
+  background-color: $pinkish-red;
+}
+
+.admission__item:nth-of-type(6n + 6) {
+  background-color: $pink;
 }
 
 .admission__item::before {
   content: "#0" counter(li);
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.admission__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 41px);
+  width: 82px;
+  height: 41px;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  background-color: $black-10;
+
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 66px);
+    left: 0;
+    width: 66px;
+    height: 133px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 66px;
+    border-top-right-radius: 66px;
+  }
+}
+
+.admission__item-small {
+  display: block;
+  font-size: 10px;
+}
+
+.admission__item p {
+  margin: 0;
+}
+
+.admission__overlay {
+  background-color: $black;
+  padding: 435px 0 80px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 342px;
+  }
 }
 
 .admission__compling,
 .admission__questions {
   font-weight: 400;
-  // color: $white;
+  color: $white;
+  text-align: center;
+  width: 448px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 777px;
+  }
+}
+
+.admission__compling {
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.admission__questions {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .admission__contacts {
   font-size: 20px;
-  // color: $white;
+  color: $white;
+  text-align: center;
+  width: 448px;
+  padding: 25px 25px 30px;
+  margin: 0 auto;
+  background-color: $lilac;
+  border-radius: 15px;
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    width: 414px;
+    padding: 25px;
+  }
+}
+
+.admission__mail,
+.admission__phone {
+  display: inline-block;
+}
+
+.admission__mail {
+  margin-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
   }
 }

@@ -1,22 +1,83 @@
+.contacts__list {
+  list-style: none;
+  padding: 0 16px 70px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
+
 .contacts__item {
   font-size: 20px;
+  padding-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 22px 5px $shadow;
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
+    width: 306px;
+    min-height: 137px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__item:nth-of-type(4n + 1) {
+  background-color: $blue;
+}
+
+.contacts__item:nth-of-type(4n + 2) {
+  background-color: $light-blue;
+}
+
+.contacts__item:nth-of-type(4n + 3) {
+  background-color: $teal;
+}
+
+.contacts__item:nth-of-type(4n + 4) {
+  background-color: $green;
+}
+
+.contacts__inner {
+  text-align: center;
+  height: 100%;
+  padding: 20px 20px 22px;
+  border-radius: 15px;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
   }
 }
 
 .contacts__header {
   font-size: 32px;
+  text-align: center;
+  margin-bottom: 43px;
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    margin-bottom: 50px;
   }
 }
 
 .contacts__item-header {
+  margin: 0 0 18px;
+
   @media (min-width: $desktop-width) {
     font-size: 14px;
+    margin-bottom: 20px;
   }
 }
 
@@ -34,6 +95,23 @@
 
 .contacts__item-header--social {
   color: $green;
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.contacts__social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 48px;
+  row-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 30px;
+  }
 }
 
 .contacts__vk,
@@ -41,8 +119,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38px;
-  height: 38px;
+  width: 61px;
+  height: 61px;
   border-radius: 50%;
   background-color: $light-lilac;
+
+  @media (min-width: $desktop-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.contacts__vk svg {
+  @media (min-width: $desktop-width) {
+    width: 23px;
+    height: 13px;
+  }
+}
+
+.contacts__telegram svg {
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 19px;
+  }
 }

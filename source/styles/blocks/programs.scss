@@ -10,20 +10,7 @@
 }
 
 .programs__controls {
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  row-gap: 25px;
-
-  @media (min-width: $desktop-width) {
-    padding: 0 52px;
-  }
-}
-
-.programs__pagination {
   width: 364px;
-  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     width: 1299px;
@@ -34,9 +21,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  width: 364px;
+  // width: 300%;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
   // transform: translate(-364px);
 
   @media (min-width: $desktop-width) {
@@ -49,27 +37,19 @@
   border-radius: 15px 15px 0 0;
 }
 
-.programs__pagination-item--current.programs__pagination-item:nth-of-type(
-    4n + 1
-  ) {
+.programs__pagination-item:nth-of-type(4n + 1) {
   background-color: $blue;
 }
 
-.programs__pagination-item--current.programs__pagination-item:nth-of-type(
-    4n + 2
-  ) {
+.programs__pagination-item:nth-of-type(4n + 2) {
   background-color: $light-blue;
 }
 
-.programs__pagination-item--current.programs__pagination-item:nth-of-type(
-    4n + 3
-  ) {
+.programs__pagination-item:nth-of-type(4n + 3) {
   background-color: $teal;
 }
 
-.programs__pagination-item--current.programs__pagination-item:nth-of-type(
-    4n + 4
-  ) {
+.programs__pagination-item:nth-of-type(4n + 4) {
   background-color: $green;
 }
 
@@ -78,21 +58,20 @@
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  width: 100%;
   height: 100%;
   padding: 16px 27px 21px;
   border: none;
   border-radius: 15px 15px 0 0;
-  background-color: $white;
+  background-color: $light-gray;
 
   @media (min-width: $desktop-width) {
     cursor: pointer;
   }
 }
 
-.programs__pagination-item--current .programs__pagination-inner {
-  background-color: $light-lilac;
-}
+// .programs__pagination-item--current .programs__pagination-inner {
+//   background-color: $light-gray;
+// }
 
 .programs__arrow {
   margin-top: 4px;
@@ -104,6 +83,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.programs__overlay {
+  background-color: $light-gray;
 }
 
 .programs__accordion {

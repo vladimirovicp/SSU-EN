@@ -726,560 +726,685 @@
       </section>
 
       <section class="programs">
-        <h2 class="programs__header">Programs</h2>
-        <div class="programs__controls">
-          <button
-            class="programs__arrow programs__arrow--left"
-            type="button"
-            aria-label="Flip list of programs to the left"
-          >
-            <svg
-              class="programs__arrow-icon"
-              width="17"
-              height="33"
-              fill="#668BD4"
-            >
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-            </svg>
-          </button>
-          <div class="programs__pagination">
-            <ul class="programs__pagination-list">
-              <li
-                class="programs__pagination-item programs__pagination-item--current"
-              >
+        <div class="center">
+          <h2 class="programs__header">Programs</h2>
+          <div class="programs__controls">
+            <ul class="programs__controls-list">
+              <li class="programs__controls-item">
                 <div
-                  class="programs__pagination-inner programs__pagination-inner--bachelors"
+                  class="programs__controls-inner programs__controls-inner--bachelors"
                 >
                   Bachelors Degree Programs
                 </div>
               </li>
-              <li class="programs__pagination-item">
+              <li class="programs__controls-item">
                 <div
-                  class="programs__pagination-inner programs__pagination-inner--masters"
+                  class="programs__controls-inner programs__pagination-inner--masters"
                 >
                   Masters Degree Programs
                 </div>
               </li>
-              <li class="programs__pagination-item">
+              <li class="programs__controls-item">
                 <div
-                  class="programs__pagination-inner programs__pagination-inner--postgraduate"
+                  class="programs__controls-inner programs__controls-inner--postgraduate"
                 >
                   Postgraduate Programs
                 </div>
               </li>
             </ul>
-          </div>
-          <button
-            class="programs__arrow programs__arrow--right"
-            type="button"
-            aria-label="Flip list of programs to the right"
-          >
-            <svg
-              class="programs__arrow-icon"
-              width="17"
-              height="33"
-              fill="#668BD4"
+            <button
+              class="programs__arrow programs__arrow--left"
+              type="button"
+              aria-label="Flip list of programs to the left"
             >
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
-            </svg>
-          </button>
+              <svg
+                class="programs__arrow-icon"
+                width="17"
+                height="33"
+                fill="#668BD4"
+              >
+                <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button
+              class="programs__arrow programs__arrow--right"
+              type="button"
+              aria-label="Flip list of programs to the right"
+            >
+              <svg
+                class="programs__arrow-icon"
+                width="17"
+                height="33"
+                fill="#668BD4"
+              >
+                <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div class="programs__accordion">
-          <ul class="programs__list">
-            <li class="programs__item programs__item--current plus-accordion">
-              <ul class="plus-accordion__list">
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Mechanics and Mathematics
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+        <div class="programs__overlay">
+          <div class="programs__accordion center">
+            <ul class="programs__list">
+              <li class="programs__item programs__item--current plus-accordion">
+                <ul class="plus-accordion__list">
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Mechanics and Mathematics
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Computer Science and Information Technology
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Computer Science and Information Technology
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Institute of Physics</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of Physics
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Institute of Chemistry
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of Chemistry
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Faculty of Geology</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">Faculty of Geology</h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Faculty of Geography</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Geography
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Faculty of Biology</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">Faculty of Biology</h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Psychology
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Psychology
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Faculty of Economics</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Economics
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Faculty of Sociology</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Sociology
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Faculty of Law</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">Faculty of Law</h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Institute of History and International Relations
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of History and International Relations
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Psychological, Pedagogical and Special
-                      Education
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Psychological, Pedagogical and Special
+                        Education
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Institute of Philology and Journalism
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of Philology and Journalism
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Foreign Languages and Linguodidactics
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Foreign Languages and Linguodidactics
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">Institute of Arts</h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">Institute of Arts</h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Philosophy
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Philosophy
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Institute of Physical Education and Sports
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of Physical Education and Sports
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Institute of Additional Professional Education
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of Additional Professional Education
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Institute of Additional Professional Education
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Institute of Additional Professional Education
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="programs__item plus-accordion">
-              <ul class="plus-accordion__list">
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Mechanics and Mathematics
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="programs__item plus-accordion">
+                <ul class="plus-accordion__list">
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Mechanics and Mathematics
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="programs__item plus-accordion">
-              <ul class="plus-accordion__list">
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Mechanics and Mathematics
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="programs__item plus-accordion">
+                <ul class="plus-accordion__list">
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Mechanics and Mathematics
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="plus-accordion__item">
-                  <div class="plus-accordion__inner">
-                    <h3 class="plus-accordion__header">
-                      Faculty of Computer Science and Information Technology
-                    </h3>
-                    <button
-                      class="plus-accordion__button"
-                      type="button"
-                      aria-label="Open the program"
-                    >
-                      <svg class="plus-accordion__icon" width="19" height="19">
-                        <use xlink:href="images/icons/stack.svg#plus"></use>
-                      </svg>
-                    </button>
-                    <div class="plus-accordion__content">
-                      <p>Здесь должен находится конетент</p>
+                  </li>
+                  <li class="plus-accordion__item">
+                    <div class="plus-accordion__inner">
+                      <h3 class="plus-accordion__header">
+                        Faculty of Computer Science and Information Technology
+                      </h3>
+                      <button
+                        class="plus-accordion__button"
+                        type="button"
+                        aria-label="Open the program"
+                      >
+                        <svg
+                          class="plus-accordion__icon"
+                          width="19"
+                          height="19"
+                        >
+                          <use xlink:href="images/icons/stack.svg#plus"></use>
+                        </svg>
+                      </button>
+                      <div class="plus-accordion__content">
+                        <p>Здесь должен находится конетент</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="admission">
-        <h2 class="admission__header">Admission</h2>
-        <p class="admission__time">
-          Traditionally, Saratov State University enrollment campaign
-          <b>begins on June, 20th and ends at the end of August.</b>
-        </p>
-        <p class="admission__foreigners">
-          If you are a foreign citizen, a person without citizenship, or a
-          compatriot living abroad,
-          <b>provide the following documents when applying:</b>
-        </p>
-        <ul class="admission__list">
-          <li class="admission__item">
-            <b>А copy of the applicant identity document</b>, or an identity
-            document of a foreign citizen in the Russian Federation
-          </li>
-          <li class="admission__item">
-            <b>Russian translation of the applicant identity document</b>, or an
-            identity document of a foreign citizen in the Russian Federation
-            certified as required by RF Law
-          </li>
-          <li class="admission__item">
-            <b>Оriginal foreign educational certificates</b> and (or) academic
-            certificates and qualifications
-          </li>
-          <li class="admission__item">
-            Russian translation of original foreign
-            <b>educational certificates</b> and academic record transcript
-            certified as required by RF Law
-          </li>
-          <li class="admission__item">
-            Сopies of documents or other evidence
-            <b>supporting affiliation of a compatriot living abroad</b> to the
-            groups provided by the Article 17 of the Federal Law dated May 24,
-            1999 No. 99-FL “On the National Policy of the Russian Federation
-            towards Compatriots Living Abroad”
-          </li>
-          <li class="admission__item"><b>6 photos</b></li>
-        </ul>
-        <p class="admission__compling">
-          The applicant’s surname, name and patronymic (if any), indicated in
-          the translations of the submitted documents, shall comply with the
-          surname, name and patronymic indicated in the identity document of a
-          foreign citizen in the Russian Federation.
-        </p>
-        <p class="admission__questions">
-          If you have any further questions concerning procedures associated the
-          enrolment campaign at Saratov State University, feel free to contact
-          for further detailed information.:
-        </p>
-        <div class="admission__contacts">
-          <a class="admission__mail" href="mailto:ied@sgu.ru">ied@sgu.ru</a>
-          <a class="admission__phone" href="tel:+78452508707"
-            >+7 (8452) 50 87 07</a
-          >
+        <div class="center">
+          <div class="admission__container">
+            <h2 class="admission__header">Admission</h2>
+            <p class="admission__time">
+              Traditionally, Saratov State University enrollment campaign
+              <b>begins on June, 20th and ends at the end of August.</b>
+            </p>
+            <p class="admission__foreigners">
+              If you are a foreign citizen, a person without citizenship, or a
+              compatriot living abroad,
+              <b>provide the following documents when applying:</b>
+            </p>
+            <ul class="admission__list">
+              <li class="admission__item">
+                <p>
+                  <b>А copy of the applicant identity document</b>, or an
+                  identity document of a foreign citizen in the Russian
+                  Federation
+                </p>
+              </li>
+              <li class="admission__item">
+                <p>
+                  <b>Russian translation of the applicant identity document</b>,
+                  or an identity document of a foreign citizen in the Russian
+                  Federation certified as required by RF Law
+                </p>
+              </li>
+              <li class="admission__item">
+                <p>
+                  <b>Оriginal foreign educational certificates</b> and (or)
+                  academic certificates and qualifications
+                </p>
+              </li>
+              <li class="admission__item">
+                <p>
+                  Russian translation of original foreign
+                  <b>educational certificates</b> and academic record transcript
+                  certified as required by RF Law
+                </p>
+              </li>
+              <li class="admission__item">
+                <p>
+                  Сopies of documents or other evidence
+                  <b>supporting affiliation of a compatriot living abroad</b>
+                  <span class="admission__item-small"
+                    >to the groups provided by the Article 17 of the Federal Law
+                    dated May 24, 1999 No. 99-FL “On the National Policy of the
+                    Russian Federation towards Compatriots Living Abroad”</span
+                  >
+                </p>
+              </li>
+              <li class="admission__item">
+                <p><b>6 photos</b></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="admission__overlay">
+          <div class="center">
+            <p class="admission__compling">
+              The applicant’s surname, name and patronymic (if any), indicated
+              in the translations of the submitted documents, shall comply with
+              the surname, name and patronymic indicated in the identity
+              document of a foreign citizen in the Russian Federation.
+            </p>
+            <p class="admission__questions">
+              If you have any further questions concerning procedures associated
+              the enrolment campaign at Saratov State University, feel free to
+              contact for further detailed information.:
+            </p>
+            <div class="admission__contacts">
+              <a class="admission__mail" href="mailto:ied@sgu.ru">ied@sgu.ru</a>
+              <br />
+              <a class="admission__phone" href="tel:+78452508707"
+                >+7 (8452) 50 87 07</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1816,7 +1941,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts center">
         <h2 class="contacts__header">Contacts</h2>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--address">
@@ -1825,7 +1950,9 @@
                 Address
               </h3>
               <span class="contacts__address"
-                >72/74 Zheleznodorozhnaya str, Saratov, Russia 410012</span
+                >72/74 Zheleznodorozhnaya str,
+                <br />
+                Saratov, Russia 410012</span
               >
             </div>
           </li>
@@ -1837,6 +1964,7 @@
               <a class="contacts__phone-1" href="tel:+78452508707"
                 >+7 (8452) 50 - 87 - 07</a
               >
+              <br />
               <a class="contacts__phone-2" href="tel:-79376397822"
                 >+7 (937) 639 - 78 - 22</a
               >
@@ -1863,8 +1991,8 @@
                 >
                   <svg
                     class="contacts__vk-icon"
-                    width="23"
-                    height="13"
+                    width="37"
+                    height="21"
                     fill="#ffffff"
                   >
                     <use xlink:href="images/icons/stack.svg#shortcut-vk"></use>
@@ -1877,8 +2005,8 @@
                 >
                   <svg
                     class="contacts__telegram-icon"
-                    width="22"
-                    height="19"
+                    width="34"
+                    height="30"
                     fill="#ffffff"
                   >
                     <use
