@@ -728,30 +728,7 @@
       <section class="programs">
         <div class="center">
           <h2 class="programs__header">Programs</h2>
-          <div class="programs__controls">
-            <ul class="programs__controls-list">
-              <li class="programs__controls-item">
-                <div
-                  class="programs__controls-inner programs__controls-inner--bachelors"
-                >
-                  Bachelors Degree Programs
-                </div>
-              </li>
-              <li class="programs__controls-item">
-                <div
-                  class="programs__controls-inner programs__pagination-inner--masters"
-                >
-                  Masters Degree Programs
-                </div>
-              </li>
-              <li class="programs__controls-item">
-                <div
-                  class="programs__controls-inner programs__controls-inner--postgraduate"
-                >
-                  Postgraduate Programs
-                </div>
-              </li>
-            </ul>
+          <div class="programs__container">
             <button
               class="programs__arrow programs__arrow--left"
               type="button"
@@ -766,6 +743,37 @@
                 <use xlink:href="images/icons/stack.svg#arrow-left"></use>
               </svg>
             </button>
+            <div class="programs__controls swiper swiperPrograms1">
+              <ul class="programs__name-list swiper-wrapper">
+                <li
+                  class="programs__name-item programs__name-item--bachelors swiper-slide"
+                >
+                  <div
+                    class="programs__name-inner programs__name-inner--bachelors"
+                  >
+                    Bachelors Degree Programs
+                  </div>
+                </li>
+                <li
+                  class="programs__name-item programs__name-item--masters swiper-slide"
+                >
+                  <div
+                    class="programs__name-inner programs__name-inner--masters"
+                  >
+                    Masters Degree Programs
+                  </div>
+                </li>
+                <li
+                  class="programs__name-item programs__name-item--postgraduate swiper-slide"
+                >
+                  <div
+                    class="programs__name-inner programs__name-inner--postgraduate"
+                  >
+                    Postgraduate Programs
+                  </div>
+                </li>
+              </ul>
+            </div>
             <button
               class="programs__arrow programs__arrow--right"
               type="button"
@@ -784,9 +792,11 @@
         </div>
 
         <div class="programs__overlay">
-          <div class="programs__accordion center">
-            <ul class="programs__list">
-              <li class="programs__item programs__item--current plus-accordion">
+          <div class="programs__accordion center swiper swiperPrograms2">
+            <ul class="programs__list swiper-wrapper">
+              <li
+                class="programs__item programs__item--current plus-accordion swiper-slide"
+              >
                 <ul class="plus-accordion__list">
                   <li class="plus-accordion__item">
                     <div class="plus-accordion__inner">
@@ -1243,7 +1253,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="programs__item plus-accordion">
+              <li class="programs__item plus-accordion swiper-slide">
                 <ul class="plus-accordion__list">
                   <li class="plus-accordion__item">
                     <div class="plus-accordion__inner">
@@ -1270,7 +1280,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="programs__item plus-accordion">
+              <li class="programs__item plus-accordion swiper-slide">
                 <ul class="plus-accordion__list">
                   <li class="plus-accordion__item">
                     <div class="plus-accordion__inner">

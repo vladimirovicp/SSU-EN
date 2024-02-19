@@ -158,15 +158,31 @@ const swiperPicture2 = new Swiper('.swiperPicture2', swiperOptions);
 
 /* Programs slider */
 
-// const swiperPrograms = new Swiper('.swiperPrograms', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   speed: 500,
-//   loop: true,
+const swiperPrograms2 = new Swiper('.swiperPrograms2', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  // autoHeight: true,
+});
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+const swiperPrograms1 = new Swiper('.swiperPrograms1', {
+  // Optional parameters
+  direction: 'horizontal',
+  spaceBetween: 40,
+  loop: true,
+  slidesPerView: 'auto', // позволяет задавать высоту слайдов
+  controller: {
+    control: swiperPrograms2,
+  },
+});
+
+const arrowPrev = document.querySelector('.programs__arrow--left');
+const arrowNext = document.querySelector('.programs__arrow--right');
+
+arrowPrev.addEventListener('click', () => {
+  swiperPrograms1.slidePrev();
+});
+
+arrowNext.addEventListener('click', () => {
+  swiperPrograms1.slideNext();
+});

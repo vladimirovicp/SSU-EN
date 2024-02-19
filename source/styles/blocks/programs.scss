@@ -1,3 +1,7 @@
+.programs {
+  padding-bottom: 50px;
+}
+
 .programs__header {
   font-size: 32px;
   margin: 0 0 30px;
@@ -9,51 +13,63 @@
   }
 }
 
-.programs__controls {
-  width: 364px;
-
-  @media (min-width: $desktop-width) {
-    width: 1299px;
-  }
+.programs__container {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.programs__pagination-list {
+.programs__controls {
+  // position: relative;
+  width: 364px;
+  height: 95px;
+  margin-bottom: -15px;
+
+  // @media (min-width: $desktop-width) {
+  //   width: 1299px;
+  // }
+}
+
+.programs__name-list {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 364px;
+  height: 100%;
   // width: 300%;
   // display: grid;
   // grid-template-columns: repeat(3, 1fr);
   // transform: translate(-364px);
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 100%;
+  // }
 }
 
-.programs__pagination-item {
+.programs__name-item {
+  width: 365px;
+
   padding-top: 8px;
   border-radius: 15px 15px 0 0;
 }
 
-.programs__pagination-item:nth-of-type(4n + 1) {
+.programs__name-item--bachelors {
   background-color: $blue;
 }
 
-.programs__pagination-item:nth-of-type(4n + 2) {
+.programs__name-item--masters {
   background-color: $light-blue;
 }
 
-.programs__pagination-item:nth-of-type(4n + 3) {
+.programs__name-item--postgraduate {
   background-color: $teal;
 }
 
-.programs__pagination-item:nth-of-type(4n + 4) {
-  background-color: $green;
-}
+// .programs__name-item:nth-of-type(4n + 4) {
+//   background-color: $green;
+// }
 
-.programs__pagination-inner {
+.programs__name-inner {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
@@ -85,13 +101,18 @@
   }
 }
 
+.programs__arrow--right .programs__arrow-icon {
+  transform: rotate(180deg);
+}
+
 .programs__overlay {
   background-color: $light-gray;
 }
 
 .programs__accordion {
   width: 480px;
-  overflow: hidden;
+
+  // overflow: hidden;
 
   @media (min-width: $desktop-width) {
     width: 1400px;
@@ -102,32 +123,32 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  width: 480px;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
   // transform: translate(-480px);
-  transition: transform 0.7s ease-in-out;
+  // transition: transform 0.7s ease-in-out;
 }
 
-.programs__list--masters {
-  transform: translate(-480px);
+// .programs__list--masters {
+//   transform: translate(-480px);
 
-  @media (min-width: $desktop-width) {
-    transform: translate(-1400px);
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     transform: translate(-1400px);
+//   }
+// }
 
-.programs__list--postgraduate {
-  transform: translate(-960px);
+// .programs__list--postgraduate {
+//   transform: translate(-960px);
 
-  @media (min-width: $desktop-width) {
-    transform: translate(-2800px);
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     transform: translate(-2800px);
+//   }
+// }
 
 .programs__item {
   font-size: 20px;
-  width: 480px;
+  // width: 447px;
 
   @media (min-width: $desktop-width) {
     width: 1400px;
@@ -137,13 +158,3 @@
 // .programs__item--current .plus-accordion__list {
 //   display: block;
 // }
-
-.programs__arrow {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.programs__arrow--right .programs__arrow-icon {
-  transform: rotate(180deg);
-}

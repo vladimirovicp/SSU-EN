@@ -1,3 +1,13 @@
+.plus-accordion__list {
+  list-style: none;
+  padding: 40px 16px 60px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 64px 52px 120px;
+  }
+}
+
 .plus-accordion__header {
   font-size: 16px;
   font-weight: 500;
@@ -5,17 +15,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-  }
-}
-
-.plus-accordion__list {
-  // display: none;
-  list-style: none;
-  padding: 40px 16px 60px;
-  margin: 0;
-
-  @media (min-width: $desktop-width) {
-    padding: 64px 52px 120px;
   }
 }
 
@@ -62,6 +61,7 @@
   column-gap: 50px;
   align-items: center;
   min-height: 70px;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
     padding: 15px 52px 15px 35px;
@@ -72,6 +72,7 @@
 .plus-accordion__button {
   width: 41px;
   height: 41px;
+  padding: 0;
   border: none;
   border-radius: 50%;
   display: flex;
