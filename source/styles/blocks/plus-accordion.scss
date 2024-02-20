@@ -70,6 +70,7 @@
 }
 
 .plus-accordion__button {
+  position: relative;
   width: 41px;
   height: 41px;
   padding: 0;
@@ -79,6 +80,29 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.plus-accordion__button::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: $white;
+}
+
+.plus-accordion__button::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 19px;
+  border-radius: 2px;
+  background-color: $white;
+  transition: height 0.5s ease-in-out;
+}
+
+.plus-accordion__inner--current .plus-accordion__button::after {
+  height: 2px;
 }
 
 .plus-accordion__item:nth-of-type(4n + 1) .plus-accordion__button {
@@ -106,6 +130,10 @@
   @media (min-width: $desktop-width) {
     font-weight: 500;
   }
+}
+
+.plus-accordion__inner--current .plus-accordion__content {
+  display: block;
 }
 
 .plus-accordion__content p {
