@@ -1,0 +1,71 @@
+.social-media {
+  padding: 0 16px 50px;
+
+  @media (min-width: $desktop-width) {
+    width: 214px;
+    padding: 5px 0 0;
+  }
+}
+
+.social-media__list {
+  list-style: none;
+  padding: 0 0 40px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+  }
+}
+
+.social-media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 35px;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.social-media__vk-icon {
+  @media (min-width: $desktop-width) {
+    width: 19px;
+    height: 12px;
+  }
+}
+
+.social-media__odnoklassniki-icon {
+  @media (min-width: $desktop-width) {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.social-media__telegram-icon {
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 15px;
+  }
+}
+
+.social-media__rutube-icon {
+  @media (min-width: $desktop-width) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.social-media__zen-icon {
+  @media (min-width: $desktop-width) {
+    width: 15px;
+    height: 15px;
+  }
+}

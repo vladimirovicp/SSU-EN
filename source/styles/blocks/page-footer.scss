@@ -3,16 +3,159 @@
   color: $dark-lilac;
 }
 
-.page-footer__information {
+.page-footer__overlay {
+  background-color: $black;
+}
+
+.page-footer__container {
+  padding: 70px 0 53px;
+
   @media (min-width: $desktop-width) {
-    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 90px 52px;
   }
 }
 
+.page-footer__information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 42px;
+  padding: 0 16px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.page-footer__column-1 {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 970px;
+  }
+}
+
+.page-footer__wrapper-1 {
+  padding-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.page-footer__address {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.page-footer__information-type {
+  display: block;
+}
+
+.page-footer__wrapper-2 {
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    padding-top: 5px;
+  }
+}
+
+.page-footer__button.page-footer__button--SSU-site {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.page-footer__commission {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.page-footer__international {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__data {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__column-2 {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__support,
+.page-footer__phone {
+  margin-bottom: 25px;
+}
+
+.page-footer__mail {
+  margin-bottom: 41px;
+}
+
 .page-footer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
+  width: 180px;
+  min-height: 50px;
+  border: 2px solid $dark-lilac;
+  border-radius: 55px;
+  padding: 14px 11px;
+}
+
+.page-footer__button--sitemap {
+  margin-bottom: 27px;
 }
 
 .page-footer__copyright {
   font-size: 14px;
+  padding: 38px 0;
+  background-color: $deep-black;
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 0 28px;
+  }
+}
+
+.page-footer__full-name {
+  text-align: center;
+  width: 414px;
+  margin: 0 auto 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 755px;
+    margin-bottom: 14px;
+  }
+}
+
+.page-footer__warning {
+  text-align: center;
+  width: 362px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 528px;
+  }
 }

@@ -728,7 +728,7 @@
       <section class="programs">
         <div class="center">
           <h2 class="programs__header">Programs</h2>
-          <div class="programs__container">
+          <div class="programs__controls">
             <button
               class="programs__arrow programs__arrow--left"
               type="button"
@@ -743,10 +743,10 @@
                 <use xlink:href="images/icons/stack.svg#arrow-left"></use>
               </svg>
             </button>
-            <div class="programs__controls swiper swiperPrograms1">
+            <div class="programs__name swiper swiperPrograms1">
               <ul class="programs__name-list swiper-wrapper">
                 <li
-                  class="programs__name-item programs__name-item--bachelors swiper-slide"
+                  class="programs__name-item programs__name-item--bachelors programs__name-item--current swiper-slide"
                 >
                   <div
                     class="programs__name-inner programs__name-inner--bachelors"
@@ -793,7 +793,7 @@
 
         <div class="programs__overlay">
           <div class="programs__accordion center swiper swiperPrograms2">
-            <ul class="programs__list swiper-wrapper">
+            <ul class="programs__list programs__list--bachelors swiper-wrapper">
               <li
                 class="programs__item programs__item--current plus-accordion swiper-slide"
               >
@@ -807,15 +807,7 @@
                         class="plus-accordion__button"
                         type="button"
                         aria-label="Open the program"
-                      >
-                        <!-- <svg
-                          class="plus-accordion__icon"
-                          width="19"
-                          height="19"
-                        >
-                          <use xlink:href="images/icons/stack.svg#plus"></use>
-                        </svg> -->
-                      </button>
+                      ></button>
                       <div class="plus-accordion__content">
                         <p>Здесь должен находится конетент</p>
                       </div>
@@ -1235,7 +1227,7 @@
               <a class="admission__mail" href="mailto:ied@sgu.ru">ied@sgu.ru</a>
               <br />
               <a class="admission__phone" href="tel:+78452508707"
-                >+7 (8452) 50 87 07</a
+                >+7 8452 50 87 07</a
               >
             </div>
           </div>
@@ -1860,189 +1852,210 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container">
-        <div class="social-media">
-          <ul class="social-media__list">
-            <li class="social-media__item">
-              <a
-                class="social-media__link"
-                href="https://vk.com/saruniversity"
-                aria-label="Vkontakte"
-              >
-                <svg
-                  class="social-media__vk-icon"
-                  width="19"
-                  height="12"
-                  fill="#949ABC"
-                >
-                  <use xlink:href="images/icons/stack.svg#shortcut-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a
-                class="social-media__link"
-                href="https://ok.ru/saruniversity"
-                aria-label="Odnoklassniki"
-              >
-                <svg
-                  class="social-media__odnoklassniki-icon"
-                  width="14"
-                  height="14"
-                  fill="#949ABC"
-                >
-                  <use
-                    xlink:href="images/icons/stack.svg#shortcut-odnoklassniki"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a
-                class="social-media__link"
-                href="https://t.me/saruniversity"
-                aria-label="Telegram"
-              >
-                <svg
-                  class="social-media__telegram-icon"
-                  width="18"
-                  height="15"
-                  fill="#949ABC"
-                >
-                  <use
-                    xlink:href="images/icons/stack.svg#shortcut-telegram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a
-                class="social-media__link"
-                href="https://rutube.ru/channel/23787053/"
-                aria-label="Rutube"
-              >
-                <svg
-                  class="social-media__rutube-icon"
-                  width="16"
-                  height="16"
-                  fill="#949ABC"
-                >
-                  <use
-                    xlink:href="images/icons/stack.svg#shortcut-rutube"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a
-                class="social-media__link"
-                href="https://zen.yandex.ru/id/61e7f00ecf77372412e737e8?utm_source=main_stripe_big"
-                aria-label="Zen"
-              >
-                <svg
-                  class="social-media__zen-icon"
-                  width="15"
-                  height="15"
-                  fill="#949ABC"
-                >
-                  <use xlink:href="images/icons/stack.svg#shortcut-zen"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <form class="search" method="get">
-            <input
-              class="search__input"
-              type="text"
-              name="search"
-              placeholder="Website search"
-            />
-            <button class="search__button" type="submit">
-              <svg class="search__icon" width="14" height="14">
-                <use xlink:href="images/icons/stack.svg#search"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-        <div class="page-footer__information">
-          <div class="page-footer__column-1">
-            <div class="page-footer__wrapper-1">
-              <div class="page-footer__address">
-                <span class="page-footer__information-type">Address:</span>
-                <br />
-                410012, Saratov, Astrakhanskaya Street, 83
-              </div>
-              <div class="page-footer__reception">
-                <span class="page-footer__information-type"
-                  >Reception of rector:</span
-                >
-                <br />
-                +7 (8452) 26 - 16 - 96, rector@sgu.ru
-              </div>
+      <div class="page-footer__overlay">
+        <div class="center">
+          <div class="page-footer__container">
+            <div class="social-media">
+              <ul class="social-media__list">
+                <li class="social-media__item">
+                  <a
+                    class="social-media__link"
+                    href="https://vk.com/saruniversity"
+                    aria-label="Vkontakte"
+                  >
+                    <svg
+                      class="social-media__vk-icon"
+                      width="32"
+                      height="21"
+                      fill="#949ABC"
+                    >
+                      <use
+                        xlink:href="images/icons/stack.svg#shortcut-vk"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a
+                    class="social-media__link"
+                    href="https://ok.ru/saruniversity"
+                    aria-label="Odnoklassniki"
+                  >
+                    <svg
+                      class="social-media__odnoklassniki-icon"
+                      width="25"
+                      height="25"
+                      fill="#949ABC"
+                    >
+                      <use
+                        xlink:href="images/icons/stack.svg#shortcut-odnoklassniki"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a
+                    class="social-media__link"
+                    href="https://t.me/saruniversity"
+                    aria-label="Telegram"
+                  >
+                    <svg
+                      class="social-media__telegram-icon"
+                      width="26"
+                      height="25"
+                      fill="#949ABC"
+                    >
+                      <use
+                        xlink:href="images/icons/stack.svg#shortcut-telegram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a
+                    class="social-media__link"
+                    href="https://rutube.ru/channel/23787053/"
+                    aria-label="Rutube"
+                  >
+                    <svg
+                      class="social-media__rutube-icon"
+                      width="28"
+                      height="27"
+                      fill="#949ABC"
+                    >
+                      <use
+                        xlink:href="images/icons/stack.svg#shortcut-rutube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a
+                    class="social-media__link"
+                    href="https://zen.yandex.ru/id/61e7f00ecf77372412e737e8?utm_source=main_stripe_big"
+                    aria-label="Zen"
+                  >
+                    <svg
+                      class="social-media__zen-icon"
+                      width="25"
+                      height="25"
+                      fill="#949ABC"
+                    >
+                      <use
+                        xlink:href="images/icons/stack.svg#shortcut-zen"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <form class="search" method="get">
+                <input
+                  class="search__input"
+                  type="text"
+                  name="search"
+                  placeholder="Website search"
+                />
+                <button class="search__button" type="submit">
+                  <svg class="search__icon" width="27" height="27">
+                    <use xlink:href="images/icons/stack.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
             </div>
-            <div class="page-footer__wrapper-2">
-              <a
-                class="page-footer__button page-footer__button--SSU-site"
-                href="#"
-                >To the SSU website</a
-              >
-            </div>
-            <div class="page-footer__wrapper-3">
-              <div class="page-footer__commission">
-                <span class="page-footer__information-type"
-                  >Department for the organization of admission to basic
-                  educational programs (Central Admission Commission)</span
-                >
-                <br />
-                +7 (8452) 51 - 92 - 26, cpk@info.sgu.ru
+            <div class="page-footer__information">
+              <div class="page-footer__column-1">
+                <div class="page-footer__wrapper-1">
+                  <div class="page-footer__address">
+                    <span class="page-footer__information-type"
+                      ><u>Address:</u></span
+                    >
+                    410012, Saratov, Astrakhanskaya Street, 83
+                  </div>
+                  <div class="page-footer__reception">
+                    <span class="page-footer__information-type"
+                      ><u>Reception of rector:</u></span
+                    >
+                    <a href="tel:+78452261696">+7 (8452) 26 - 16 - 96,</a>
+                    <a href="mailto:rector@sgu.ru">rector@sgu.ru</a>
+                  </div>
+                </div>
+                <div class="page-footer__wrapper-2">
+                  <a
+                    class="page-footer__button page-footer__button--SSU-site"
+                    href="#"
+                    >To the SSU website</a
+                  >
+                </div>
+                <div class="page-footer__wrapper-3">
+                  <div class="page-footer__commission">
+                    <span class="page-footer__information-type"
+                      ><u
+                        >Department for the organization of admission to basic
+                        educational programs (Central Admission Commission)</u
+                      ></span
+                    >
+                    <a href="tel:+78452519226">+7 (8452) 51 - 92 - 26,</a>
+                    <a href="mailto:cpk@info.sgu.ru">cpk@info.sgu.ru</a>
+                  </div>
+                  <div class="page-footer__international">
+                    <span class="page-footer__information-type"
+                      ><u>International Students:</u></span
+                    >
+                    <a href="tel:+78452518707">+7 (8452) 51 - 87 - 07,</a>
+                    <a href="mailto:ied@sgu.ru">ied@sgu.ru</a>
+                  </div>
+                  <div class="page-footer__data">
+                    Information about the education organization
+                  </div>
+                </div>
               </div>
-              <div class="page-footer__international">
-                <span class="page-footer__information-type"
-                  >International Students:</span
-                >
-                <br />
-                +7 (8452) 51 - 87 - 07, ied@sgu.ru
-              </div>
-              <div class="page-footer__data">
-                Information about the education organization
-              </div>
-            </div>
-          </div>
 
-          <div class="page-footer__column-2">
-            <div class="page-footer__support">
-              <span class="page-footer__information-type"
-                >Information support:</span
-              >
-              <br />
-              Media communication management SSU
+              <div class="page-footer__column-2">
+                <div class="page-footer__support">
+                  <span class="page-footer__information-type"
+                    ><u>Information support:</u></span
+                  >
+                  <br />
+                  Media communication management SSU
+                </div>
+                <div class="page-footer__phone">
+                  <span class="page-footer__information-type"
+                    ><u>Phone:</u></span
+                  >
+                  <a href="tel:+78452210625">+7 (8452) 21 - 06 - 25</a>
+                </div>
+                <div class="page-footer__mail">
+                  <span class="page-footer__information-type"
+                    ><u>Email:</u></span
+                  >
+                  <a href="mailto:press@sgu.ru">press@sgu.ru</a>
+                </div>
+                <a
+                  class="page-footer__button page-footer__button--sitemap"
+                  href="#"
+                  >Sitemap</a
+                >
+                <a
+                  class="page-footer__button page-footer__button--account"
+                  href="#"
+                  >Personal account</a
+                >
+              </div>
             </div>
-            <div class="page-footer__phone">
-              <span class="page-footer__information-type">Phone:</span>
-              <br />
-              +7 (8452) 21 - 06 - 25
-            </div>
-            <div class="page-footer__mail">
-              <span class="page-footer__information-type">Email:</span>
-              <br />
-              press@sgu.ru
-            </div>
-            <a class="page-footer__button page-footer__button--sitemap" href="#"
-              >Sitemap</a
-            >
-            <a class="page-footer__button page-footer__button--account" href="#"
-              >Personal account</a
-            >
           </div>
         </div>
       </div>
       <div class="page-footer__copyright">
-        <p>
-          @ 2022 Federal State Budgetary Educational Institution of Higher
-          Education "Saratov National Research State University named after N.G.
-          Chernyshevsky
-        </p>
-        <p>When using materials, an active link to the source is mandatory</p>
+        <div class="center">
+          <p class="page-footer__full-name">
+            @ 2022 Federal State Budgetary Educational Institution of Higher
+            Education "Saratov National Research State University named after
+            N.G. Chernyshevsky
+          </p>
+          <p class="page-footer__warning">
+            When using materials, an active link to the source is mandatory
+          </p>
+        </div>
       </div>
     </footer>
 

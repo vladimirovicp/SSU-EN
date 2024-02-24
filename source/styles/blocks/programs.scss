@@ -1,9 +1,14 @@
 .programs {
   padding-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 100px;
+  }
 }
 
 .programs__header {
   font-size: 32px;
+  padding: 0 52px;
   margin: 0 0 30px;
   text-align: center;
 
@@ -13,81 +18,104 @@
   }
 }
 
-.programs__container {
+.programs__controls {
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 52px;
+  }
 }
 
-.programs__controls {
-  // position: relative;
+.programs__name {
   width: 364px;
-  height: 95px;
-  margin-bottom: -15px;
+  min-height: 69px;
 
-  // @media (min-width: $desktop-width) {
-  //   width: 1299px;
-  // }
+  @media (min-width: $desktop-width) {
+    width: 1299px;
+    min-height: 86px;
+  }
 }
 
 .programs__name-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 364px;
-  height: 100%;
-  // width: 300%;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // transform: translate(-364px);
-
-  // @media (min-width: $desktop-width) {
-  //   width: 100%;
-  // }
 }
 
 .programs__name-item {
-  width: 365px;
-
-  padding-top: 8px;
   border-radius: 15px 15px 0 0;
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+  }
 }
 
 .programs__name-item--bachelors {
   background-color: $blue;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+
+    &.programs__name-item--current {
+      background-color: $blue;
+    }
+  }
 }
 
 .programs__name-item--masters {
   background-color: $light-blue;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+
+    &.programs__name-item--current {
+      background-color: $light-blue;
+    }
+  }
 }
 
 .programs__name-item--postgraduate {
   background-color: $teal;
-}
 
-// .programs__name-item:nth-of-type(4n + 4) {
-//   background-color: $green;
-// }
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+
+    &.programs__name-item--current {
+      background-color: $teal;
+    }
+  }
+}
 
 .programs__name-inner {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  height: 100%;
+  height: calc(100% - 8px);
   padding: 16px 27px 21px;
-  border: none;
+  margin-top: 8px;
   border-radius: 15px 15px 0 0;
   background-color: $light-gray;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
+    height: calc(100% - 10px);
+    padding: 29px 27px 19px;
+    margin-top: 10px;
+    background-color: $white;
     cursor: pointer;
+
+    &--masters {
+      padding-left: 80px;
+    }
   }
 }
 
-// .programs__pagination-item--current .programs__pagination-inner {
-//   background-color: $light-gray;
-// }
+.programs__name-item--current .programs__name-inner {
+  background-color: $light-gray;
+}
 
 .programs__arrow {
   margin-top: 4px;
@@ -112,10 +140,9 @@
 .programs__accordion {
   width: 480px;
 
-  // overflow: hidden;
-
   @media (min-width: $desktop-width) {
     width: 1400px;
+    overflow: hidden;
   }
 }
 
@@ -124,37 +151,31 @@
   padding: 0;
   margin: 0;
   width: 480px;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // transform: translate(-480px);
-  // transition: transform 0.7s ease-in-out;
+
+  @media (min-width: $desktop-width) {
+    width: 300%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: transform 0.5s ease-in-out;
+  }
 }
 
-// .programs__list--masters {
-//   transform: translate(-480px);
+.programs__list--masters {
+  @media (min-width: $desktop-width) {
+    transform: translateX(-1400px);
+  }
+}
 
-//   @media (min-width: $desktop-width) {
-//     transform: translate(-1400px);
-//   }
-// }
-
-// .programs__list--postgraduate {
-//   transform: translate(-960px);
-
-//   @media (min-width: $desktop-width) {
-//     transform: translate(-2800px);
-//   }
-// }
+.programs__list--postgraduate {
+  @media (min-width: $desktop-width) {
+    transform: translateX(-2800px);
+  }
+}
 
 .programs__item {
   font-size: 20px;
-  // width: 447px;
 
   @media (min-width: $desktop-width) {
     width: 1400px;
   }
 }
-
-// .programs__item--current .plus-accordion__list {
-//   display: block;
-// }

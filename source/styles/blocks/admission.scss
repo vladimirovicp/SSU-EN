@@ -1,5 +1,9 @@
 .admission {
   padding-bottom: 80px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 100px;
+  }
 }
 
 .admission__container {
@@ -39,6 +43,10 @@
 
 .admission__time {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .admission__foreigners {
