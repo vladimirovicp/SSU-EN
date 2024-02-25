@@ -1,5 +1,9 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }

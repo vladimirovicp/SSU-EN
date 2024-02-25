@@ -4,11 +4,7 @@
   line-height: 1.2;
   font-weight: 700;
   color: $black;
+  padding-right: calc(20px - (100vw - 100%));
   box-sizing: border-box;
-  // width: 480px;
-  // margin: 0 auto;
-
-  // @media (min-width: $desktop-width) {
-  //   width: 1400px;
-  // }
+  scroll-behavior: smooth;
 }

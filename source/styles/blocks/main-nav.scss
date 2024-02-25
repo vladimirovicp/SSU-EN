@@ -1,3 +1,68 @@
+.main-nav {
+  top: 0;
+  bottom: 0;
+  background-color: $black;
+  overflow-y: auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 100px;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 25px 0 24px;
+    background-color: $white;
+  }
+}
+
+.main-nav.main-nav--opened {
+  position: fixed;
+  z-index: 4;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  min-height: 100%;
+}
+
+.main-nav__top-panel-wrapper {
+  position: relative;
+  z-index: 3;
+  padding-right: calc(20px - (100vw - 100%));
+  background-color: $black;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.main-nav__top-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 31px;
+  width: 480px;
+  padding: 8px 16px 10px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.main-nav__link-logo {
+  width: 225px;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
 .main-nav__shortcut-logo {
   @media (min-width: $desktop-width) {
     fill: $black;
@@ -15,10 +80,167 @@
   }
 }
 
-.main-nav__link {
-  font-weight: 500;
+.main-nav__toggle {
+  position: relative;
+  width: 48px;
+  height: 37px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 
-  &--current {
-    color: $dark-blue;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: $white;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav--closed .main-nav__toggle::before,
+.main-nav--closed .main-nav__toggle::after {
+  transform: rotate(0deg);
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  box-shadow: 0 12px 0 0 $white, 0 -12px 0 0 $white;
+}
+
+.main-nav__menu {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  width: 100%;
+  padding-right: calc(20px - (100vw - 100%));
+  transition: top 0.2s ease-in-out;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    transform: translate(0);
+  }
+}
+
+.main-nav--closed .main-nav__menu {
+  top: -110%;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0 0 80px;
+  margin: 0;
+  background-color: $black;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 60px;
+    row-gap: 15px;
+    padding: 0;
+    background-color: $white;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.main-nav__item:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: $blue;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__item:nth-of-type(6n + 1)::after {
+  background-color: $light-blue;
+}
+
+.main-nav__item:nth-of-type(6n + 2)::after {
+  background-color: $teal;
+}
+
+.main-nav__item:nth-of-type(6n + 3)::after {
+  background-color: $green;
+}
+
+.main-nav__item:nth-of-type(6n + 4)::after {
+  background-color: $pinkish-red;
+}
+
+.main-nav__item:nth-of-type(6n + 5)::after {
+  background-color: $pink;
+}
+
+.main-nav__item:nth-of-type(6n + 6)::after {
+  background-color: $blue;
+}
+
+.main-nav__link {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 500;
+  color: $dark-lilac;
+
+  width: 448px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    font-size: 16px;
+    color: $black;
+    text-transform: uppercase;
+
+    &--current {
+      color: $dark-blue;
+    }
   }
 }
