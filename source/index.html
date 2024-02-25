@@ -1629,20 +1629,20 @@
         </div>
       </section>
 
-      <section class="news" id="news">
+      <section class="news center" id="news">
         <h2 class="news__header">News</h2>
-        <div class="news__slider">
-          <div class="news__assortment">
+        <div class="news__container">
+          <div class="news__review">
             <button class="news__filters" type="button">
               <span class="news__filters-capture">Show filters</span>
               <span class="news__filters-cross"></span>
             </button>
-            <div class="news__control">
+            <div class="news__controls">
               <div class="news__slides">
-                <span class="news__slide news__slide--current">02</span
-                >&ensp;&mdash;&ensp;<span class="news__slide news__slide--last"
-                  >05</span
-                >
+                <span class="news__slide news__slide--current"></span
+                >&ensp;&mdash;&ensp;<span
+                  class="news__slide news__slide--last"
+                ></span>
               </div>
               <div class="news__arrows">
                 <button
@@ -1676,108 +1676,111 @@
               </div>
             </div>
           </div>
-          <ul class="news__list">
-            <li class="news__item">
-              <img
-                class="news__picture"
-                src="images/scientific-discussion.jpg"
-                width="448"
-                height="250"
-                alt="Scientific discussion"
-              />
-              <div class="news__publication-time">
-                <span class="news__date">14.08.2022</span>&ensp;/&ensp;<span
-                  class="news__time"
-                  >14:35</span
-                >
-              </div>
-              <h3 class="news__item-header">
-                Scientists Discussed Neurophysiology Research Results
-              </h3>
-              <span class="news__hashtag"
-                >#kniit&ensp;#sport&ensp;#admission
-              </span>
-            </li>
-            <li class="news__item">
-              <div class="news__picture-slider">
-                <button
-                  class="news__picture-slider__arrow news__picture-slider__arrow--left"
-                  type="button"
-                  aria-label="flip slider to the left"
-                >
-                  <!-- Sprite -->
-                </button>
-                <button
-                  class="news__picture-slider__arrow news__picture-slider__arrow--right"
-                  type="button"
-                  aria-label="flip slider to the right"
-                >
-                  <!-- Sprite -->
-                </button>
-                <ul class="news__inner-list">
-                  <li class="news__inner-item">
-                    <img
-                      class="news__picture"
-                      src="images/meeting.jpg"
-                      width="448"
-                      height="250"
-                      alt="Image of the landing site of Gagarin"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div class="news__publication-time">
-                <span class="news__date">14.08.2022</span
-                >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
-              </div>
-              <h3 class="news__item-header">
-                SSU Suggested Projects at Meeting of Galaxy Centre Board of
-                Trustees
-              </h3>
-              <span class="news__hashtag"
-                >#forum&ensp;#science&ensp;#conference
-              </span>
-            </li>
-            <li class="news__item">
-              <img
-                class="news__picture"
-                src="images/awarding.jpg"
-                width="448"
-                height="250"
-                alt="Awarding ceremony"
-              />
-              <div class="news__publication-time">
-                <span class="news__date">14.08.2022</span
-                >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
-              </div>
-              <h3 class="news__item-header">
-                Awarding Ceremony of Best Academic Graduates Took Place at SSU
-              </h3>
-              <span class="news__hashtag"
-                >#forum&ensp;#science&ensp;#conference
-              </span>
-            </li>
-            <li class="news__item">
-              <img
-                class="news__picture"
-                src="images/nesterova.jpg"
-                width="448"
-                height="250"
-                alt="Awarding ceremony"
-              />
-              <div class="news__publication-time">
-                <span class="news__date">14.08.2022</span
-                >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
-              </div>
-              <h3 class="news__item-header">
-                Olga Nesterova Reported at The Future of Higher Education Forum
-                of Leading Universities
-              </h3>
-              <span class="news__hashtag"
-                >#kniit&ensp;#sport&ensp;#admission
-              </span>
-            </li>
-          </ul>
+          <div class="news__slider swiper swiperNews">
+            <ul class="news__list swiper-wrapper">
+              <li class="news__item swiper-slide">
+                <img
+                  class="news__picture"
+                  src="images/news/scientific-discussion.jpg"
+                  width="448"
+                  height="250"
+                  alt="Scientific discussion"
+                />
+                <div class="news__publication-time">
+                  <span class="news__date">14.08.2022</span>&ensp;/&ensp;<span
+                    class="news__time"
+                    >14:35</span
+                  >
+                </div>
+                <h3 class="news__item-header">
+                  Scientists Discussed Neurophysiology Research Results
+                </h3>
+                <span class="news__hashtag"
+                  >#kniit&ensp;#sport&ensp;#admission
+                </span>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__picture-slider">
+                  <button
+                    class="news__picture-slider__arrow news__picture-slider__arrow--left"
+                    type="button"
+                    aria-label="flip slider to the left"
+                  >
+                    <!-- Sprite -->
+                  </button>
+                  <button
+                    class="news__picture-slider__arrow news__picture-slider__arrow--right"
+                    type="button"
+                    aria-label="flip slider to the right"
+                  >
+                    <!-- Sprite -->
+                  </button>
+                  <ul class="news__inner-list">
+                    <li class="news__inner-item">
+                      <img
+                        class="news__picture"
+                        src="images/news/meeting.jpg"
+                        width="448"
+                        height="250"
+                        alt="Image of the landing site of Gagarin"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="news__publication-time">
+                  <span class="news__date">14.08.2022</span
+                  >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
+                </div>
+                <h3 class="news__item-header">
+                  SSU Suggested Projects at Meeting of Galaxy Centre Board of
+                  Trustees
+                </h3>
+                <span class="news__hashtag"
+                  >#forum&ensp;#science&ensp;#conference
+                </span>
+              </li>
+              <li class="news__item swiper-slide">
+                <img
+                  class="news__picture"
+                  src="images/news/awarding.jpg"
+                  width="448"
+                  height="250"
+                  alt="Awarding ceremony"
+                />
+                <div class="news__publication-time">
+                  <span class="news__date">14.08.2022</span
+                  >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
+                </div>
+                <h3 class="news__item-header">
+                  Awarding Ceremony of Best Academic Graduates Took Place at SSU
+                </h3>
+                <span class="news__hashtag"
+                  >#forum&ensp;#science&ensp;#conference
+                </span>
+              </li>
+              <li class="news__item swiper-slide">
+                <img
+                  class="news__picture"
+                  src="images/news/nesterova.jpg"
+                  width="448"
+                  height="250"
+                  alt="Awarding ceremony"
+                />
+                <div class="news__publication-time">
+                  <span class="news__date">14.08.2022</span
+                  >&ensp;&mdash;&ensp;<span class="news__time">14:35</span>
+                </div>
+                <h3 class="news__item-header">
+                  Olga Nesterova Reported at The Future of Higher Education
+                  Forum of Leading Universities
+                </h3>
+                <span class="news__hashtag"
+                  >#kniit&ensp;#sport&ensp;#admission
+                </span>
+              </li>
+            </ul>
+          </div>
+
           <button class="news__button-all" type="button">All news</button>
         </div>
       </section>
