@@ -8,9 +8,14 @@ const swiperNews = new Swiper('.swiperNews', {
   // Optional parameters
   direction: 'horizontal',
   speed: 500,
-  spaceBetween: 40,
+  spaceBetween: 24,
   loop: true,
   autoHeight: true,
+  breakpoints: {
+    1400: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 const arrowLeft = document.querySelector('.news__arrow--left');
@@ -34,4 +39,20 @@ showCurrentSlide(listSlides, currentSlide);
 
 swiperNews.on('slideChange', () => {
   showCurrentSlide(listSlides, currentSlide);
+});
+
+/* News inner-slider */
+
+const swiperInnerNews = new Swiper('.swiperInnerNews', {
+  // Optional parameters
+  direction: 'horizontal',
+  speed: 500,
+  spaceBetween: 40,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });

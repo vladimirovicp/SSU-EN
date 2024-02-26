@@ -2,7 +2,7 @@
   padding: 0 16px 60px;
 
   @media (min-width: $desktop-width) {
-    padding: 0 52px 90px;
+    padding: 0 41px 90px;
   }
 }
 
@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
+    padding: 0 11px;
     margin-bottom: 40px;
   }
 }
@@ -26,17 +27,25 @@
   margin-bottom: 40px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 37px;
+    justify-content: flex-end;
+    column-gap: 233px;
+    padding: 0 11px;
+    margin-bottom: 27px;
   }
 }
 
 .news__filters {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
   font-size: inherit;
   font-weight: 500;
   color: $blue;
   width: 220px;
-  padding: 14px 17px;
+  min-height: 50px;
+  padding: 11px 28px 11px 17px;
   border: 2px solid $gray;
   border-radius: 55px;
   background-color: transparent;
@@ -48,7 +57,7 @@
   position: absolute;
   width: 18px;
   height: 2.4px;
-  right: 17px;
+  right: 15px;
   top: calc(50% - 2.4px);
   background-color: $blue;
   border-radius: 50%;
@@ -67,6 +76,10 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 17px;
+
+  @media (min-width: $desktop-width) {
+    width: 305px;
+  }
 }
 
 .news__slides {
@@ -88,14 +101,15 @@
 }
 
 .news__arrow {
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 50%;
-  background-color: $blue;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $blue;
   cursor: pointer;
 }
 
@@ -107,7 +121,14 @@
   width: 448px;
   margin-bottom: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 22px 5px $shadow;
+  box-shadow: 0 0 11px 5px $shadow;
+
+  @media (min-width: $desktop-width) {
+    width: 1318px;
+    padding: 11px;
+    margin-bottom: 30px;
+    box-shadow: none;
+  }
 }
 
 .news__list {
@@ -119,6 +140,11 @@
 .news__item {
   padding-bottom: 50px;
   border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 306px;
+    box-shadow: 0 0 22px 5px $shadow;
+  }
 }
 
 .news__picture {
@@ -130,23 +156,27 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
+    width: 306px;
+    height: 171px;
   }
 }
 
 .news__publication-time {
-  font-weight: 400;
+  font-weight: 500;
   color: $blue;
   text-align: center;
   width: 190px;
-  padding-left: 36px;
+  padding-left: 45px;
   margin: 0 auto 20px;
   background-image: url(../../images/icons/clock.svg);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left 28px center;
   background-size: 16px 16px;
 
   @media (min-width: $desktop-width) {
-    padding-left: 33px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 35px;
     background-size: 15px 15px;
   }
 }
@@ -154,11 +184,14 @@
 .news__item-header {
   font-size: 24px;
   text-align: center;
-  min-height: 96px;
-  margin: 0 0 40px;
+  width: 412px;
+  min-height: 86px;
+  margin: 0 auto 3px;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    width: 267px;
+    min-height: 96px;
   }
 }
 
@@ -173,10 +206,56 @@
   }
 }
 
+.news__inner-slider {
+  width: 448px;
+  height: 250px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 306px;
+    height: 171px;
+    margin-bottom: 20px;
+  }
+}
+
+.news__arrow::after {
+  display: none;
+}
+
+.news__inner-slider .news__arrow {
+  width: 21px;
+  height: 21px;
+}
+
+.news__inner-slider .news__arrow-icon {
+  width: 5px;
+  height: 9px;
+}
+
+.news__inner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news__inner-picture {
+  display: block;
+  width: 448px;
+  height: 250px;
+  border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 306px;
+    height: 171px;
+  }
+}
+
 .news__button-all {
   display: block;
   font-size: 500;
   color: $white;
+  text-align: center;
   width: 200px;
   min-height: 60px;
   padding: 19px 22px 22px;

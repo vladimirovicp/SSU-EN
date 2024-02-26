@@ -1,5 +1,7 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
+import { showCurrentSlide } from './util.js';
+
 /* Main slider */
 
 const swiperMain = new Swiper('.swiperMain', {
@@ -21,16 +23,6 @@ const swiperMain = new Swiper('.swiperMain', {
 });
 
 /* Text sliders */
-
-const showCurrentSlide = (list, slide) => {
-  setTimeout(() => {
-    for (let i = 0; i < list.length; i++) {
-      if (list[i].classList.contains('swiper-slide-active')) {
-        slide.textContent = `0${i + 1}`;
-      }
-    }
-  }, 0);
-};
 
 /* Text slider 1 */
 
