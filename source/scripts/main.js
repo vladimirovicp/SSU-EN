@@ -1,5 +1,6 @@
 import './arrow-accordion.js';
 import './navigation.js';
+import './map.js';
 import './news.js';
 // import './flip-programs.js';
 import './programs.js';

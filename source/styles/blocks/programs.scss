@@ -142,7 +142,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1400px;
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 
@@ -150,32 +150,32 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 480px;
+  // width: 480px;
 
   @media (min-width: $desktop-width) {
-    width: 300%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    transition: transform 0.5s ease-in-out;
+    // width: 300%;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // transition: transform 0.5s ease-in-out;
   }
 }
 
-.programs__list--masters {
-  @media (min-width: $desktop-width) {
-    transform: translateX(-1400px);
-  }
-}
+// .programs__list--masters {
+//   @media (min-width: $desktop-width) {
+//     transform: translateX(-1400px);
+//   }
+// }
 
-.programs__list--postgraduate {
-  @media (min-width: $desktop-width) {
-    transform: translateX(-2800px);
-  }
-}
+// .programs__list--postgraduate {
+//   @media (min-width: $desktop-width) {
+//     transform: translateX(-2800px);
+//   }
+// }
 
-.programs__item {
-  font-size: 20px;
+// .programs__item {
+//   font-size: 20px;
 
-  @media (min-width: $desktop-width) {
-    width: 1400px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 1400px;
+//   }
+// }

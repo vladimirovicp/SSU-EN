@@ -1,0 +1,11 @@
+.page-main__map {
+  width: 480px;
+  height: 600px;
+  padding: 0 16px;
+
+  @media (min-width: $desktop-width) {
+    width: 1400px;
+    height: 586px;
+    padding: 0 52px;
+  }
+}
