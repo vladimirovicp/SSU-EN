@@ -83,6 +83,12 @@
   background-color: transparent;
 }
 
+@media (hover: hover) {
+  .search--invisible .search__button:hover {
+    background-color: $dark-lilac;
+  }
+}
+
 .search__icon {
   @media (min-width: $desktop-width) {
     width: 14px;

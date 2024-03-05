@@ -44,10 +44,6 @@
 
 .picture-slider__arrow--right .picture-slider__arrow-icon {
   transform: rotate(180deg);
-
-  @media (min-width: $desktop-width) {
-    fill: $blue;
-  }
 }
 
 .picture-slider__pagination {
@@ -89,6 +85,13 @@
 .picture-slider__arrow .picture-slider__arrow-icon {
   width: 17px;
   height: 33px;
+  transition: 0.2s;
+}
+
+@media (hover: hover) {
+  .picture-slider__arrow:hover .picture-slider__arrow-icon {
+    fill: $light-blue;
+  }
 }
 
 .swiper-slide-prev .picture-slider__description,

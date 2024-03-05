@@ -45,3 +45,34 @@ img {
     width: 1400px;
   }
 }
+
+.underline {
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:before {
+    right: 50%;
+  }
+
+  &:after {
+    left: 50%;
+  }
+
+  &--narrow {
+    &::before,
+    &::after {
+      height: 1px;
+    }
+  }
+}

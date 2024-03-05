@@ -98,20 +98,14 @@ swiperText2.on('slideChange', () => {
 
 /* Picture slider */
 
-const screenWidth = window.innerWidth;
-
-// window.addEventListener('resize', () => {
-//   screenWidth = window.innerWidth;
-// });
-
 const swiperOptions = {
   // Optional parameters
   direction: 'horizontal',
   speed: 500,
   loop: true,
-  centeredSlides: screenWidth > 1400,
+  centeredSlides: true,
   slidesPerView: 'auto',
-  effect: screenWidth > 1400 ? 'coverflow' : 'slide',
+  effect: 'coverflow',
   coverflowEffect: {
     depth: 0,
     rotate: 0,
@@ -119,7 +113,6 @@ const swiperOptions = {
     slideShadows: false,
     stretch: 17,
   },
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -132,18 +125,5 @@ const swiperOptions = {
   },
 };
 
-/* Picture slider 1 */
-
 const swiperPicture1 = new Swiper('.swiperPicture1', swiperOptions);
-
-// window.addEventListener('resize', () => {
-//   swiperPicture1.update();
-// });
-
-/* Picture slider 2 */
-
 const swiperPicture2 = new Swiper('.swiperPicture2', swiperOptions);
-
-// window.addEventListener('resize', () => {
-//   swiperPicture2.update();
-// });

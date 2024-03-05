@@ -1,11 +1,23 @@
-.page-main__map {
-  width: 480px;
-  height: 600px;
+.page-main__map-wrapper {
   padding: 0 16px;
 
   @media (min-width: $desktop-width) {
-    width: 1400px;
-    height: 586px;
     padding: 0 52px;
   }
+}
+
+.page-main__map {
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    height: 586px;
+  }
+}
+
+.page-main__map-marker {
+  width: 32px;
+  height: 42px;
+  background-image: url("../../images/marker.svg");
 }

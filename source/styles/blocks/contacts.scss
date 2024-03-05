@@ -93,6 +93,17 @@
   color: $teal;
 }
 
+@media (hover: hover) {
+  .contacts__phone-1:hover .underline::before,
+  .contacts__phone-1:hover .underline::after,
+  .contacts__phone-2:hover .underline::before,
+  .contacts__phone-2:hover .underline::after,
+  .contacts__mail:hover .underline::before,
+  .contacts__mail:hover .underline::after {
+    width: 50%;
+  }
+}
+
 .contacts__item-header--social {
   color: $green;
   margin-bottom: 15px;
@@ -123,6 +134,12 @@
   height: 61px;
   border-radius: 50%;
   background-color: $light-lilac;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $green;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 38px;

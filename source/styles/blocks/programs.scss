@@ -129,6 +129,16 @@
   }
 }
 
+.programs__arrow-icon {
+  transition: 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      fill: $light-lilac;
+    }
+  }
+}
+
 .programs__arrow--right .programs__arrow-icon {
   transform: rotate(180deg);
 }
@@ -143,6 +153,7 @@
   @media (min-width: $desktop-width) {
     width: 1400px;
     // overflow: hidden;
+    // height: 100%;
   }
 }
 
@@ -157,6 +168,22 @@
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
     // transition: transform 0.5s ease-in-out;
+  }
+}
+
+.programs__item {
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+    width: 0;
+    max-height: 0;
+  }
+}
+
+.programs__item.programs__item--current {
+  @media (min-width: $desktop-width) {
+    width: 1400px;
+    max-height: 3000px;
+    transition: max-height 1.5s ease-in-out;
   }
 }
 

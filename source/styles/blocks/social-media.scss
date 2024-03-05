@@ -35,37 +35,39 @@
   }
 }
 
-.social-media__vk-icon {
+.social-media__icon {
+  transition: 0.2s;
+
   @media (min-width: $desktop-width) {
-    width: 19px;
-    height: 12px;
+    &--vk {
+      width: 19px;
+      height: 12px;
+    }
+
+    &--odnoklassniki {
+      width: 14px;
+      height: 14px;
+    }
+
+    &--telegram {
+      width: 18px;
+      height: 15px;
+    }
+
+    &--rutube {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--zen {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
 
-.social-media__odnoklassniki-icon {
-  @media (min-width: $desktop-width) {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-.social-media__telegram-icon {
-  @media (min-width: $desktop-width) {
-    width: 18px;
-    height: 15px;
-  }
-}
-
-.social-media__rutube-icon {
-  @media (min-width: $desktop-width) {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-.social-media__zen-icon {
-  @media (min-width: $desktop-width) {
-    width: 15px;
-    height: 15px;
+@media (hover: hover) {
+  .social-media__link:hover .social-media__icon {
+    fill: $white;
   }
 }

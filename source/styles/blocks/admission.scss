@@ -235,3 +235,12 @@
     margin-bottom: 16px;
   }
 }
+
+@media (hover: hover) {
+  .admission__mail:hover .underline::before,
+  .admission__mail:hover .underline::after,
+  .admission__phone:hover .underline::before,
+  .admission__phone:hover .underline::after {
+    width: 50%;
+  }
+}

@@ -49,6 +49,14 @@
   border: 2px solid $gray;
   border-radius: 55px;
   background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $gray;
+    }
+  }
 }
 
 .news__filters::before,
@@ -111,6 +119,12 @@
   border-radius: 50%;
   background-color: $blue;
   cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $gray;
+    }
+  }
 }
 
 .news__arrow--right .news__arrow-icon {
@@ -138,12 +152,25 @@
 }
 
 .news__item {
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
   border-radius: 10px;
 
   @media (min-width: $desktop-width) {
     width: 306px;
     box-shadow: 0 0 22px 5px $shadow;
+  }
+}
+
+.news__link {
+  display: block;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  transition: 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 0 0 22px 10px $shadow;
+    }
   }
 }
 
@@ -252,7 +279,9 @@
 }
 
 .news__button-all {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 500;
   color: $white;
   text-align: center;
@@ -264,4 +293,11 @@
   border-radius: 55px;
   background-color: $blue;
   cursor: pointer;
+}
+
+@media (hover: hover) {
+  .news__button-all:hover .underline::before,
+  .news__button-all:hover .underline::after {
+    width: 50%;
+  }
 }

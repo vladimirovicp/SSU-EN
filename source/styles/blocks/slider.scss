@@ -113,8 +113,14 @@
 
 .slider__arrow--right .slider__arrow-icon {
   transform: rotate(180deg);
+}
 
-  @media (min-width: $desktop-width) {
+.slider__arrow-icon {
+  transition: 0.2s;
+}
+
+@media (hover: hover) {
+  .slider__arrow:hover .slider__arrow-icon {
     fill: $light-blue;
   }
 }
@@ -122,6 +128,9 @@
 .slider__button-admission,
 .slider__button-partnership {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 292px;
   text-transform: uppercase;
   text-align: center;
@@ -156,5 +165,37 @@
     top: 382px;
     left: auto;
     right: 52px;
+  }
+}
+
+// .slider__underline {
+//   position: relative;
+
+//   &::before,
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     bottom: 0;
+//     width: 0;
+//     height: 2px;
+//     background-color: $white;
+//     transition: width 0.2s ease-in-out;
+//   }
+
+//   &:before {
+//     right: 50%;
+//   }
+
+//   &:after {
+//     left: 50%;
+//   }
+// }
+
+@media (hover: hover) {
+  .slider__button-admission:hover .underline::before,
+  .slider__button-admission:hover .underline::after,
+  .slider__button-partnership:hover .underline::before,
+  .slider__button-partnership:hover .underline::after {
+    width: 50%;
   }
 }

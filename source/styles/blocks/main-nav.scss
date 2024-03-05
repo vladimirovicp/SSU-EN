@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 31px;
+  column-gap: 27px;
   width: 480px;
   padding: 8px 16px 10px;
   margin: 0 auto;
@@ -82,12 +82,14 @@
 
 .main-nav__toggle {
   position: relative;
-  width: 48px;
-  height: 37px;
+  width: 52px;
+  height: 40px;
   padding: 4px;
   border: none;
-  cursor: pointer;
+  border-radius: 10px;
   background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -104,7 +106,8 @@
   height: 5px;
   border-radius: 2.5px;
   background-color: $white;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -122,6 +125,12 @@
 
 .main-nav--closed .main-nav__toggle::before {
   box-shadow: 0 12px 0 0 $white, 0 -12px 0 0 $white;
+}
+
+@media (hover: hover) {
+  .main-nav__toggle:hover {
+    background-color: $dark-lilac;
+  }
 }
 
 .main-nav__menu {
@@ -228,19 +237,51 @@
   font-size: 32px;
   font-weight: 500;
   color: $dark-lilac;
-
   width: 448px;
   padding: 0;
   margin: 0 auto;
+  transition: 0.2s;
 
   @media (min-width: $desktop-width) {
     display: inline;
     font-size: 16px;
     color: $black;
     text-transform: uppercase;
+  }
+}
 
-    &--current {
-      color: $dark-blue;
+@media (hover: hover) {
+  .main-nav__link:hover {
+    color: $white;
+
+    @media (min-width: $desktop-width) {
+      color: $hover-blue;
     }
   }
 }
+
+// @media (hover: hover) {
+//   .main-nav__item:nth-of-type(6n + 1) .main-nav__link:hover {
+//     color: $blue;
+//   }
+
+//   .main-nav__item:nth-of-type(6n + 2) .main-nav__link:hover {
+//     color: $light-blue;
+//   }
+
+//   .main-nav__item:nth-of-type(6n + 3) .main-nav__link:hover {
+//     color: $teal;
+//   }
+
+//   .main-nav__item:nth-of-type(6n + 4) .main-nav__link:hover {
+//     color: $green;
+//   }
+
+//   .main-nav__item:nth-of-type(6n + 5) .main-nav__link:hover {
+//     color: $pinkish-red;
+//   }
+
+//   .main-nav__item:nth-of-type(6n + 6) .main-nav__link:hover {
+//     color: $pink;
+//   }
+// }

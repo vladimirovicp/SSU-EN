@@ -113,6 +113,21 @@
   margin-bottom: 41px;
 }
 
+@media (hover: hover) {
+  .page-footer__reception a:hover .underline::before,
+  .page-footer__reception a:hover .underline::after,
+  .page-footer__commission a:hover .underline::before,
+  .page-footer__commission a:hover .underline::after,
+  .page-footer__international a:hover .underline::before,
+  .page-footer__international a:hover .underline::after,
+  .page-footer__phone a:hover .underline::before,
+  .page-footer__phone a:hover .underline::after,
+  .page-footer__mail a:hover .underline::before,
+  .page-footer__mail a:hover .underline::after {
+    width: 50%;
+  }
+}
+
 .page-footer__button {
   display: flex;
   justify-content: center;

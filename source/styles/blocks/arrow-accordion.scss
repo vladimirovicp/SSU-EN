@@ -65,7 +65,7 @@
   position: absolute;
   right: calc(50% - 22px);
   bottom: 0;
-  transition: bottom 0.5s ease-in-out;
+  transition: bottom 0.4s ease-in-out;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -111,7 +111,7 @@
   box-shadow: 0 4px 4px 0 $shadow;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -127,7 +127,7 @@
 
   @media (min-width: $desktop-width) {
     max-height: 730px;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
   }
 }
 

@@ -1,3 +1,5 @@
+// import ymaps3 from 'https://api-maps.yandex.ru/v3/?apikey=6aba9faf-ee85-4e45-8a16-e95800518649&lang=ru_RU';
+
 initMap();
 
 async function initMap() {
@@ -14,7 +16,6 @@ async function initMap() {
 
     // Передаём параметры инициализации карты
     {
-      // mode: 'raster',
       location: {
         // Координаты центра карты
         center: [46.010245, 51.538828],
@@ -25,28 +26,26 @@ async function initMap() {
     }
   );
 
-  // const placemark = new yamps3.Placemark([46.010245, 51.538828]);
+  // Добавьте слой с дорогами и зданиями
+  map.addChild(new YMapDefaultSchemeLayer());
 
-  // const markerElement = document.createElement('div');
-  // markerElement.className = 'marker-class';
-  // markerElement.innerText = "I'm marker!";
+  // Добавьте слой для маркеров
+  map.addChild(new YMapDefaultFeaturesLayer());
+
+  const markerElement = document.createElement('div');
+  markerElement.className = 'page-main__map-marker';
+  // markerElement.innerText = '<h1>X корпус, ул. Астраханская, 88</h1>';
 
   const marker = new YMapMarker(
     {
-      // source: 'markerSource',
+      // source: '../images/marker.svg',
       coordinates: [46.010245, 51.538828],
-      draggable: true,
-      mapFollowsOnDrag: true,
-    }
-    // markerElement
+      // draggable: true,
+      // mapFollowsOnDrag: true,
+    },
+    markerElement
   );
 
-  // // Добавляем слой для отображения схематической карты
-  // map.addChild(new YMapDefaultSchemeLayer());
-
-  // // Добавьте слой для маркеров
-  // map.addChild(new YMapDefaultFeaturesLayer());
-
+  // Добавьте маркер на карту
   map.addChild(marker);
-  // map.geoObjects.add(placemark);
 }
