@@ -1,8 +1,15 @@
+.page-main {
+  position: relative;
+}
+
 .page-main__map-wrapper {
+  position: relative;
   padding: 0 16px;
+  margin-bottom: -264px;
 
   @media (min-width: $desktop-width) {
     padding: 0 52px;
+    margin-bottom: -286px;
   }
 }
 
@@ -10,6 +17,7 @@
   height: 600px;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 0 0 22px 5px $shadow;
 
   @media (min-width: $desktop-width) {
     height: 586px;
@@ -20,4 +28,32 @@
   width: 32px;
   height: 42px;
   background-image: url("../../images/marker.svg");
+}
+
+.page-main__overlay {
+  padding: 264px 0 120px;
+
+  background-color: $light-gray;
+
+  @media (min-width: $desktop-width) {
+    padding: 286px 0 98px;
+  }
+}
+
+.page-main__button-up {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: calc(50% - 648px);
+    bottom: 33px;
+    display: block;
+    font-size: 10px;
+    color: $white;
+    width: 51px;
+    height: 51px;
+    border: none;
+    border-radius: 50%;
+    background-color: $black;
+  }
 }

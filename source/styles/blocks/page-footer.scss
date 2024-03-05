@@ -144,6 +144,14 @@
   margin-bottom: 27px;
 }
 
+@media (hover: hover) {
+  .page-footer__button:hover,
+  .page-footer__button:hover {
+    color: $white;
+    background-color: $dark-lilac;
+  }
+}
+
 .page-footer__copyright {
   font-size: 14px;
   padding: 38px 0;

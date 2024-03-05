@@ -1638,10 +1638,12 @@
         <h2 class="news__header">News</h2>
         <div class="news__container">
           <div class="news__review">
-            <button class="news__filters" type="button">
-              <span class="news__filters-capture">Show filters</span>
-              <span class="news__filters-cross"></span>
-            </button>
+            <div class="news__filters" type="button">
+              <button class="news__filters-list">
+                <span class="underline">Show filters</span>
+              </button>
+              <button class="news__filters-cross"></button>
+            </div>
             <div class="news__controls">
               <div class="news__slides">
                 <span class="news__slide news__slide--current"></span
@@ -1944,8 +1946,9 @@
       <div class="page-main__map-wrapper center">
         <div id="map" class="page-main__map"></div>
       </div>
+      <div class="page-main__overlay"></div>
 
-      <button class="button-up" type="button">Upstairs</button>
+      <button class="page-main__button-up" type="button">Upstairs</button>
     </main>
 
     <footer class="page-footer">
