@@ -16,7 +16,7 @@
 }
 
 .info-template__inner {
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   border-radius: 15px;
   background-color: $white;
 
@@ -99,11 +99,6 @@
     }
   }
 }
-
-// .info-template__arrow .info-template__arrow-icon {
-//   width: 8px;
-//   height: 15px;
-// }
 
 .info-template__arrow--right .info-template__arrow-icon {
   transform: rotate(180deg);

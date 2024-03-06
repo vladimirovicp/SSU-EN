@@ -39,7 +39,7 @@
   padding: 26px 48px;
   box-sizing: border-box;
   background-color: $black-63;
-  top: 34px;
+  top: 10px;
   left: 0;
   right: 0;
   margin: auto;
@@ -59,13 +59,15 @@
 
 .slider__pagination {
   height: 10px;
-  --swiper-pagination-top: 362px;
+  --swiper-pagination-top: 355px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
-  --swiper-pagination-bullet-width: 10px;
-  --swiper-pagination-bullet-height: 10px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
 
   @media (min-width: $desktop-width) {
     --swiper-pagination-top: 526px;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
   }
 }
 
@@ -80,7 +82,7 @@
 
 .slider__arrow {
   position: absolute;
-  top: 204px;
+  top: 220px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -91,7 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 274px;
+    top: 290px;
   }
 }
 
@@ -148,7 +150,7 @@
   margin: auto;
 
   @media (min-width: $desktop-width) {
-    top: 382px;
+    top: 385px;
     left: auto;
     right: 374px;
   }
@@ -162,34 +164,11 @@
   margin: auto;
 
   @media (min-width: $desktop-width) {
-    top: 382px;
+    top: 385px;
     left: auto;
     right: 52px;
   }
 }
-
-// .slider__underline {
-//   position: relative;
-
-//   &::before,
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     bottom: 0;
-//     width: 0;
-//     height: 2px;
-//     background-color: $white;
-//     transition: width 0.2s ease-in-out;
-//   }
-
-//   &:before {
-//     right: 50%;
-//   }
-
-//   &:after {
-//     left: 50%;
-//   }
-// }
 
 @media (hover: hover) {
   .slider__button-admission:hover .underline::before,

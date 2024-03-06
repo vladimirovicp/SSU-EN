@@ -103,6 +103,7 @@ const swiperOptions = {
   direction: 'horizontal',
   speed: 500,
   loop: true,
+  autoHeight: true,
   centeredSlides: true,
   slidesPerView: 'auto',
   effect: 'coverflow',

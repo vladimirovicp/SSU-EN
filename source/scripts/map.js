@@ -34,14 +34,10 @@ async function initMap() {
 
   const markerElement = document.createElement('div');
   markerElement.className = 'page-main__map-marker';
-  // markerElement.innerText = '<h1>X корпус, ул. Астраханская, 88</h1>';
 
   const marker = new YMapMarker(
     {
-      // source: '../images/marker.svg',
       coordinates: [46.010245, 51.538828],
-      // draggable: true,
-      // mapFollowsOnDrag: true,
     },
     markerElement
   );

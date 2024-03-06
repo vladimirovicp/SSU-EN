@@ -129,7 +129,6 @@
 }
 
 .plus-accordion__content {
-  // display: none;
   font-size: 16px;
   font-weight: 400;
   grid-column: 1 / 3;
@@ -144,7 +143,6 @@
 }
 
 .plus-accordion__inner--current .plus-accordion__content {
-  // display: block;
   max-height: 100px;
   margin-top: 15px;
 }

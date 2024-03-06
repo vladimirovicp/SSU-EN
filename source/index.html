@@ -94,9 +94,8 @@
       </style>
     </noscript>
     <script src="https://api-maps.yandex.ru/v3/?apikey=6aba9faf-ee85-4e45-8a16-e95800518649&lang=ru_RU"></script>
-    <!-- <script src="scripts/index.js" defer></script> -->
   </head>
-  <body class="page-body">
+  <body class="page-body" id="page-body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__top-panel-wrapper">
@@ -537,7 +536,7 @@
         </div>
       </section>
 
-      <section class="foreigners center" id="foreigners">
+      <section class="foreigners center arrow-accordion" id="foreigners">
         <h2 class="foreigners__header">
           Preparatory department for foreign citizens
         </h2>
@@ -1254,7 +1253,7 @@
         </div>
       </section>
 
-      <section class="residence center" id="residence">
+      <section class="residence center arrow-accordion" id="residence">
         <h2 class="residence__header">Residence</h2>
         <ul class="arrow-accordion__list">
           <li
@@ -1536,7 +1535,7 @@
         <div class="science__overlay">
           <div class="center">
             <div
-              class="region__picture-slider picture-slider swiper swiperPicture2"
+              class="science__picture-slider picture-slider picture-slider--second swiper swiperPicture2"
             >
               <ul class="picture-slider__list swiper-wrapper">
                 <li
@@ -1638,11 +1637,11 @@
         <h2 class="news__header">News</h2>
         <div class="news__container">
           <div class="news__review">
-            <div class="news__filters" type="button">
-              <button class="news__filters-list">
+            <div class="news__filters">
+              <button class="news__filters-list" type="button">
                 <span class="underline">Show filters</span>
               </button>
-              <button class="news__filters-cross"></button>
+              <button class="news__filters-cross" type="button"></button>
             </div>
             <div class="news__controls">
               <div class="news__slides">
@@ -1948,7 +1947,17 @@
       </div>
       <div class="page-main__overlay"></div>
 
-      <button class="page-main__button-up" type="button">Upstairs</button>
+      <a class="page-main__button-up" href="#page-body">
+        <svg
+          class="page-main__button-up-icon"
+          width="8"
+          height="15"
+          fill="#ffffff"
+        >
+          <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+        </svg>
+        <span class="page-main__button-up-capture">Upstairs</span>
+      </a>
     </main>
 
     <footer class="page-footer">

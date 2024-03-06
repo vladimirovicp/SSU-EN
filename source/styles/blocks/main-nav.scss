@@ -40,9 +40,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 27px;
+  column-gap: 10px;
   width: 480px;
-  padding: 8px 16px 10px;
+  padding: 8px 12px 10px 16px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
@@ -53,7 +53,6 @@
 }
 
 .main-nav__link-logo {
-  width: 225px;
   display: flex;
   align-items: center;
   column-gap: 14px;
@@ -64,6 +63,8 @@
 }
 
 .main-nav__shortcut-logo {
+  flex-shrink: 0;
+
   @media (min-width: $desktop-width) {
     fill: $black;
   }
@@ -73,6 +74,7 @@
   font-size: 13px;
   font-weight: 500;
   color: $white;
+  text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
     font-size: 15px;
@@ -85,6 +87,7 @@
   width: 52px;
   height: 40px;
   padding: 4px;
+  margin-left: 25px;
   border: none;
   border-radius: 10px;
   background-color: transparent;
@@ -259,29 +262,3 @@
     }
   }
 }
-
-// @media (hover: hover) {
-//   .main-nav__item:nth-of-type(6n + 1) .main-nav__link:hover {
-//     color: $blue;
-//   }
-
-//   .main-nav__item:nth-of-type(6n + 2) .main-nav__link:hover {
-//     color: $light-blue;
-//   }
-
-//   .main-nav__item:nth-of-type(6n + 3) .main-nav__link:hover {
-//     color: $teal;
-//   }
-
-//   .main-nav__item:nth-of-type(6n + 4) .main-nav__link:hover {
-//     color: $green;
-//   }
-
-//   .main-nav__item:nth-of-type(6n + 5) .main-nav__link:hover {
-//     color: $pinkish-red;
-//   }
-
-//   .main-nav__item:nth-of-type(6n + 6) .main-nav__link:hover {
-//     color: $pink;
-//   }
-// }

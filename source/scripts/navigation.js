@@ -22,45 +22,6 @@ navToggle.addEventListener('click', () => {
 
 const navLinks = document.querySelectorAll('.main-nav__link');
 
-// const followLink = () => {
-//   if (window.innerWidth < 1400) {
-//     navLinks.forEach((navLink) => {
-//       navLink.addEventListener('click', (event) => {
-//         event.preventDefault();
-//         if (mainNav.classList.contains('main-nav--opened')) {
-//           mainNav.classList.remove('main-nav--opened');
-
-//           setTimeout(() => {
-//             mainNav.classList.add('main-nav--closed');
-//             setTimeout(() => {
-//               body.style.overflowY = 'auto';
-//               // window.location.href = navLink.href;
-//               const targetElement = document.querySelector(
-//                 navLink.getAttribute('href')
-//               );
-
-//               // Прокручиваем до целевого элемента с плавным скроллом
-//               if (targetElement) {
-//                 targetElement.scrollIntoView({
-//                   behavior: 'smooth',
-//                 });
-//               }
-//             }, 400);
-//           }, 200);
-//         }
-//       });
-//     });
-//   }
-// };
-
-// followLink();
-
-// window.addEventListener('resize', () => {
-//   followLink();
-// });
-
-/* парапапарам */
-
 const followLink = () => {
   if (window.innerWidth < 1400) {
     navLinks.forEach((navLink) => {

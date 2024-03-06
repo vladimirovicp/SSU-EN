@@ -38,21 +38,14 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  column-gap: 35px;
+  column-gap: 25px;
   align-items: center;
   width: 220px;
   min-height: 50px;
-  padding: 11px 28px 11px 17px;
+  padding: 8px 8px 8px 17px;
   border: 2px solid $gray;
   border-radius: 55px;
-  cursor: pointer;
   transition: 0.2s;
-
-  // @media (hover: hover) {
-  //   &:hover {
-  //     background-color: $gray;
-  //   }
-  // }
 }
 
 .news__filters-list {
@@ -62,6 +55,7 @@
   color: $blue;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (hover: hover) {
     &:hover .underline::before,
@@ -82,6 +76,7 @@
   border-radius: 10px;
   background-color: transparent;
   transition: 0.2s;
+  cursor: pointer;
 
   &:hover {
     background-color: $dark-lilac;
@@ -172,7 +167,7 @@
   @media (min-width: $desktop-width) {
     width: 1318px;
     padding: 11px;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     box-shadow: none;
   }
 }
@@ -251,6 +246,7 @@
     font-size: 20px;
     width: 267px;
     min-height: 96px;
+    margin-bottom: 40px;
   }
 }
 

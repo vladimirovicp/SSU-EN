@@ -1,8 +1,14 @@
 .picture-slider {
   width: 448px;
+  min-height: 375px;
   margin: 0 auto;
 
+  &--second {
+    min-height: 395px;
+  }
+
   @media (min-width: $desktop-width) {
+    min-height: 433px;
     width: 1296px;
   }
 }
@@ -14,8 +20,6 @@
 }
 
 .picture-slider__item {
-  padding-bottom: 35px;
-
   @media (min-width: $desktop-width) {
     width: 448px;
   }
@@ -35,7 +39,7 @@
   color: $gray;
   text-align: center;
   margin: 0;
-  min-height: 96px;
+  min-height: 58px;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;

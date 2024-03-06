@@ -1,5 +1,5 @@
 .admission {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 100px;
@@ -42,15 +42,11 @@
 }
 
 .admission__time {
-  margin-bottom: 20px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 }
 
 .admission__foreigners {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
@@ -86,15 +82,15 @@
   text-align: center;
   counter-increment: li;
   width: 216px;
-  min-height: 245px;
-  padding: 10px 16px 30px;
+  min-height: 235px;
+  padding: 10px 16px 28px;
   border-radius: 15px;
 
   @media (min-width: $desktop-width) {
     text-align: start;
     width: 413px;
     min-height: 162px;
-    padding: 32px 25px 27px 13px;
+    padding: 32px 23px 27px 13px;
     display: flex;
     align-items: center;
     column-gap: 38px;
@@ -130,9 +126,10 @@
   display: block;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
     margin-bottom: 0;
   }
 }
@@ -162,6 +159,7 @@
 .admission__item-small {
   display: block;
   font-size: 10px;
+  margin-top: 10px;
 }
 
 .admission__item p {
@@ -199,7 +197,7 @@
 }
 
 .admission__questions {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 34px;
