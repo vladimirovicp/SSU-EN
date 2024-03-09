@@ -100,6 +100,8 @@
 
 .swiper-slide-prev .picture-slider__description,
 .swiper-slide-next .picture-slider__description {
-  font-size: 18px;
-  padding: 0 20px;
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 0 20px;
+  }
 }

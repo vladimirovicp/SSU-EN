@@ -10,10 +10,10 @@ navToggle.addEventListener('click', () => {
       body.style.overflow = 'hidden';
     }, 200);
   } else if (mainNav.classList.contains('main-nav--opened')) {
+    body.style.overflowY = 'auto';
     mainNav.classList.remove('main-nav--opened');
     setTimeout(() => {
       mainNav.classList.add('main-nav--closed');
-      body.style.overflowY = 'auto';
     }, 200);
   }
 });
@@ -29,13 +29,13 @@ const followLink = () => {
       const clickHandler = (event) => {
         event.preventDefault();
         if (mainNav.classList.contains('main-nav--opened')) {
+          body.style.overflowY = 'auto';
           mainNav.classList.remove('main-nav--opened');
 
           setTimeout(() => {
             mainNav.classList.add('main-nav--closed');
+
             setTimeout(() => {
-              body.style.overflowY = 'auto';
-              // window.location.href = navLink.href;
               const targetElement = document.querySelector(
                 navLink.getAttribute('href')
               );

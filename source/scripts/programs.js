@@ -112,8 +112,7 @@ for (let i = 0; i < accordionButtons.length; i++) {
     );
 
     accordionButtons[i].parentElement.addEventListener('transitionend', () => {
-      const programNamesList = document.querySelector('.programs__list');
-      programNamesList.style.height = 'auto';
+      swiperPrograms2.update();
     });
   });
 }
